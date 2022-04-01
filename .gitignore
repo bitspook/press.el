@@ -2,3 +2,4 @@
 /_published/
 /.parcel-cache/
 /node_modules/
+/*.log

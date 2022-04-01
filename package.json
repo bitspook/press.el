@@ -5,8 +5,9 @@
   "author": "Charanjit Singh <bitspook@protonmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf static/dist",
     "build-scss": "parcel build assets/scss/main.scss --dist-dir static/dist",
-    "build": "yarn build-scss"
+    "build": "yarn clean && yarn build-scss"
   },
   "dependencies": {
     "parcel": "^2.4.1"

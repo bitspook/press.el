@@ -1,6 +1,9 @@
 #+DATE: <2019-06-21>
 #+TITLE: Lessons From a Year of TDD
 
+#+begin_export html
+<style>img { max-width: 600px; margin: 1rem 0; }</style>
+#+end_export
 
 #+begin_export html
   <iframe src="///slides.com/bitspook/lessons-from-a-year-of-tdd/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -88,14 +91,6 @@ age. We certainly meet the criteria:
   computer)
 - [X] Bend reality to our will (/r/insidethesoftstone reality is what
   you want it to be)
-
-#+begin_html
-  <p>
-#+end_html
-
-#+begin_html
-  </p>
-#+end_html
 
 #+begin_export html
   <img src="/lfyot-slides/04--the-stallzard.png" title="The Stallzard"

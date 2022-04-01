@@ -2,16 +2,6 @@
   margin-top: 0.5em;
 }
 
-.root {
-  .content {
-    font-family: Cantarell, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5em;
-    line-height: 1.4;
-  }
-}
-
 .content-meta, .content-meta a {
   font-family: Roboto, sans-serif;
   color: $secondary-color;
@@ -46,8 +36,12 @@
   }
 }
 
-.main-article {
+.content {
   font-family: Cantarell, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.4;
   min-height: 500px;
 
   strong, b {
@@ -55,8 +49,6 @@
   }
 
   p {
-    font-family: inherit;
-    font-size: inherit;
     margin: 1em 0;
   }
 

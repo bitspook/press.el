@@ -3,6 +3,7 @@
 	font-style: "normal";
 	font-weight: 300;
 	src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
+  font-display: optional;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
 	font-style: "normal";
 	font-weight: 500;
 	src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-display: optional;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
 	font-style: "normal";
 	font-weight: "bold";
 	src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-display: optional;
 }
 
 @font-face {
@@ -24,12 +27,14 @@
 	font-style: "normal";
 	font-weight: "bold";
 	src: url("/assets/fonts/Cantarell/Cantarell-Bold.ttf");
+  font-display: optional;
 }
 
 @font-face {
 	font-family: "Cantarell";
 	font-style: "normal";
 	src: url("/assets/fonts/Cantarell/Cantarell-Regular.ttf");
+  font-display: optional;
 }
 
 * {
@@ -157,4 +162,14 @@ img, figure {
 pre {
   overflow: auto;
   padding: 1em;
+}
+
+#postamble {
+  font-family: monospace;
+  color: #666;
+  margin: 4rem 0;
+
+  .validation {
+    display: none;
+  }
 }
