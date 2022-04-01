@@ -2,18 +2,13 @@
 #+TITLE: Lessons From a Year of TDD
 
 
-#+begin_html
-  <iframe src="//slides.com/channikhabra/lessons-from-a-year-of-tdd/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-#+end_html
-
-#+begin_html
+#+begin_export html
+  <iframe src="///slides.com/bitspook/lessons-from-a-year-of-tdd/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
   </iframe>
-#+end_html
+#+end_export
 
 #+begin_quote
-  This talk was delivered in
-  [[https://agilenetworkindia.com/events/technical-agility-day-chandigarh/][Technical
-  Agility Day, Chandigarh (June 15, 2019)]].
+This talk was delivered in [[https://agilenetworkindia.com/events/technical-agility-day-chandigarh/][Technical Agility Day, Chandigarh (June 15, 2019)]].
 #+end_quote
 
 ** Transcript
@@ -28,9 +23,13 @@ what I meant to say in the talk.
     :PROPERTIES:
     :CUSTOM_ID: introduction
     :END:
-{{< figure src="slides/01--introduction-to-tdd-talk.png"
-title="Experience from a year of TDD by Charanjit Singh" alt="Experience
-from a year of TDD by Charanjit Singh" width="100%" >}}
+
+#+begin_export html
+<img
+  src="/lfyot-slides/01--introduction-to-tdd-talk.png"
+  title="Experience from a year of TDD by Charanjit Singh"
+  alt="Experience from a year of TDD by Charanjit Singh" width="100%" />
+#+end_export
 
 Hello everyone, my name is Charanjit. I am working as a technical lead
 at Trantor.
@@ -63,8 +62,10 @@ history. The myths were used to fill the plot holes in stories told by
 one generation to next. A common and very fascinating theme among the
 myths of different cultures is that of magic.
 
-{{< figure src="slides/02--the-wizard.png" title="The Wizard" alt="The
-Wizard" width="100%" >}}
+#+begin_export html
+<img src="/lfyot-slides/02--the-wizard.png" title="The Wizard" alt="The
+Wizard" width="100%" />
+#+end_export
 
 Allegedly there used to be some very special people who could use the
 mysterious powers. With flick of a wand they could create things out of
@@ -73,8 +74,10 @@ reality itself to their will.
 
 But those were of course myths. What we have now are developers.
 
-{{< figure src="slides/03--the-stallman.png" title="The Stallman"
-alt="The Stallman" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/03--the-stallman.png" title="The Stallman"
+  alt="The Stallman" width="100%" />
+#+end_export
 
 Well, I argue that developers are in fact the wizards of the information
 age. We certainly meet the criteria:
@@ -94,8 +97,10 @@ age. We certainly meet the criteria:
   </p>
 #+end_html
 
-{{< figure src="slides/04--the-stallzard.png" title="The Stallzard"
-alt="The Stallzard" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/04--the-stallzard.png" title="The Stallzard"
+  alt="The Stallzard" width="100%" />
+#+end_export
 
 Raw materials for the products a software developer creates are the
 thoughts. The third point here is the focus of this talk.
@@ -104,8 +109,10 @@ thoughts. The third point here is the focus of this talk.
     :PROPERTIES:
     :CUSTOM_ID: software-as-universe
     :END:
-{{< figure src="slides/05--the-universe.png" title="The Universe"
-alt="The Universe" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/05--the-universe.png" title="The Universe"
+alt="The Universe" width="100%" />
+#+end_export
 
 I am not kidding. I believe it is fair to say that every software is a
 universe of its own. It has its own rules it operates within, its own
@@ -117,8 +124,10 @@ as well.
 Do anyone here watches Rick and Morty? It is a good show about a
 rockstar and a junior software developer. Try it sometime.
 
-{{< figure src="slides/06--the-microverse.png" title="The Microverse"
-alt="The Microverse" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/06--the-microverse.png" title="The Microverse"
+alt="The Microverse" width="100%" />
+#+end_export
 
 One of the episodes are about the microverse battery. The rockstar
 developer creates a miniature universe whose sole purpose is to provide
@@ -128,31 +137,39 @@ Funnier thing in that episode, the universe within the universe in the
 battery does the exact same thing. Creates a universe whose sole purpose
 is to power its host.
 
-{{< figure src="slides/07--many-layers-of-microverse.png" title="Many
+#+begin_export html
+  <img src="/lfyot-slides/07--many-layers-of-microverse.png" title="Many
 layers of the Microverse" alt="Many layers of the Microverse"
-width="100%" >}}
+width="100%" />
+#+end_export
 
 Software we write are not very different. We create entire universe to
 serve our needs, and it is rarely created in isolation. Usually our
 universe has a bunch of other, more complex universes wrapped around it.
 
-{{< figure src="slides/08--realm-of-tux.png" title="The realm of Tux"
-alt="The realm of Tux" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/08--realm-of-tux.png" title="The realm of Tux"
+alt="The realm of Tux" width="100%" />
+#+end_export
 
 We often start with a base universe of Operating system. The platform,
 programming language, the frameworks, they all make up for our initial
 "empty" worlds. They set up their layers of rules, on which then we
 write our own. Layers and layers of worlds.
 
-{{< figure src="slides/11--layers-of-software-universe.png" title="Many
+#+begin_export html
+  <img src="/lfyot-slides/11--layers-of-software-universe.png" title="Many
 layered of software universe" alt="Many layered of software universe"
-width="100%" >}}
+width="100%" />
+#+end_export
 
 Now, how do we populate this empty universe with the inhabitants which
 would do our bidding? Well, with our thoughts and prayers of course.
 
-{{< figure src="slides/13--pray-to-the-machine.png" title="Pray to the
-machine" alt="Pray to the machine" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/13--pray-to-the-machine.png" title="Pray to the
+machine" alt="Pray to the machine" width="100%" />
+#+end_export
 
 I am not kidding. But you get it, you aren't laughing. We literally send
 our thoughts, often prayers as well, formulated in some special form
@@ -163,14 +180,18 @@ which then inhabit and basically forms the universe of our software.
   Asgard isn't a place. Asgard is its people.
 #+end_quote
 
-{{< figure src="slides/14--pray-to-the-compiler.png" title="Pray to the
-compiler" alt="Pray to the compiler" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/14--pray-to-the-compiler.png" title="Pray to the
+compiler" alt="Pray to the compiler" width="100%" />
+#+end_export
 
 That brings us to the corollary which takes us in the general direction
 of practices like Test Driven Development.
 
-{{< figure src="slides/15--bugs-are-thoughts-gone-wrong.png" title="Bugs
-are thoughts too" alt="Bugs are thoughts too" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/15--bugs-are-thoughts-gone-wrong.png" title="Bugs
+are thoughts too" alt="Bugs are thoughts too" width="100%" />
+#+end_export
 
 *** Bugs are thoughts, gone wrong
     :PROPERTIES:
@@ -193,8 +214,10 @@ subsequently.
 
 This is what TDD essentially do.
 
-{{< figure src="slides/16--tdd-validates-thoughts.png" title="Bugs are
-thoughts too" alt="Bugs are thoughts too" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/16--tdd-validates-thoughts.png" title="Bugs are
+thoughts too" alt="Bugs are thoughts too" width="100%" />
+#+end_export
 
 The first point points to the red-green-refactor cycle. When doing TDD,
 you write down the "what" aspect of the unit/module/function you are
@@ -218,9 +241,11 @@ with TDD, initial time consumption is more if there is a learning curve
 involved. Disregarding the learning curve, developing same features took
 us roughly 30% longer to develop new features in our project.
 
-{{< figure src="slides/17--myth-tdd-is-time-consuming.png" title="Myth
+#+begin_export html
+  <img src="/lfyot-slides/17--myth-tdd-is-time-consuming.png" title="Myth
 #1: TDD is time consuming" alt="Myth #1: TDD is time consuming"
-width="100%" >}}
+width="100%" />
+#+end_export
 
 But this time is an investment you are making into your software, as
 well as your developers. When the project started off, we did start off
@@ -242,9 +267,11 @@ an overview, and tell them to run the tests. We did put considerable
 amount of effort to make the tests our live documentation for
 developers, and it paid dividends.
 
-{{< figure src="slides/24--tdd-gave-us-free-time.png" title="TDD gave us
+#+begin_export html
+  <img src="/lfyot-slides/24--tdd-gave-us-free-time.png" title="TDD gave us
 time to invest elsewhere" alt="TDD gave us time to invest elsewhere"
-width="100%" >}}
+width="100%" />
+#+end_export
 
 Not just that, TDD actually gave our team to do more than just our
 assigned duties. Most notably, we were able to not have a separate
@@ -265,8 +292,10 @@ TDD on a new project, *your tests should be driving the development*.
 Tests by themselves aren't the goal. The essential thing you must do to
 ensure this, is to ensure that you write tests first.
 
-{{< figure src="slides/24--myth-tdd-is-about-tests.png" title="Myth #2:
-TDD is about Tests" alt="Myth #2: TDD is about Tests" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/24--myth-tdd-is-about-tests.png" title="Myth #2:
+TDD is about Tests" alt="Myth #2: TDD is about Tests" width="100%" />
+#+end_export
 
 Tests written after the fact are practically handicapped. No matter how
 good a developer you are, when you are writing tests after you have
@@ -282,16 +311,20 @@ This is what I've been advertising so far, ain't I! Well, it is not a
 100% truth. Even if we ignore the fact that your tests will almost never
 be 100% complete, TDD will not guarantee a fully correct software.
 
-{{< figure src="slides/29--myth-tdd-means-no-bugs.png" title="Myth #3:
-TDD means no bugs" alt="Myth #3: TDD means no bugs" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/29--myth-tdd-means-no-bugs.png" title="Myth #3:
+TDD means no bugs" alt="Myth #3: TDD means no bugs" width="100%" />
+#+end_export
 
 TDD is your last line of defense. By the time you have sat down to
 judiciously implement TDD, the thoughts that are going to populate your
 software's universe have already been set. All you are going to do is
 verify that they behave as it has been decided.
 
-{{< figure src="slides/32--protect-yourself-from-your-po.png"
-title="Adopt BDD" alt="Adopt BDD" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/32--protect-yourself-from-your-po.png"
+title="Adopt BDD" alt="Adopt BDD" width="100%" />
+#+end_export
 
 BDD operates at a much higher layer than TDD. At the layer where
 discussions are done and decisions are made. I believe a combination of
@@ -303,9 +336,11 @@ to have, I can see how much time and confusion it could have saved us.
     :PROPERTIES:
     :CUSTOM_ID: grow-as-a-developer
     :END:
-{{< figure src="slides/33--tdd-guides-you-in-right-direction.png"
+#+begin_export html
+  <img src="/lfyot-slides/33--tdd-guides-you-in-right-direction.png"
 title="TDD Guides you in right direction" alt="TDD Guides you in right
-direction" width="100%" >}}
+direction" width="100%" />
+#+end_export
 
 It was an interesting observation. Team seem to have a much higher
 appreciation for design patterns like dependency injection. We also
@@ -317,8 +352,10 @@ more fruitful brought a cultural shift in the team.
     :PROPERTIES:
     :CUSTOM_ID: when-adding-tdd-to-a-new-team
     :END:
-{{< figure src="slides/38--brace-yourself.png" title="When adding TDD to
-a new team" alt="When adding TDD to a new team" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/38--brace-yourself.png" title="When adding TDD to
+a new team" alt="When adding TDD to a new team" width="100%" />
+#+end_export
 
 Biggest resistance we faced was convincing developers that it's worth
 their while to write tests *before* they write code for their code. We
@@ -335,8 +372,10 @@ developers realized the benefits of this process.
      :PROPERTIES:
      :CUSTOM_ID: mutation-testing
      :END:
-{{< figure src="slides/41--mutation-testing.png" title="I wish we did:
-Mutation Testing" alt="I wish we did: Mutation Testing" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/41--mutation-testing.png" title="I wish we did:
+Mutation Testing" alt="I wish we did: Mutation Testing" width="100%" />
+#+end_export
 
 So, coverage reports are big fat liars. They don't tell you how your
 tests are doing. In my opinion, they are more like the Velocity Charts
@@ -361,9 +400,11 @@ we can take some time out of our everlasting "churn mode" for this.
      :PROPERTIES:
      :CUSTOM_ID: bdd
      :END:
-{{< figure src="slides/42--bdd.png" title="I wish we did: Behavior
+#+begin_export html
+  <img src="/lfyot-slides/42--bdd.png" title="I wish we did: Behavior
 Driven Development" alt="I wish we did: Behavior Driven Development"
-width="100%" >}}
+width="100%" />
+#+end_export
 
 We implemented BDD a bit late (just a couple months ago) when we had
 some critical modules for which we wanted automated tests, which
@@ -382,5 +423,7 @@ above. Need to get this off my todo list :-). If I get to deliver this
 talk again at some occasion, I will revisit and will probably add some
 velocity/burndown charts from Jira as well.
 
-{{< figure src="slides/47--thank-you.png" title="Thank you for your
-patience" alt="Thank you for your patience" width="100%" >}}
+#+begin_export html
+  <img src="/lfyot-slides/47--thank-you.png" title="Thank you for your
+  patience" alt="Thank you for your patience" width="100%" />
+#+end_export

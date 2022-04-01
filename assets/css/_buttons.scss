@@ -1,0 +1,56 @@
+.btn {
+  display: inline-flex;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 0 2.1em;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 2.2em;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-cta {
+  border-color: $cta-color;
+  background: $cta-color;
+  color: $background;
+
+  &:hover {
+    background: darken($cta-color , 1);
+  }
+
+  &:active {
+    background: darken($cta-color, 5);
+  }
+}
+
+.btn-primary {
+  border-color: $primary-color;
+  color: $primary-color;
+  background: $background;
+
+  &:hover {
+    background: darken($background, 1);
+  }
+
+  &:active {
+    background: darken($background, 5);
+  }
+}
+
+.btn-secondary {
+  border-color: $secondary-color;
+  color: $secondary-color;
+  background: $background;
+
+  &:hover {
+    background: darken($background, 1)
+  }
+
+  &:active {
+    background: darken($background, 5)
+  }
+}

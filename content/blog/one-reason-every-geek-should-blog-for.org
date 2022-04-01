@@ -8,35 +8,30 @@ when you are obsessed with learning and creating new things.
 
 You learn a lot if you blog responsibly
 
-I started
-[[https://web.archive.org/web/20141121015249/http://beatofthegeek.com/][my
-first blog]] in 2011 (I run two now). It was first time I got an
-Internet connection of my own. I was excited and I did some posts about
-few things I was trying those days. Some people read it, few praised it,
-it felt nice. Then I got bored. And I stopped writing slowly. There were
-people thanking me for putting my time in writing and encouraging me to
-write more. But I couldn't.
+I started my first blog in 2011 (I run two now). It was first time I got an
+Internet connection of my own. I was excited and I did some posts about few
+things I was trying those days. Some people read it, few praised it, it felt
+nice. Then I got bored. And I stopped writing slowly. There were people thanking
+me for putting my time in writing and encouraging me to write more. But I
+couldn't.
 
-I was not doing it right. I am a geek, not a blogger or writer or poet
-(although I blog and
-[[https://web.archive.org/web/20141121015249/http://channikhabra.github.io/2014/01/27/my-poem-pathr/][write]]
-[[https://web.archive.org/web/20141121015249/http://channikhabra.github.io/2014/01/27/my-poem-kaynat/][poems]]).
-Actually I recently discovered it. Writing and blogging become all so
-much fun when you stop writing what you already know. Sharing experience
-is cool. Actually it is only the experience that is worth writing about.
-But for me it was very boring to sit down and write about what I already
-knew. Then I tried writing posts as notes. Notes to remind me how to do
-stuff I know I will forget in some time. But it didn't work either.
+I was not doing it right. I am a geek, not a blogger or writer or poet (although
+I blog and [[/poems/poem-pathr/][write]] [[/poems/poem-kaynat][poems]]). Actually I recently discovered it. Writing and blogging
+become all so much fun when you stop writing what you already know. Sharing
+experience is cool. Actually it is only the experience that is worth writing
+about. But for me it was very boring to sit down and write about what I already
+knew. Then I tried writing posts as notes. Notes to remind me how to do stuff I
+know I will forget in some time. But it didn't work either.
 
-And then I started blogging with a different objective. Earlier I was
-writing my experience to help people. But (un?)fortunately I am not that
-good a person who would do things for helping others and enjoy it. I am
-little more on the devil's side.
+And then I started blogging with a different objective. Earlier I was writing my
+experience to help people. But (un?)fortunately I am not that good a person who
+would do things for helping others and enjoy it. I am little more on the devil's
+side.
 
-For about few weeks now, I am blogging for learning. Instead of writing
-a post I already know, I write about things I want to know. I choose a
-topic (say git), and think of a post I want to read about it (say, how
-internals of .git directory work?). Then I start preparing to write it.
+For about few weeks now, I am blogging for learning. Instead of writing a post I
+already know, I write about things I want to know. I choose a topic (say git),
+and think of a post I want to read about it (say, how internals of .git
+directory work?). Then I start preparing to write it.
 
 No I don't Google it. It might be already written. There might be 10
 posts already crawling through reddit on the same topic. I don't give a

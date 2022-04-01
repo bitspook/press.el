@@ -4,14 +4,11 @@
 #+TITLE: Personal brands for software developers
 
 
-[[https://channikhabra.github.io/blog/maximize-individual-growing-in-a-software-team-2-month-report/][Reflecting
-on the progress]] we have made in our
-[[https://channikhabra.github.io/blog/how-to-maximize-individual-growth-in-a-software-team/]["nurture
-a culture of individual growth in a software team" initiative]], I
-realized there is much to gain from candy wrapping our efforts. As per
-our plan, we'll be (and are) giving talks, doing research, and writing
-itch-scratching code. Coming out of shadows and presenting our efforts
-in a nice frame present many fold benefits.
+[[/blog/maximize-individual-growing-in-a-software-team-2-month-report/][Reflecting on the progress]] we have made in our [[/blog/how-to-maximize-individual-growth-in-a-software-team/]["nurture a culture of individual
+growth in a software team" initiative]], I realized there is much to gain from
+candy wrapping our efforts. As per our plan, we'll be (and are) giving talks,
+doing research, and writing itch-scratching code. Coming out of shadows and
+presenting our efforts in a nice frame present many fold benefits.
 
 My proposal is to invest energy in making our efforts more visible. To
 focus this emotion on a more concrete goal, I have chosen
@@ -84,17 +81,13 @@ and organizations employing us. Building offline presence require
 engagement in local community, organizing and attending meetups,
 hackathons etc.
 
-We are in a unique position in this regard, the tech "culture" in our
-city (Chandigarh) is yet barely blossoming. It used to be a
-[[https://channikhabra.github.io/blog/dear-first-world-dev-have-a-look-at-your-nightmare/][rather
-gloomy picture]] around here, but I believe people have now started
-seeing the exploitation going around in the tech scene of the city for
-what it is.
-[[https://www.meetup.com/find/events/?allMeetups=true&radius=10&userFreeform=Chandigarh%252C+India&mcId=z1018132&mcName=Chandigarh%252C+IN&eventFilter=mysugg][More
-and more meetup groups]] are blossoming for the good. Participating in
-these groups can be a great source of content for our online presence.
-Before I start day-dreaming about how we can hack for Chandigarh, I'll
-shut up about it : )
+We are in a unique position in this regard, the tech "culture" in our city
+(Chandigarh) is yet barely blossoming. It used to be a [[/blog/dear-first-world-dev-have-a-look-at-your-nightmare/][rather gloomy picture]]
+around here, but I believe people have now started seeing the exploitation going
+around in the tech scene of the city for what it is. [[https://www.meetup.com/find/events/?allMeetups=true&radius=10&userFreeform=Chandigarh%252C+India&mcId=z1018132&mcName=Chandigarh%252C+IN&eventFilter=mysugg][More and more meetup groups]]
+are blossoming for the good. Participating in these groups can be a great source
+of content for our online presence. Before I start day-dreaming about how we can
+hack for Chandigarh, I'll shut up about it : )
 
 For this, I suppose the next course of action is to open the sessions we
 have been doing for public to attend. Trantor is one of the few

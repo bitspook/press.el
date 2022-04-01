@@ -9,8 +9,8 @@ I also enjoy writing, giving talks and discussing engaging topics.
 Mostly technical. This website has things I am willing to share
 publicly. You can go through my blog [[/blog][posts]],
 [[/categories/poem][poems]],
-[[http://github.com/channikhabra/][projects]],
-[[https://slides.com/channikhabra][talks]], or if you are considering
+[[http://github.com/bitspook/][projects]],
+[[https://slides.com/bitspook][talks]], or if you are considering
 hiring a software architect, then
 [[https://docs.google.com/document/d/1HFOxl97RGtuhAX95AhGWwa808SO9qSCYLjP1Pm39la0/edit][my
 resume]] as well.

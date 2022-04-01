@@ -7,6 +7,7 @@
 (defvar spub--staging-dir (expand-file-name "./_staged"))
 (defvar spub--publish-dir (expand-file-name "./_published"))
 (defvar spub--legacy-content-dir (expand-file-name "./content"))
+(defvar spub--static-dir (expand-file-name "./static"))
 (defvar spub--index-file-name "index.org")
 
 (defun spub--roam-nodes-with-tags (tags)
@@ -25,78 +26,41 @@ publishing as a single project."
   (let* ((staging-dir spub--staging-dir)
          (legacy-content-dir spub--legacy-content-dir)
          (index-file spub--index-file-name)
-         (nodes-to-publish (spub--roam-nodes-with-tags '("blog-post" "published"))))
+         (blog-posts-to-publish (spub--roam-nodes-with-tags '("blog-post" "published"))))
     (spub--clean-stage staging-dir)
 
     (copy-directory legacy-content-dir staging-dir nil t t)
     (copy-file index-file (expand-file-name index-file staging-dir) t)
 
-    (cl-dolist (node nodes-to-publish)
+    (cl-dolist (node blog-posts-to-publish)
       (copy-file (org-roam-node-file node)
                  (expand-file-name "./blog/" staging-dir)))))
 
 (defun spub--publish ()
   "Publish the project."
   (defvar org-publish-project-alist)
-  (let* ((project `("project"
-                    :base-directory ,spub--staging-dir
-                    :recursive t
-                    :base-exteinsion "org"
-                    :publishing-directory ,spub--publish-dir
-                    :publishing-function org-html-publish-to-html
-                    :auto-preamble nil
-                    :with-toc nil
-                    :with-drawers nil
-                    :auto-sitemap t
-                    :html-style nil))
-         (org-publish-project-alist (list project))
+  (let* ((posts `("posts"
+                  :base-directory ,spub--staging-dir
+                  :recursive t
+                  :base-exteinsion "org"
+                  :publishing-directory ,spub--publish-dir
+                  :publishing-function org-html-publish-to-html
+                  :auto-preamble nil
+                  :with-toc nil
+                  :with-drawers nil
+                  :auto-sitemap nil
+                  :html-style nil))
+         (static `("static"
+                   :base-directory ,spub--static-dir
+                   :base-extension "[a-zA-Z0-9]*"
+                   :publishing-directory ,spub--publish-dir
+                   :recursive t
+                   :publishing-function org-publish-attachment))
+         (project `("project" :components ("static" "posts")))
+         (org-publish-project-alist (list posts project static))
          (org-html-head-include-default-style nil)
+         (org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\"></link>")
          (js-mode-hook nil))
     (spub--clean)
     (spub--stage)
     (org-publish-project (car project) t)))
-
-(defun fix-imported-file (org-file)
-  (let* ((md-file (concat (file-name-sans-extension org-file) ".md"))
-         (metadata-str
-          (with-temp-buffer
-            (insert-file md-file)
-            (goto-char (point-min))
-            (delete-line)
-            (search-forward "---")
-            (delete-line)
-            (set-mark (point))
-            (set-mark (point-max))
-            (delete-region (region-beginning) (region-end))
-            (buffer-substring (point-min) (point-max))))
-         (metadata nil)
-         (metadata (cl-dolist (line (s-lines metadata-str) metadata)
-                     (let ((pair (split-string line ":" t "[ \t]+")))
-                       (when pair (push pair metadata))))))
-    (with-current-buffer (create-file-buffer org-file)
-      (goto-char (point-min))
-      (insert
-       (s-join "\n"
-               (seq-filter
-                #'org-not-nil
-                (mapcar
-                 (lambda (pair)
-                   (pcase (car pair)
-                     ("draft" nil)
-                     ("date" (format "#+DATE: <%s>" (car (split-string (car (cdr pair)) "T"))))
-                     ("title" (format "#+TITLE: %s" (s-replace "\"" "" (cadr pair))))
-                     ("author" (format "#+AUTHOR: %s" (s-replace-regexp "[\[\"\]]*" "" (cadr pair))))
-                     ("tags" (format "#+FILETAGS: %s"
-                                     (s-join
-                                      " "
-                                      (split-string
-                                       (s-replace-regexp "[\[\"\]]*" "" (cadr pair)) "," t "[ \t]"))))))
-                 metadata))))
-      (insert "\n\n\n")
-      (insert-file org-file)
-      (write-file org-file nil)
-      (kill-buffer))))
-
-(seq-map #'fix-imported-file (f-entries (expand-file-name "./content") (lambda (f) (s-ends-with? ".org" f)) t))
-
-(spub--publish)

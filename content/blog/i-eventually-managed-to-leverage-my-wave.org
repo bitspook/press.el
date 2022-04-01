@@ -47,8 +47,7 @@ e-lisp quite fascinating and that brought me out of the trough fast, and
 my crest now is not that chaotic.
 
 ** Inspiration from the
-`[[https://web.archive.org/web/20141119093711/http://channikhabra.github.io/2013/10/20/I-eventually-managed-to-leverage-my-wave/blog.42floors.com/100-day-goals/][100
-day goals]]'
+`[[https://blog.42floors.com/100-day-goals/][100 day goals]]'
    :PROPERTIES:
    :CUSTOM_ID: inspiration-from-the-100-day-goals
    :END:
@@ -95,12 +94,10 @@ but looking at my computer I have a feeling like a lost battle-ground.
 There are so many things I thought I could do with it, so many I started
 on it, and no one I ever finished. The wave is the one I blame.
 
-[[https://web.archive.org/web/20141119093711/http://channikhabra.github.io/2013/10/11/the-most-beautiful-tutorial/][My
-previous blog post]] was a wild success (when seen from my eyes). It
-earned me many hn and reddit points, and is still bringing traffic. It
-was a blow to my thought that I can't achieve anything. Many of the
-self-doubting thoughts that started raising heads in my head got
-chopped.
+[[/blog/the-most-beautiful-tutorial/][My previous blog post]] was a wild success (when seen from my eyes). It earned me
+many hn and reddit points, and is still bringing traffic. It was a blow to my
+thought that I can't achieve anything. Many of the self-doubting thoughts that
+started raising heads in my head got chopped.
 
 I took a lesson from it. Instead of trying to pursue my half-baked
 world-changing ideas, I will spend more time doing small things. It

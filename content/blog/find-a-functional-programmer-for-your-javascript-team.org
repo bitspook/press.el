@@ -5,18 +5,15 @@
 
 
 #+begin_quote
-  Written below are some opinions and rationalizations for them. I have
-  come to these opinions by interviewing and working with people for
-  years. However strongly I feel about them, they can still be wrong. If
-  you have feedback for these, please do contact me on
-  [[https://www.linkedin.com/in/channikhabra/][LinkedIn]] or
-  [[https://twitter.com/channikhabra][Twitter]]. All kind of feedback is
+  Written below are some opinions and rationalizations for them. I have come to
+  these opinions by interviewing and working with people for years. However
+  strongly I feel about them, they can still be wrong. If you have feedback for
+  these, please do contact me on [[https://www.linkedin.com/in/bitspook][LinkedIn]] or [[https://twitter.com/bitspook][Twitter]]. All kind of feedback is
   very much appreciated.
 #+end_quote
 
-From "Functional programmer" I mean a programmer familiar with concepts
-of [[https://en.wikipedia.org/wiki/Functional_programming][functional
-programming]].
+From "Functional programmer" I mean a programmer familiar with concepts of
+[[https://en.wikipedia.org/wiki/Functional_programming][functional programming]].
 
 A good teammate is someone:
 

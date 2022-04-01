@@ -2,15 +2,14 @@
 #+TITLE: Modern day JS Apps (2017)
 
 
-#+begin_html
-  <iframe src="//slides.com/channikhabra/modern-js-apps-2017/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-#+end_html
+#+begin_export html
+  <iframe src="//slides.com/bitspook/modern-js-apps-2017/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+#+end_export
 
 #+begin_html
   </iframe>
 #+end_html
 
-I think this was the second meetup I organized after I came back from
-Bangalore (to Chandigarh). It was organized with
-[[https://www.meetup.com/Chandigarh-Programmers-Club/][Programmers' Club
-Chandigarh]] meetup group.
+I think this was the second meetup I organized after I came back from Bangalore
+(to Chandigarh). It was organized with [[https://www.meetup.com/Chandigarh-Programmers-Club/][Programmers' Club Chandigarh]] meetup
+group.

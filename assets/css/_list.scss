@@ -1,0 +1,73 @@
+ul {
+  list-style-type: none;
+  font-family: Cantarell, sans-serif;
+}
+
+li {
+  display: flex;
+  line-height: 1.3;
+  padding: 0.3em 0;
+  align-items: center;
+  margin-bottom: 0.6em;
+}
+
+.li-icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: '';
+  width: 88px;
+  height: 48px;
+  flex-shrink: 0;
+
+  &--blog {
+    background-image: url('/assets/images/icons/post.svg');
+  }
+
+  &--talks {
+    background-image: url('/assets/images/icons/talk.svg');
+  }
+
+  &--poems {
+    background-image: url('/assets/images/icons/poems.svg');
+    background-size: contain;
+  }
+}
+
+li.title {
+  font-size: 1.2em;
+}
+
+li.meta {
+  margin-top: 0.5em;
+  font-size: 0.6em;
+}
+
+li.meta, li.meta a {
+  font-family: Roboto, sans-serif;
+  color: $secondary-color;
+  display: flex;
+
+  .meta-item {
+    border-right: 1px solid $separator;
+    line-height: 1;
+    padding: 0;
+    padding-right: 1em;
+    display: flex;
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+
+    a {
+      margin-left: 1em;
+    }
+  }
+}

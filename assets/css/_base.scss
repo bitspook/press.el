@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: "normal";
+	font-weight: 300;
+	src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: "normal";
+	font-weight: 500;
+	src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: "normal";
+	font-weight: "bold";
+	src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Cantarell";
+	font-style: "normal";
+	font-weight: "bold";
+	src: url("/assets/fonts/Cantarell/Cantarell-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Cantarell";
+	font-style: "normal";
+	src: url("/assets/fonts/Cantarell/Cantarell-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  background: $background;
+  color: $primary-text;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-text;
+}
+
+h1, h2, h3 {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  max-width: 70%;
+  padding: 0 124px;
+  margin: 0 auto;
+
+  @media (max-width: $width-md) {
+    max-width: 100%;
+    padding: 0 8%;
+  }
+
+  @media (max-width: $width-xs) {
+    max-width: 100%;
+    padding: 0 4%;
+  }
+
+  .top-nav {
+    height: 90px;
+    display: flex;
+    position: relative;
+
+    .brand {
+      width: 60px;
+      height: 60px;
+      align-self: center;
+      flex-grow: 1;
+    }
+
+    .brand-avatar {
+      height: 100%;
+    }
+
+    .nav-items {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-self: right;
+      padding: 2em;
+    }
+
+    .nav-item {
+      flex-grow: 1;
+      padding-right: 2em;
+
+      a {
+        text-decoration: underline;
+        font-size: 1.4em;
+        font-family: Roboto, sans-serif;
+        color: $primary-text;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+
+      &:last-child {
+        padding: 0;
+      }
+
+      @media (max-width: $width-xs) {
+        padding-right: 1em;
+
+        a {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  margin: 2em 0;
+
+  h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 1.2;
+    text-transform: capitalize;
+  }
+}
+
+blockquote {
+  background-color: lighten($secondary-color, 50);
+  padding: 0.01em 1em;
+  margin: 1em 0;
+  border-left: 4px solid $secondary-color;
+}
+
+img, figure {
+  background-color: lighten($secondary-color, 50);
+
+  figcaption {
+    padding: 0.4em;
+    padding-top: 0;
+    border-bottom: 2px solid $secondary-color;
+
+    font-size: 0.7em;
+  }
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+}

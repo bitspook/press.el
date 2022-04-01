@@ -1,0 +1,258 @@
+.home {
+  display: flex;
+
+  @media (max-width: $width-md) {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 450px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    position: relative;
+    padding: 35px;
+    text-align: center;
+
+    border-right: 0.2px solid $separator;
+
+    .name {
+      font-size: 2em;
+      line-height: 2.6;
+      font-weight: bold;
+      font-family: Roboto;
+    }
+
+    .handle {
+      font-size: 1.3em;
+      line-height: 0;
+      font-family: Roboto;
+      font-weight: 300;
+    }
+
+    .quote {
+      padding: 20px;
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 1.4em;
+      position: relative;
+      margin: 15px 0;
+      margin-top: 45px;
+
+      &::before {
+        content: '';
+        background: url('/assets/images/icons/quote.svg') no-repeat;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 21px;
+        top: 0px;
+      }
+    }
+
+    .social {
+      width: 148px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      padding-top: 40px;
+
+      a {
+        clear: top;
+        display: block;
+        float: left;
+        width: calc(50% - 20px);
+        margin: 10px;
+      }
+
+      span {
+        display: block;
+        position: relative;
+        width: 48px;
+        height: 48px;
+      }
+
+      .github {
+        background: url('/assets/images/icons/github.svg') no-repeat;
+      }
+
+      .stackoverflow {
+        background: url('/assets/images/icons/stackoverflow.svg') no-repeat;
+      }
+
+      .rss {
+        background: url('/assets/images/icons/rss.svg') no-repeat;
+      }
+
+      .linkedin {
+        background: url('/assets/images/icons/linkedin.svg') no-repeat;
+      }
+    }
+
+    .pub-key-qr {
+      margin: 55px auto;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $width-l) {
+      width: 40%;
+    }
+
+    @media (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+
+  .content {
+    width: calc(100% - 450px);
+    max-width: 872px;
+    position: relative;
+    padding: 40px;
+
+    h2 {
+      font-size: 2.2em;
+      padding: 10px 0;
+      font-weight: bold;
+      font-family: Roboto, sans-serif;
+    }
+
+    .about-me-snippet {
+      p {
+        font-family: Cantarell, sans-serif;
+        font-size: 1.35em;
+        line-height: 1.5;
+        align-items: center;
+        margin: 0.8em 0;
+        font-weight: 500;
+
+        a {
+          text-decoration: underline;
+          font-weight: bold;
+
+          &:active {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .hire-status {
+      position: relative;
+      margin: 1em 0 2.4em 0;
+      font-size: 1.4em;
+      width: 14em;
+      height: 2em;
+      overflow: hidden;
+      padding: 0.2em 0.4em;
+      text-align: center;
+
+      transition: all 0.3s ease;
+
+      &__title {
+        line-height: 1;
+        text-align: center;
+        width: 100%;
+        padding: 0.2em;
+      }
+
+      &__dialog {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        display: flex;
+        transition: opacity 0s;
+        padding: 10px 15px;
+        text-align: left;
+        line-height: 1.7;
+
+        &__title {
+          font-size: 1.5em;
+          padding: 0;
+        }
+      }
+
+      @media (max-width: $width-xs) {
+        width: 100%;
+      }
+    }
+
+    .hire-status--expanded {
+      $hs: hire-status;
+      width: 25em;
+      height: 11em;
+
+      .#{$hs}__title {
+        display: none;
+      }
+
+      .#{$hs}__dialog {
+        opacity: 1;
+        flex-flow: column;
+        transition: opacity 1s ease-out;
+
+        @media (max-width: $width-xs) {
+          position: relative;
+        }
+      }
+
+      @media (max-width: $width-xs) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .recent-content {
+      font-family: Cantarell, sans-serif;
+
+      .recent-content-list {
+        list-style-type: none;
+        margin: 2em 0;
+      }
+
+      .recent-content-item {
+        display: flex;
+        line-height: 1.4;
+        padding: 0.3em 0;
+        font-size: 1.6em;
+        align-items: center;
+        margin-bottom: 0.4em;
+
+        &::before {
+          display: block;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          content: '';
+          width: 88px;
+          height: 48px;
+          flex-shrink: 0;
+        }
+      }
+
+      .content-type--blog {
+        &::before {
+          background-image: url('/assets/images/icons/post.svg');
+        }
+      }
+
+      .content-type--talks {
+        &::before {
+          background-image: url('/assets/images/icons/talk.svg');
+        }
+      }
+
+      .read-more-btn {
+        font-size: 1.3em;
+        margin: 0.7em 0;
+      }
+    }
+
+    @media (max-width: $width-l) {
+      width: 60%;
+    }
+
+    @media (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+}

@@ -4,12 +4,10 @@
 #+TITLE: Maximize individual growing in a software team
 
 
-Couple months ago we started an
-[[https://channikhabra.github.io/blog/how-to-maximize-individual-growth-in-a-software-team/][initiative]]
-in our team here at [[http://trantorinc.com/][Trantor]] with the focus
-on nurturing a culture which optimizes personal growth of an individual
-in the team. I believe it is turning out to be quite successful. We
-decided we'll focus on 4 things to achieve our goal:
+Couple months ago we started an [[/blog/how-to-maximize-individual-growth-in-a-software-team/][initiative]] in our team here at [[http://trantorinc.com/][Trantor]] with the
+focus on nurturing a culture which optimizes personal growth of an individual in
+the team. I believe it is turning out to be quite successful. We decided we'll
+focus on 4 things to achieve our goal:
 
 ** Interactive sessions of tools/technologies
    :PROPERTIES:
