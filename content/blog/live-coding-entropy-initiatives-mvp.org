@@ -1,0 +1,81 @@
+#+DATE: <2021-11-12>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Live coding entropy
+
+
+Here is a brief overview of what I'll be working on in the live-coding
+session I am going to start.
+
+#+begin_quote
+  Why am I doing a live coding session? Well, because I've been too lazy
+  to organize a proper meetaup-with-agenda for the longest time.
+#+end_quote
+
+In this session, I'll be writing Rust code while working on Entropy.
+
+** What is Entropy?
+   :PROPERTIES:
+   :CUSTOM_ID: what-is-entropy
+   :END:
+[[https://github.com/bitspook/entropy/][Entropy]], I am hoping will be a
+platform for nurturing communities. It is primarily targeted towards
+bootstrapping a tech community named
+[[https://entropyhacker.space][Entropy Hackerspace]] in Chandigarh, but
+will eventually be made into a framework. So far it is very much in
+alpha stage (mostly because as always, I chose an entirely new tech
+stack to build it).
+
+** What am I working on?
+   :PROPERTIES:
+   :CUSTOM_ID: what-am-i-working-on
+   :END:
+In this session I'll be working on the
+"[[https://github.com/bitspook/entropy/milestone/1][Initiatives MVP]]".
+
+(Excerpt from github milestone) > An initiative is anything, any member
+of the community want to work towards > solving/accomplishing. > > The
+MVP will be considered done, when there is at least one initiative >
+organized on Entropy's site. This should include: > > 1. Initiative and
+its goals published on the Entropy site > 2. Health of the initiative
+published and kept up-to-date automatically > 3. Health/Progress of
+goals published and kept up-to-date automatically
+
+** Technically
+   :PROPERTIES:
+   :CUSTOM_ID: technically
+   :END:
+Entropy (the app)'s job is to provide ways of methodical collaboration.
+Initiatives is one way of doing that
+
+*Initiative*: An =initiative= is a overarching objective, a solution to
+some problem, a fantasy, that any community member want to achieve
+collaboratively - An initiative is split into =goals=. A goal is a
+
+*Goal*: A =goal= is something achievable, with a quantifiable finishing
+line - e.g Have 100 monthly active users - e.g Score 8.5 in the exam
+
+** Challenge
+   :PROPERTIES:
+   :CUSTOM_ID: challenge
+   :END:
+
+1. Get bare-bones initiatives and goals working. This means creating a
+   new initiative, creating goals for it, and publishing them on the
+   entropy site
+
+2. Automatically track and publish the health and progress of goals (and
+   initiatives). This one is going to be a bit difficult, since a goal
+   can be anything, and different goals are going to have very different
+   way of measuring progress and health.
+
+   I have a rough plan in the mind which I am hoping to get polished
+   while implementing #1 above (need to get into that diffused state).
+   Let's discuss on the live stream what my approach is going to be!
+
+--------------
+
+Recording for the session is available here:
+https://www.youtube.com/watch?v=lAcT2FsQsYI
+
+Turns out, although jit.si allow live streaming to youtube, the audio
+quality takes a blow for the worse.

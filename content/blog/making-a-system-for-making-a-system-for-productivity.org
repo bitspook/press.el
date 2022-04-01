@@ -1,0 +1,71 @@
+#+DATE: <2015-04-01>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Making a System for Making a System for Productivity
+
+
+I thought out hard last night and came up with a system that might (or
+might not) work. But I have to keep trying till I get it right. Here are
+some main points of my new system:
+
+** #1 Commitment {#1-commitment}
+   :PROPERTIES:
+   :CUSTOM_ID: commitment-1-commitment
+   :END:
+Do 8+ hours on day's priority #1 before you can open any other
+website/video on the web. On weekdays it should be work that pay my
+bills, on weekends it can be 2 things, study/side-kick-projects to try
+new things/or whatever. I am free to just troll around on weekends, i.e
+do nothing and waste the day. This is the only commitment I make for a
+day.
+
+** #2 Iterate {#2-iterate}
+   :PROPERTIES:
+   :CUSTOM_ID: iterate-2-iterate
+   :END:
+Iterate over 3 days. Do above for 3 days, then review it and come up
+with a list of things that were tempting me to divert from my plan. Then
+replace these things with something else, or if possible get rid of
+them. Improvise and bring changes in my system to remove all the
+falsities. Also make a list of all the things that were motivating, and
+keep bringing them back in the system with #3.
+
+** #3 Change {#3-change}
+   :PROPERTIES:
+   :CUSTOM_ID: change-3-change
+   :END:
+Bring something new in my workflow every 3 days. Start using some new
+tool, make some modifications in Emacs.d, anything. If can't find
+anything, spin something from good things I got from #2 and bring it in
+the system with a flavour, or find a creative solution to get rid of
+something bad from #2
+
+--
+
+It's not a perfect system, but aiming for perfection has brought nothing
+but failure for me in past. I am trying to strike a balance b/w
+practicality and flexibility in the system. i.e for a system that would
+be flexible enough to improvise over time but strict enough that I won't
+get lost in managing the system itself. Idea is that I am going to get
+bored from this system in 15 days max. So before that happens, it should
+become self-sustaining and would require minimum input, while giving
+maximum satisfaction.
+
+This is a system that should create another system when it dies in next
+15 days, and same should happen after than. Only constant is change.
+Keep improving, and more importantly, keep changing. Even if it is a
+step in wrong direction once in a while, just change for the sake of
+changing. If my system doesn't change, I will abandon it; so no matter
+how much good it was, it's gonna get wasted. If it doesn't change that
+is. Change is life baby!
+
+By the way, today was the first day of me using this system. I
+introduced Trello as a change to my workflow. I used to plan things in
+org-mode in my Emacs, it's awesome. I changed to Trello just for the
+sake of changing, and it worked wonders for one day at least. I believe
+it can keep doing so for two more days. After that, I'll change
+something else. Not necessarily my thought/todo management system, but
+anything. I'll come back to Emacs' org-mode some time later. Constant
+change doesn't mean things can't repeat. Future is what if not a
+reincarnation of past.
+
+I did more tasks than I planned for today. It feels good.

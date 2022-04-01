@@ -1,0 +1,51 @@
+#+FILETAGS: adhd personal
+#+DATE: <2019-05-13>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Helping others to help myself
+
+
+It is near impossible for me to get something done if I don't have 100%
+peaked interest in it at *this* very moment. Occasionally I can hyper
+focus on things, but that hyper focus rarely finish things. Hyper focus
+is like eating all the desert, leaving behind a plate full of broccoli.
+
+I have noticed however that most of the times when I have actually
+finished something, I was, in my mind, helping someone else.
+
+Reviewing the judicious documentation of my life, that is my journal, I
+can say it for near about 100% of the things that I actually finished.
+The force behind crossing the finishing line was either accountability,
+or my belief that someone else is relying on me.
+
+None of my own "side projects" have ever seen a ray of light, but most
+things I started for others were finished. Mostly that was
+presentations, processes, and very personally tailored learning
+materials.
+
+Reviewing my journal, I noticed a pattern developing over the course of
+last year. Whenever I had an idea that I wanted to see done, I tried to
+frame it in somebody else' canvas. If I could do that, I shared the idea
+with the person and got them involved as a partner. Chances of success
+I've observed were directly proportional to how much I care for the
+person. Some of the things I started that I couldn't fit in to help
+someone else are still in "TODO" state, despite the long and clear
+road-maps I created for them.
+
+This discovery of transforming emotions that come easily to me, into
+what I believe I severely lack has sown seeds of new hope. Perhaps I
+will be able to replace my need of accountability to get things done
+with this. I don't know if it is vain need of acknowledgment, or
+goodness of heart, but it works.
+
+I have started taking actions to optimize this. I am as anti-social as
+they come, and that, now I believe, is a problem to be solved if I want
+to increase my happiness.
+
+Most of my activities with other people don't register to my brain as
+something it should remember. My mind is often meeting people for first
+time despite several previous encounters. That is the first thing I am
+going to tackle. Concrete step I am taking for this, is to start using
+[[https://github.com/monicahq/monica/][Monica]] to keep track of my
+social life. Next step would be to actually start making effort to
+socialize. I suppose saying "hello" to my colleagues every morning could
+be a good start.

@@ -1,0 +1,83 @@
+#+FILETAGS: introspection
+#+DATE: <2016-06-11>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Debt of my rebellion
+
+
+Most of my school life I was very confused, depressed perhaps. I was a
+"good boy", as they call those traumatized, obedient kids. Confusion
+started turning into frustration by the end of my 10th standard. It was
+the "board" class. Nonsensical pressure, corporal punishment and stupid
+as fuck rules had started turning my depression into anger. So much
+pressure was put on by that
+[[https://web.archive.org/web/20161117224135/http://channikhabra.github.io/2016/06/11/cost-of-being-a-rebel/sasacademy.com][bloody
+shithole of a school]] that one of my classmates had a mental breakdown.
+A guy went complete nuts. That was the final nail in the coffin.
+
+I felt like it was my turn next. So I rebelled. Against everything that
+didn't make sense to me. Unfortunate for me, one of the foes in my
+rebellion was Mathematics. The dull, complex subject whose applications
+I couldn't understand. My teachers failed to convince me it was ever
+going to have a practical application at all. All they could come up
+with was "competitive exams need it". But that won't make the cut.
+
+After a year of being a total brat, I finally pushed my parents to sell
+a cow and buy me a computer. Computers always fascinated me, even though
+I had used Computers only for a total of 10-12 hours max (occasional
+15-20 minutes sittings in IT lab). I taught myself Python from the
+ebooks I would download on my rare visits to cyber-cafe in nearest city.
+It was a revelation. I didn't need those stupid teachers anymore; there
+was no need to go through all the frustration, frowned looks and grudges
+(which often lead to physical punishment) from the teachers. I could
+teach myself better, faster. Unfortunate side effect of this
+realization: I didn't need a shiny college.
+
+Not going to college however was not an option. My parents were giving
+me enough pain already for using computer too much (despite the fact
+that I was good at school AND helped at home and farm as well). So I
+went for admission in
+[[https://web.archive.org/web/20161117224135/http://dgc.edu.in/][one of
+those piece of shit colleges which let anyone in for a big some of
+money]]. Another story for another day.
+
+I could teach myself everything I needed. I was perhaps right about
+that. But there was nobody to tell me what to learn. By the time I got
+Internet I was making enough side money building software to pay for my
+ever growing list of re-appears. I didn't see no math used anywhere.
+When I got Internet, I started making websites. Again, no math to be
+seen anywhere. The college was as shitty as they get. They never really
+taught any of the syllabus (DS, algorithms etc). So I ignored them as
+mumbo-jumbo schools put in their books to make money. I was making more
+money than most lecturers in that college, I didn't care.
+
+In 2014 I graduated, and went for full time freelancing. It took me some
+time till I reached my limit; when I felt brute forcing my way through
+problems wasn't really efficient. It was boring. It was becoming more
+and more obvious that I was plateauing. I started realizing that there
+are better ways to do things, and so many of them have already been
+discovered.
+
+But now the playtime was over. I was no longer in college, I had to
+support myself; and my family (they're not very good financially). So I
+continued freelancing. It was paying much more than most approaching
+companies were offering, clients were happy, so what the hell, I
+thought. I planned to save some amount in bank, and then I was to take
+few months off to go back to square one and learn CS theory and
+Mathemetics. I reached there 3 months ago. But then life did what it
+always do. 2 big expenses came up and cleared most of my savings. So I
+continued with freelancing.
+
+But I guess it's about time I put my original plan in action. I have
+started getting the good ol' limbo feeling again. I used to think it was
+my indiscipline which make me feel like shit. But now I think it isn't.
+Most of the time I have to discipline myself to get away from the
+computer. When I start needing to force myself to code, it's because
+something somewhere is wrong. I think I've hit another plateau (this
+realization (that it's not indiscipline that put me in limbo) itself was
+a load off my chest, but a story for another time).
+
+I have savings to last for only a couple months without work, but I
+guess that'll have to do. It's funny deja-vu situation actually. I was
+in similar situation when I headed for Bangalore. Back to square one I
+guess. I think it's time to put a pause on freelancing, and pay the debt
+of my rebellion.

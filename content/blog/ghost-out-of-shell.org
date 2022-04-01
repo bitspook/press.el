@@ -1,0 +1,139 @@
+#+DATE: <2014-07-21>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Ghost Out of Shell
+
+
+#+begin_quote
+  In this post are the thoughts running through my head nowadays.
+  Dreams, hopes and fears. I am depicting myself to be the ghost getting
+  out of my shell created by years of social isolation.
+#+end_quote
+
+I am going to Bangalore. Jobless and almost empty-handed. But full of
+hopes, and fears. Hope that it will be the place I imagine. Silicon
+Valley of India. Of course not as good as SF, may be more like a pirated
+version of it. I am pretty scared. There are far too many "if"s and a
+lot I've put at risk, some pretty sexy opportunities I've ditched to
+keep the commitment I made with myself a while ago, and a pile of lies I
+imagine would be too heavy to bear if any of the "if"s returned true.
+
+** Ghost? Shell? Wtf?
+   :PROPERTIES:
+   :CUSTOM_ID: ghost-shell-wtf
+   :END:
+I am living in a sort of social isolation for past 4-5 years. I live
+with my family, 90% of my villagers don't know I am a resident of this
+village. They know there are two "kids" in my home, but most of them
+think I live in hostel or something. This is abnormal. My village is
+pretty small. Everyone knows everyone else. I've been living a ghost
+like existence. Why? I don't know why. Standing in group of people
+bragging, teasing and sharing (almost always wrong) political wisdom
+never amused me. I rather prefer to sit in front of the light filled
+rectangle and put something amusing in my head to churn.
+
+** Why am I doing this?
+   :PROPERTIES:
+   :CUSTOM_ID: why-am-i-doing-this
+   :END:
+I've been unfortunate to never had a mentor who could understand me and
+could show me a path. A guide can mean a lot. Trust me. I consider
+myself very lucky, and even I couldn't get much out of trial and error
+methods of finding a path for myself. I am talking about guidance in
+technical realm. All I could become by 2 years of relentless pursuit on
+my computer was a lost techie.
+
+I am lucky. Things always fall in the right place for me. They do
+eventually. That's why I don't usually panic when shit goes wrong. But
+it doesn't mean there is no sense of fear or anxiety. There's a hell lot
+of it. Stupid belief (and a history to back that belief) that everything
+will fall in right place eventually allow me to do crazy things and stay
+with them.
+
+Why this babbling? I was to tell why I have decided to move to Bangalore
+instead of staying in the city closest to my village (Chandigarh) and
+get a job there. Or may be freelance but stay in Chandigarh. I won't get
+a job because I don't want to let James go. I got into him from a
+stupider blog post of mine which hit HN, and have worked for him for
+past 5 months. I've learned a lot from him. But it's not finished yet.
+There is much more I have to learn from him. And he's got a vision for a
+great product we are working on, and I want to be the one who
+materializes his vision.
+
+I can stay in Chandigarh and do freelancing. I've ditched 2-3 pretty
+lucrative jobs in here. But I want to get out into a tech land. I would
+have gone out of India if I could, but unfortunately my finances won't
+allow me to. Bangalore will be good enough I think.
+
+** Go through hell and die
+   :PROPERTIES:
+   :CUSTOM_ID: go-through-hell-and-die
+   :END:
+James told this to me once. We were discussing about how near-death
+experience change a person's perception of life, how it fades away, and
+how James became what he is after going through hell multiple times;
+having a ridiculous debt on his head and getting out of it working every
+waking moment. James said my true potential will come to surface only
+when I am working with my life on line. I am pretty much already feeling
+like that; but this feeling might be temporary. Fear of change you say.
+This is going to be the biggest change of my life so far. I suppose
+being jobless in a (rather expensive) place so far from home will be
+ideal life on line situation. Keeping the pile of lies I've earned is an
+added bonus. This is a drowning feeling (although I have yet to leave
+for Bangalore), but I'll have to get over it, with shear brute-force if
+nothing else.
+
+** The pile of lies
+   :PROPERTIES:
+   :CUSTOM_ID: the-pile-of-lies
+   :END:
+Indian parents don't let go their children (I am 22) that easily.
+(Financial) security is most important thing for middle-class. So I had
+to create a whole plot to make my voyage to Bangalore resistance free.
+In this plot, I've got a job in a software development company who make
+software for Australian government. They pay me Rs. 35,000 pm, and I can
+save about Rs. 20,000 per month (send Rs. 10,000 home and Rs. 10,000 my
+personal savings). My parents have a thing about getting me immigrated
+to Australia (my cousins are Aus citizens), so it was extra sugar to
+keep them from having second thoughts. I have a (verbal) deal with James
+by which he pay me about $1250 per month and make me write whatever
+software for him. But what "if" something go off track and this deal is
+broken? I wonder what I could do to save RS. 20,000 a month unemployed.
+I have almost no other connections to get freelance work, and I don't
+know how hard it is to seek a well paying job in Bangalore. Given my
+meager bank balance, if James decide to ditch me, I wonder if could keep
+myself fed for a month.
+
+** Freelancing as a Junior Developer
+   :PROPERTIES:
+   :CUSTOM_ID: freelancing-as-a-junior-developer
+   :END:
+Freelancing I've experienced is not as easy as it sounds for a new born
+developer, especially if you seek perfection and aim to have long
+lasting bonds with clients. There are some things which you learn only
+with experience. Even if you're successfully making a living
+freelancing, it comes with a price. Learning a craft is many times fast
+and efficient if you learn under the shadow of a master. I am depicting
+senior developers / product managers here. I am still doing this,
+because James play those two roles for me. He teaches me a lot, more
+like a personal trainer and pay me more than I think I can get on a job
+given my portfolio. So it's a win-win for me. If I had time I would
+create a place on interwebs where Senior level devs could find
+apprentices (to do stuff for less pay and more interest?), and
+(passionate?) people kickstarting their carrier could find
+mentors/employers to polish them. I would call it Internstine.
+
+** How am I feeling?
+   :PROPERTIES:
+   :CUSTOM_ID: how-am-i-feeling
+   :END:
+Excited. Scared. More of latter. I've never got out of Chandigarh and
+given my utter lack of sense of direction, I get lost in almost every
+place. In the title of this post, I am considering the "shell" I am
+leaving to be of protective nature rather than limiting. I'll have to
+worry about finding a place to live, food, clothes and all sort of stuff
+I never had to think of when at home. I imagine me getting lost on
+airport, then on taxi stand, on the place where I am supposed to get a
+hostel to live in, everywhere. I am excited I'll hopefully be in a
+community of like-minded people. I hope I'll get chances to get into
+them, I imagine tech meetups and hackathons to be a thing of daily life.
+That's one of few things I think of and not piss my pants.

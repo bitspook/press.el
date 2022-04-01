@@ -1,0 +1,63 @@
+#+DATE: <2014-02-24>
+#+AUTHOR: Charanjit Singh
+#+TITLE: One Reason Every Geek Should Blog For
+
+
+Right answer is the most obvious one. Learning. Blogging helps a lot
+when you are obsessed with learning and creating new things.
+
+You learn a lot if you blog responsibly
+
+I started
+[[https://web.archive.org/web/20141121015249/http://beatofthegeek.com/][my
+first blog]] in 2011 (I run two now). It was first time I got an
+Internet connection of my own. I was excited and I did some posts about
+few things I was trying those days. Some people read it, few praised it,
+it felt nice. Then I got bored. And I stopped writing slowly. There were
+people thanking me for putting my time in writing and encouraging me to
+write more. But I couldn't.
+
+I was not doing it right. I am a geek, not a blogger or writer or poet
+(although I blog and
+[[https://web.archive.org/web/20141121015249/http://channikhabra.github.io/2014/01/27/my-poem-pathr/][write]]
+[[https://web.archive.org/web/20141121015249/http://channikhabra.github.io/2014/01/27/my-poem-kaynat/][poems]]).
+Actually I recently discovered it. Writing and blogging become all so
+much fun when you stop writing what you already know. Sharing experience
+is cool. Actually it is only the experience that is worth writing about.
+But for me it was very boring to sit down and write about what I already
+knew. Then I tried writing posts as notes. Notes to remind me how to do
+stuff I know I will forget in some time. But it didn't work either.
+
+And then I started blogging with a different objective. Earlier I was
+writing my experience to help people. But (un?)fortunately I am not that
+good a person who would do things for helping others and enjoy it. I am
+little more on the devil's side.
+
+For about few weeks now, I am blogging for learning. Instead of writing
+a post I already know, I write about things I want to know. I choose a
+topic (say git), and think of a post I want to read about it (say, how
+internals of .git directory work?). Then I start preparing to write it.
+
+No I don't Google it. It might be already written. There might be 10
+posts already crawling through reddit on the same topic. I don't give a
+fuck. What you read in blog posts is the summary. It's the juice drawn
+from sugarcane. But the real thing a geek want is knowledge. True
+knowledge can only be acquired by experience. You have to live through
+the process of putting a piece down in soil, and grow your experience
+into the sugarcane from which you can draw the juice and put in your
+post. Of course how much you learn depends all on how much work you can
+put when writing a post. I found it particularly beneficial to write
+about topics I have some experience in but want to go deeper. Like git.
+I use it everyday, but digging deeper is not a requirement.
+
+In my opinion, the secret sauce which make this work is responsibility.
+When you write a post and you know people gonna read it, you can't write
+carelessly. I can't say about others, but I feel a sense of
+responsibility when I am writing about something I haven't personally
+experienced long enough. It make me work extra hard.
+
+"Great power brings great responsibility", right? The inverse is also
+true (in this case at least). Great responsibility can bring great power
+as well (provided you can feel it). This worked with me. It might work
+with you as well (unless you have already surpassed me in terms of
+slacking and procrastination).

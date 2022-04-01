@@ -1,0 +1,128 @@
+#+FILETAGS: emacs
+#+DATE: <2013-10-11>
+#+AUTHOR: Charanjit Singh
+#+TITLE: The most beautiful tutorial
+
+
+#+begin_quote
+  The most beautiful tutorial I've ever read, "The Emacs-lisp Intro".
+  Run your Emacs and press 'C-h-i', and select " Emacs Lisp Intro" to
+  read it. I am a reader, and learner, I read a lot. I used to prefer
+  learning from books, and have a huge collection 70% of which I haven't
+  even ever opened (and 95% I have never completed). Most of my reads
+  are related to programming, new languages, techniques and frameworks.
+  Over time my preference for learning programming shifted from learning
+  from books to learning from tutorials, documentation and by reading
+  the code itself. I found myself too fickle to stick with one long book
+  and keep myself interested in it. There is so much to explore in the
+  world, whenever I start reading a book, half way through I find
+  something more interesting. Something from the book, or hacker news,
+  or reddit, or prismatic. Mind is always successful in finding some
+  sort of diversion. For a week ago, I had not find any book or tutorial
+  that could keep me with it till the end. And then I met 'the
+  Emacs-lisp intro'. It's the most beautiful book (or tutorial, I don't
+  know what to call it) I have ever laid my eyes on.
+#+end_quote
+
+** Perfect flow
+   :PROPERTIES:
+   :CUSTOM_ID: perfect-flow
+   :END:
+It's more like a compilation of tutorials than a book, but it is so
+beautifully organized. While reading it, it feels like it is
+orchestrated in the most perfect way possible, to get the concepts
+settle in your mind, and not letting you get bored at the same time.
+
+** I never felt like lost somewhere
+   :PROPERTIES:
+   :CUSTOM_ID: i-never-felt-like-lost-somewhere
+   :END:
+Being a mere mortal, many times when reading programming stuff I get
+lost in between. Some topics that just don't enter my head, some things
+I can't grasp sometime. Most tuts just get over with it leaving me in
+half despair. But this one was very well laid out. I never had a feeling
+like missing something or getting behind the author.
+
+** It held my hand but never spoon fed
+   :PROPERTIES:
+   :CUSTOM_ID: it-held-my-hand-but-never-spoon-fed
+   :END:
+Another beautiful thing. Easy tutorials most times are just too easy,
+their easiness make them boring. I was working myself when reading this
+tutorial. It was (little) challenging and very easy flow. Perfect for
+me.
+
+** I learned to praise lisp and the beauty of parenthesis
+   :PROPERTIES:
+   :CUSTOM_ID: i-learned-to-praise-lisp-and-the-beauty-of-parenthesis
+   :END:
+The perfect speed with which the things are put forward, and the clarity
+with which it's done made me respect lisp much more. I learned so much
+about how lisp works and how things are done in lisp world without even
+knowing I was learning them.
+
+** If you tried learning a lisp (Clojure?) and found it too difficult,
+try reading this tutorial
+   :PROPERTIES:
+   :CUSTOM_ID: if-you-tried-learning-a-lisp--clojure--and-found-it-too-difficult-try-reading-this-tutorial
+   :END:
+I tried learning Clojure few months back. I got a book and tried to
+study it. I failed. There were so many things quite foreign to me, and I
+decided to put on the shelf for future. That was the right decision.
+Reading this tutorial made many things clear, and weird things
+respectable. I think now I am ready to give Clojure another shot.
+Reading first few chapters of the same book (Programming Clojure) was so
+much easier than before.
+
+** Using Anki alongside: perfect combination for producing some Emacs
+love
+   :PROPERTIES:
+   :CUSTOM_ID: using-anki-alongside-perfect-combination-for-producing-some-emacs-love
+   :END:
+I've been using Anki for spaced learning for a while now. I use it every
+time I am reading something, it help me a lot to avoid re-reading books
+I left half way (and then pick up later). Still it was a different
+experience using it while reading this tutorial. So many ideas of doing
+stuff with Emacs were popping up in my head while reading this tutorial,
+and thanks to Anki I reminded every e-lisp function I encountered on the
+way, and this made me feel comfortable as I knew their possible
+implementations, I knew what to use, and where to take inspiration from.
+
+** It made Emacs appear so simple and easy, and powerful
+   :PROPERTIES:
+   :CUSTOM_ID: it-made-emacs-appear-so-simple-and-easy-and-powerful
+   :END:
+I have been using emacs for few months now (3 or 4 may be). I thought I
+knew it just fine and that it's awesome but over-glorified. I was wrong.
+Emacs is awesome indeed, but I didn't knew shit about it. And no one can
+tell you the real glory of Emacs. It's a path one need to travel to know
+the feel. It has changed many things in me as a programmer. For one
+thing, I now feel much more controlled (and like secure in some way
+('cause of my psychotic issues may be)) when doing anything in Emacs.
+
+** Fill your mind with tons of ideas, things you want your editor to do,
+and they are all possible
+   :PROPERTIES:
+   :CUSTOM_ID: fill-your-mind-with-tons-of-ideas-things-you-want-your-editor-to-do-and-they-are-all-possible
+   :END:
+Emacs is known for its ability to customize, everyone know that. So did
+I. But no, now I feel I really didn't know that. There is a whole world
+of possibilities. There is so much one might desire from their editor
+and not even know it. Now I realize so many things are wrong with my
+current setup, so many new things I want Emacs to do. It's a very good
+feeling to have.
+
+** It was a bliss reading it inside the Emacs
+   :PROPERTIES:
+   :CUSTOM_ID: it-was-a-bliss-reading-it-inside-the-emacs
+   :END:
+I think it is the most important thing that made me feel so great about
+this tutorial. Emacs dwarfs any awesome e-book reader I have ever tried.
+Not because of navigation or any other fancy,but because I suddenly
+realized that right way to read about programming is from inside my
+editor. Even a simple 'alt-tab' is too much. Almost all the cases where
+I would normally copy-paste the code to check out something (I know
+copy-paste is a bad thing, but lazy me) were replaced with a 'ctrl-e'. I
+could execute the code right there inside the tutorial, even parts of
+it. There are browser embedded consoles and stuff which do the similar,
+but they can never match the experience Emacs gave.

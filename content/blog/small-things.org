@@ -1,0 +1,137 @@
+#+DATE: <2015-01-19>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Small Things
+
+
+#+begin_quote
+  In this post I am talking about the significance of small things in
+  life, some lessons I've learned over time, and some random stuff.
+#+end_quote
+
+Everyday I go to bed with bigger than life dreams, promising myself
+tomorrow is the day when I'll take a giant step to drop all my bad
+habits and be a better, more productive person forever. A life full of
+satisfaction is just a night away. I've been doing this for may be over
+2 years. Nothing changed of course. What actually mattered over time
+were the small things. All the new year resolutions, or stricter "code
+of conduct"s caused exhaustion at best, and dragged me into depression
+at their worst.
+
+Small things keep accumulating over time, like the little bit of poison
+we eat everyday with "food". Many times I'd realize after it's too late,
+the little something has gotten so big that I have to cut it off
+altogether, or smother under the weight of little mistakes. A little bit
+of submission over time can make your employer feel like he own you. A
+little bit of lies, can mark you a liar for life.
+
+But it's not all bad that come from little things. I have just made
+myself such that I see negative first. It is supposed to be a positive
+post, but a small step it is.
+
+** Small Wins
+   :PROPERTIES:
+   :CUSTOM_ID: small-wins
+   :END:
+Winning is a habit. There are many theories that'll nod in affirmation,
+I won't mention in this post. You have to get into the habit of winning
+to keep winning. No biggie, win small win frequently, and soon you'll be
+on the track of tackling any challenge with an invincible attitude, and
+you will actually score big wins.
+
+** Small Losses
+   :PROPERTIES:
+   :CUSTOM_ID: small-losses
+   :END:
+When I first started out with Python, it was all too easy. I was so
+super confident I can do anything with my dragon slayer. I of course
+fell on face many times, again and again. They never felt like a battle
+lost, they were small. Insignificant. But it did it's job in bringing
+down my morale for a long time. No matter with how much enthusiasm I'd
+start something, something in me always kept mocking me, "you'll fail",
+and I did. It still haunts me sometime, but I've got over it pretty
+well.
+
+When you are just starting with something new, be little careful and
+build a momentum with small wins, avoid losses howsoever small they
+would be.
+
+I don't mean don't start something challenging. Do whatever you want, be
+prepared, you will hit walls. And when you do, remember not to
+accumulate small losses, your mind is too stupid, fool it. For every
+loss you suffer, score 3 wins. It doesn't matter how small they are,
+just win something small, minute I'd say, it doesn't matter, just win.
+
+** Small Habits
+   :PROPERTIES:
+   :CUSTOM_ID: small-habits
+   :END:
+Habits are hard to build and leave. It's hard to get rid of bad ones,
+it's even harder to build good ones.
+
+I feel it to be very expensive to force myself out of (or into)
+something new. It takes a huge chunk of my always limited will power,
+leave me drained and exhausted. Leave me with too little energy to make
+myself do anything else throughout the day.
+
+Instead of building a big habit of doing regular exercise, I made some
+small ones. Like eating some of my favorite snack bars every morning,
+but only if I do 20 some push ups. It's working better than my previous
+approach so far. I have raised the bar to 50 push ups in couple of
+weeks. Yes its slow, but I win every morning, get to eat my favorite
+snacks, and am building a healthy habit.
+
+So the takeaway, instead of bringing a big change in your daily routine,
+bring a small one, and if that too is too much for your puny self, bribe
+yourself with a small reward.
+
+** Write better code
+   :PROPERTIES:
+   :CUSTOM_ID: write-better-code
+   :END:
+Enough talk about stupid meaningless life, let's discus some real stuff
+now.
+
+Some small things can make you better at writing code.
+
+Start with the smallest, most minimal version of your program, as
+featureless as it can be without losing its meaning, and build it.
+Software in some ways is like pottery, start small, iterate till you are
+satisfied, and then bake it with intensive testing.
+
+That's about tackling a problem, but how can you make your code better.
+Well, make the smallest unit of your code clean and tidy. Now that
+smallest unit can be whatever for you, I think of a file as the smallest
+unit of my code. Start small, keep classes in their own files, keep the
+file small and beautiful. At the end of the day, when you are about to
+call your software "done", looking at each file of your app should fill
+your eyes with tears of joy. It should be that beautiful.
+
+And I can't emphasize it enough, keep your files small.
+
+** Read code better
+   :PROPERTIES:
+   :CUSTOM_ID: read-code-better
+   :END:
+When I was just getting started with software, what would bother me a
+lot was "how to read software". I struggled a lot with it, mostly
+because I always took software too big for my mind back then.
+
+Well, first of all, don't bite more than you can chew. Start with small
+software, start with software you think you can write yourself and
+increase the bar from there. Again, make several small wins before you
+raise the bar for yourself.
+
+If the software is written well enough, you'll find it very easy to
+understand and pleasant to read. For example, I found meteor to be a
+great read and very easy to understand. Just dive in, read the readmes,
+big picture start revealing itself and soon you're reading a novel
+written in Javascript.
+
+** Small annoyances
+   :PROPERTIES:
+   :CUSTOM_ID: small-annoyances
+   :END:
+And finally, small annoyances caused by the person sitting beside you
+can make you wish the flight will crash and you'll get a chance to smack
+his head into the running engine fan (or may be his feet first) before
+you can finally die in peace

@@ -1,0 +1,386 @@
+#+DATE: <2019-06-21>
+#+TITLE: Lessons From a Year of TDD
+
+
+#+begin_html
+  <iframe src="//slides.com/channikhabra/lessons-from-a-year-of-tdd/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+#+end_html
+
+#+begin_html
+  </iframe>
+#+end_html
+
+#+begin_quote
+  This talk was delivered in
+  [[https://agilenetworkindia.com/events/technical-agility-day-chandigarh/][Technical
+  Agility Day, Chandigarh (June 15, 2019)]].
+#+end_quote
+
+** Transcript
+   :PROPERTIES:
+   :CUSTOM_ID: transcript
+   :END:
+Following is the transcript for the talk. There was no video recording,
+but the transcript I prepared for the talk should sufficiently convey
+what I meant to say in the talk.
+
+*** Introduction
+    :PROPERTIES:
+    :CUSTOM_ID: introduction
+    :END:
+{{< figure src="slides/01--introduction-to-tdd-talk.png"
+title="Experience from a year of TDD by Charanjit Singh" alt="Experience
+from a year of TDD by Charanjit Singh" width="100%" >}}
+
+Hello everyone, my name is Charanjit. I am working as a technical lead
+at Trantor.
+
+I joined Trantor a year ago, in one of Trantor's projects where I was
+fortunate enough to see people willing to apply test driven development
+on what was going to become a rather complex project. I am leading one
+part of this project under a team named "The cloud team". This talk is
+the story of things we learned while practicing test driven development
+to build a micro-services based cloud with several third-party
+integrations.
+
+Our cloud is built primarily with Node.js (express.js), uses GraphQL to
+communicate with clients as well as for inter-service communication,
+backed by Azure's CosmosDB (with its Mongo API), has Kafka for messaging
+queue, and Elasticsearch for complex search solutions. We have about 9
+services till today, and 3 third party integrations. We are building an
+IOT-ish solution, and our cloud primarily serves the android application
+running on our custom hardware, along with some companion applications
+(for support and sales).
+
+Before we get into the details of how we did TDD in our project, or of
+TDD itself, let's take a step back and work out some abstract thoughts.
+Abstract thoughts about what we are trying to accomplish with techniques
+like TDD. Actually, let's take all the steps back and go to the very
+beginning.
+
+In the beginning, there were myths. Humans weren't always recording
+history. The myths were used to fill the plot holes in stories told by
+one generation to next. A common and very fascinating theme among the
+myths of different cultures is that of magic.
+
+{{< figure src="slides/02--the-wizard.png" title="The Wizard" alt="The
+Wizard" width="100%" >}}
+
+Allegedly there used to be some very special people who could use the
+mysterious powers. With flick of a wand they could create things out of
+thin air, they could put life into the inanimate, they could bend the
+reality itself to their will.
+
+But those were of course myths. What we have now are developers.
+
+{{< figure src="slides/03--the-stallman.png" title="The Stallman"
+alt="The Stallman" width="100%" >}}
+
+Well, I argue that developers are in fact the wizards of the information
+age. We certainly meet the criteria:
+
+- [X] Create things (business/products/tools) out of thin air (without
+  any raw materials)
+- [X] Put life into the inanimate (software is practically the soul of
+  computer)
+- [X] Bend reality to our will (/r/insidethesoftstone reality is what
+  you want it to be)
+
+#+begin_html
+  <p>
+#+end_html
+
+#+begin_html
+  </p>
+#+end_html
+
+{{< figure src="slides/04--the-stallzard.png" title="The Stallzard"
+alt="The Stallzard" width="100%" >}}
+
+Raw materials for the products a software developer creates are the
+thoughts. The third point here is the focus of this talk.
+
+*** Software as Universe
+    :PROPERTIES:
+    :CUSTOM_ID: software-as-universe
+    :END:
+{{< figure src="slides/05--the-universe.png" title="The Universe"
+alt="The Universe" width="100%" >}}
+
+I am not kidding. I believe it is fair to say that every software is a
+universe of its own. It has its own rules it operates within, its own
+reality, which is at your disposal to do whatever with.
+
+It is a living and breathing thing which must change and evolve and die
+as well.
+
+Do anyone here watches Rick and Morty? It is a good show about a
+rockstar and a junior software developer. Try it sometime.
+
+{{< figure src="slides/06--the-microverse.png" title="The Microverse"
+alt="The Microverse" width="100%" >}}
+
+One of the episodes are about the microverse battery. The rockstar
+developer creates a miniature universe whose sole purpose is to provide
+power to his car. It is essentially a very complex car battery.
+
+Funnier thing in that episode, the universe within the universe in the
+battery does the exact same thing. Creates a universe whose sole purpose
+is to power its host.
+
+{{< figure src="slides/07--many-layers-of-microverse.png" title="Many
+layers of the Microverse" alt="Many layers of the Microverse"
+width="100%" >}}
+
+Software we write are not very different. We create entire universe to
+serve our needs, and it is rarely created in isolation. Usually our
+universe has a bunch of other, more complex universes wrapped around it.
+
+{{< figure src="slides/08--realm-of-tux.png" title="The realm of Tux"
+alt="The realm of Tux" width="100%" >}}
+
+We often start with a base universe of Operating system. The platform,
+programming language, the frameworks, they all make up for our initial
+"empty" worlds. They set up their layers of rules, on which then we
+write our own. Layers and layers of worlds.
+
+{{< figure src="slides/11--layers-of-software-universe.png" title="Many
+layered of software universe" alt="Many layered of software universe"
+width="100%" >}}
+
+Now, how do we populate this empty universe with the inhabitants which
+would do our bidding? Well, with our thoughts and prayers of course.
+
+{{< figure src="slides/13--pray-to-the-machine.png" title="Pray to the
+machine" alt="Pray to the machine" width="100%" >}}
+
+I am not kidding. But you get it, you aren't laughing. We literally send
+our thoughts, often prayers as well, formulated in some special form
+governed by some programming language to a compiler (or interpreter),
+which then inhabit and basically forms the universe of our software.
+
+#+begin_quote
+  Asgard isn't a place. Asgard is its people.
+#+end_quote
+
+{{< figure src="slides/14--pray-to-the-compiler.png" title="Pray to the
+compiler" alt="Pray to the compiler" width="100%" >}}
+
+That brings us to the corollary which takes us in the general direction
+of practices like Test Driven Development.
+
+{{< figure src="slides/15--bugs-are-thoughts-gone-wrong.png" title="Bugs
+are thoughts too" alt="Bugs are thoughts too" width="100%" >}}
+
+*** Bugs are thoughts, gone wrong
+    :PROPERTIES:
+    :CUSTOM_ID: bugs-are-thoughts-gone-wrong
+    :END:
+
+#+begin_quote
+  Correctness of software is inversely proportional to the client side
+  product team.
+#+end_quote
+
+Thoughts go wrong primarily in two ways:
+
+1. They are wrong to begin with. Mostly caused by misunderstanding
+2. Thoughts that go wrong during translation
+
+We can create correct software if we can validate the correctness of
+thoughts that get into the system, and those that reside it
+subsequently.
+
+This is what TDD essentially do.
+
+{{< figure src="slides/16--tdd-validates-thoughts.png" title="Bugs are
+thoughts too" alt="Bugs are thoughts too" width="100%" >}}
+
+The first point points to the red-green-refactor cycle. When doing TDD,
+you write down the "what" aspect of the unit/module/function you are
+going to write. It essentially allow you to pause, sit back, and think
+about what you are going to implement. How it should behave.
+
+The second point points to the help we get from our well-written tests
+when we have to then make changes in our.
+
+*** Busting some Myths
+    :PROPERTIES:
+    :CUSTOM_ID: busting-some-myths
+    :END:
+**** Myth #1 : TDD is time consuming
+     :PROPERTIES:
+     :CUSTOM_ID: myth-1-tdd-is-time-consuming
+     :END:
+This one is half a myth. TDD does consume time when you are starting.
+Your mileage may vary depending on how much experience your team has
+with TDD, initial time consumption is more if there is a learning curve
+involved. Disregarding the learning curve, developing same features took
+us roughly 30% longer to develop new features in our project.
+
+{{< figure src="slides/17--myth-tdd-is-time-consuming.png" title="Myth
+#1: TDD is time consuming" alt="Myth #1: TDD is time consuming"
+width="100%" >}}
+
+But this time is an investment you are making into your software, as
+well as your developers. When the project started off, we did start off
+slow. Other teams (there are 3 including us) were delivering more "story
+points". After about 3-4 months however, both other teams had dedicated
+processes set up to tackle bugs, to prioritize and decide which bugs to
+quash and which ones to live with. We still don't have any process
+explicitly for bugs.
+
+Our product is a startup, we have been going through a lot of changes
+and pivots throughout the year. While other teams were struggling with
+new bugs after every such change, we were delivering at pretty much the
+same pace. Every bug that occurred in cloud got test(s) for it too, so
+no mistakes were repeated. Till now, we have been able to keep the list
+of bugs small enough that we don't pay particular attention to it.
+
+On-boarding new people to our team was a no-op, we would just give them
+an overview, and tell them to run the tests. We did put considerable
+amount of effort to make the tests our live documentation for
+developers, and it paid dividends.
+
+{{< figure src="slides/24--tdd-gave-us-free-time.png" title="TDD gave us
+time to invest elsewhere" alt="TDD gave us time to invest elsewhere"
+width="100%" >}}
+
+Not just that, TDD actually gave our team to do more than just our
+assigned duties. Most notably, we were able to not have a separate
+dev/ops team at all, and took care of provisioning a cloud with
+[[https://en.wikipedia.org/wiki/Infrastructure_as_Code][IAC]] (using
+Terraform and Ansible), and a small sized K8s cluster too. Our
+development environment is pristine as well. It just takes a single
+command (docker-compose up) to get the complete cloud (including log
+aggregation, Elasticsearch, Kibana and Kafka) running on new machine.
+
+**** Myth #2 : TDD is about tests
+     :PROPERTIES:
+     :CUSTOM_ID: myth-2-tdd-is-about-tests
+     :END:
+It is not. "DD" in "TDD" is more important than "T". We learned this the
+hard way because of lack of experience with TDD. When you are applying
+TDD on a new project, *your tests should be driving the development*.
+Tests by themselves aren't the goal. The essential thing you must do to
+ensure this, is to ensure that you write tests first.
+
+{{< figure src="slides/24--myth-tdd-is-about-tests.png" title="Myth #2:
+TDD is about Tests" alt="Myth #2: TDD is about Tests" width="100%" >}}
+
+Tests written after the fact are practically handicapped. No matter how
+good a developer you are, when you are writing tests after you have
+written the feature/code, the "how" aspect of your code will creep in,
+and your tests will never be as effective as they could have been. Same
+goes for the feature you are writing.
+
+**** Myth #3 : TDD means no bugs
+     :PROPERTIES:
+     :CUSTOM_ID: myth-3-tdd-means-no-bugs
+     :END:
+This is what I've been advertising so far, ain't I! Well, it is not a
+100% truth. Even if we ignore the fact that your tests will almost never
+be 100% complete, TDD will not guarantee a fully correct software.
+
+{{< figure src="slides/29--myth-tdd-means-no-bugs.png" title="Myth #3:
+TDD means no bugs" alt="Myth #3: TDD means no bugs" width="100%" >}}
+
+TDD is your last line of defense. By the time you have sat down to
+judiciously implement TDD, the thoughts that are going to populate your
+software's universe have already been set. All you are going to do is
+verify that they behave as it has been decided.
+
+{{< figure src="slides/32--protect-yourself-from-your-po.png"
+title="Adopt BDD" alt="Adopt BDD" width="100%" >}}
+
+BDD operates at a much higher layer than TDD. At the layer where
+discussions are done and decisions are made. I believe a combination of
+BDD and TDD can create a very solid software. We adopted BDD in our
+project at a much later time, looking back at the long meetings we used
+to have, I can see how much time and confusion it could have saved us.
+
+*** Grow as a developer
+    :PROPERTIES:
+    :CUSTOM_ID: grow-as-a-developer
+    :END:
+{{< figure src="slides/33--tdd-guides-you-in-right-direction.png"
+title="TDD Guides you in right direction" alt="TDD Guides you in right
+direction" width="100%" >}}
+
+It was an interesting observation. Team seem to have a much higher
+appreciation for design patterns like dependency injection. We also
+observed a shift in PR review comments toward a focus on software design
+and architecture. Discussions we used to have to make our TDD approach
+more fruitful brought a cultural shift in the team.
+
+*** When adding TDD to a new team
+    :PROPERTIES:
+    :CUSTOM_ID: when-adding-tdd-to-a-new-team
+    :END:
+{{< figure src="slides/38--brace-yourself.png" title="When adding TDD to
+a new team" alt="When adding TDD to a new team" width="100%" >}}
+
+Biggest resistance we faced was convincing developers that it's worth
+their while to write tests *before* they write code for their code. We
+ended up introducing an extra step in our PR review checklist: /ensure
+there is a "test:" commit which only has test descriptions/. This helped
+somewhat, but it took some time (and a lot of pair programming) till
+developers realized the benefits of this process.
+
+*** Things I wish we did
+    :PROPERTIES:
+    :CUSTOM_ID: things-i-wish-we-did
+    :END:
+**** Mutation Testing
+     :PROPERTIES:
+     :CUSTOM_ID: mutation-testing
+     :END:
+{{< figure src="slides/41--mutation-testing.png" title="I wish we did:
+Mutation Testing" alt="I wish we did: Mutation Testing" width="100%" >}}
+
+So, coverage reports are big fat liars. They don't tell you how your
+tests are doing. In my opinion, they are more like the Velocity Charts
+our Scrum Master loves so much. They tell you if you are going in the
+correct general direction, and it is very easy to make them lie.
+
+[[https://stryker-mutator.io/][Mutation test]] is a rather interesting
+concept that we played around with. Big idea is that the test-runner can
+modify your code (e.g replace an if condition with =true= and =false=),
+and re-run your code to verify how many mutations it can withhold. It
+gives a lot better insight into the strength of your tests.
+
+We experimented with mutation testing for a while. But I suppose because
+of lack of integration of a platform for our CI (Bamboo) to present
+thorough coverage reports, we haven't yet made mutation testing a part
+of our test process.
+
+I can see how it can make PR reviews a lot more effective though. I hope
+we can take some time out of our everlasting "churn mode" for this.
+
+**** BDD
+     :PROPERTIES:
+     :CUSTOM_ID: bdd
+     :END:
+{{< figure src="slides/42--bdd.png" title="I wish we did: Behavior
+Driven Development" alt="I wish we did: Behavior Driven Development"
+width="100%" >}}
+
+We implemented BDD a bit late (just a couple months ago) when we had
+some critical modules for which we wanted automated tests, which
+required the complete cloud up and running. Like all software projects,
+we have always been on a rather tight schedule :-)
+
+BDD could have saved us a lot of trouble and confusion. It contributes
+immensely to help you maintain a ubiquitous language of the project, and
+make the communication between product people and developers much more
+correct.
+
+--------------
+
+I apologize for rushing the transcript a bit in last few headlines
+above. Need to get this off my todo list :-). If I get to deliver this
+talk again at some occasion, I will revisit and will probably add some
+velocity/burndown charts from Jira as well.
+
+{{< figure src="slides/47--thank-you.png" title="Thank you for your
+patience" alt="Thank you for your patience" width="100%" >}}

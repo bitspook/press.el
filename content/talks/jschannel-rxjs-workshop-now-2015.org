@@ -1,0 +1,19 @@
+#+DATE: <2015-11-01>
+#+TITLE: Jschannel RxJS workshop Nov 2015
+
+
+#+begin_html
+  <iframe src="//slides.com/channikhabra/jschannel-rxjs-workshop-nov-2015/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+#+end_html
+
+#+begin_html
+  </iframe>
+#+end_html
+
+I was very fascinated about Reactive programming, and when we had a
+shortage of talks in
+[[https://www.meetup.com/jslovers-bengaluru/][JsChannel]], I decided to
+give a workshop on RxJS.
+
+The [[https://github.com/channikhabra/rxjs-workshop-nov-2015][code used
+in this workshop]] can be found in my Github.

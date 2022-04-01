@@ -1,0 +1,48 @@
+#+FILETAGS: introspection
+#+DATE: <2016-06-23>
+#+AUTHOR: Charanjit Singh
+#+TITLE: My overplanning nature and how it help me
+
+
+Although I try my best to not fall in the conformist's trap, there is
+always a force lurking right beneath the conscious which want me to fit
+in. I remember my obsession for control and planning from quite early
+childhood. It used to be a major source of frustration; not that I was
+obsessive about planning things, but that everyone else was not.
+
+Over time I figured it was me who was the odd one; so I subconsciously
+started suppressing this (over?)planning nature of mine.
+
+And supressed it was, until I started writing software. I found that
+properly planning things out before writing the software was immensely
+helpful. Writing every unique use case, all the nuances, things to do
+and things not to do; all of them helped when writing actual code.
+Proper planning would make writing software so much more smoother.
+
+But it didn't put me on the path to undo the supression I had done for
+years; it merely put a doubt. I was still in doubt if I was the odd one
+here, may be I am just wasting time writing every detail down up front.
+May be it helped me only because it would satisfy my over planning
+nature which would then let me code in peace. So I wouldn't do it every
+time. Even though the results were obvious as daylight, the doubt would
+have me not write specs in so many cases. Laziness didn't help either;
+it's far more fun to just start writing code then it is to write specs.
+As a matter of fact, thinking and writing all the small details become
+painful on times.
+
+To my great surprise, all it took was a
+[[https://web.archive.org/web/20161117174710/http://www.joelonsoftware.com/articles/fog0000000036.html][single
+blog post]] (well, actually 5 blog posts from a single series) to pull
+this doubt out of me, to take away all the confusion and bring the
+clarity that I knew the right thing to do all along. There are still
+things to learn, "where to draw the line?" for instance. But that is the
+fun part. Hard part will be to write specs for every software I write,
+defeating the laziness; which unfortunatley has become a big part of me.
+
+I wish more programmers would blog about thier learnings and experiences
+and struggles. That blog post I linked about was written in 2000, and it
+came to my attention following another post on the same blog which
+someone linked in a chat group. May be I am the odd one here; I don't
+exactly have a team of developers working together, learning together.
+But I am certain I am not alone. I hope my posts help someone realise
+they're not alone if they have struggles similar as mine.

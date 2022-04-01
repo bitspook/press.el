@@ -1,0 +1,222 @@
+#+DATE: <2014-06-02>
+#+AUTHOR: Charanjit Singh
+#+TITLE: 3K Later
+
+
+#+begin_quote
+  This post is follow up to my previous unintentional rant about the
+  situation I was in and the tech scene in my city in general. In this
+  post I am writing the things I went through in past 3 months, joys and
+  burns.
+#+end_quote
+
+** 3 K {#3-k}
+   :PROPERTIES:
+   :CUSTOM_ID: k-3-k
+   :END:
+Yes 3 K is 3000 USD. It might not be too much for 3 month time period
+(for you), but it's a huge sum if you see from my eyes. Besides, what I
+learned in past three months is worth way more than 3K. Although I spent
+almost all of it (Macbook + iPhone), but past 3 months had been bestest
+of my life so far.
+
+** Opportunities Missed
+   :PROPERTIES:
+   :CUSTOM_ID: opportunities-missed
+   :END:
+I missed a lot of what was offered to me in a plate. Offer from awesome guys at
+[[https://web.archive.org/web/20140813170756/http://boards.coffeestrap.com/][coffeestrap]], the test project from [[https://web.archive.org/web/20140813170756/http://www.epiphanyeyewear.com/][Epiphany Eyewear]], the awesome team we built
+for learning ML and many more. All the sudden attention I got drove me nuts. It
+was too much chaos in the days when my last post hit HN. I made many mistakes in
+that time. Not that I regret it. I didn't let it all go away (it didn't let me
+all go away). I held on to the most probably best of them.
+
+** The Mentor
+   :PROPERTIES:
+   :CUSTOM_ID: the-mentor
+   :END:
+I met a really awesome person. [[https://web.archive.org/web/20140813170756/https://twitter.com/faceyspacey][James Gillmore]]. I call him master. He was the
+first person to offer me to teach code and I couldn't stop the adrenaline rush.
+He offered to teach me Meteor.js and promised to give me real work once I know
+enough of it. I denied. I wanted to do more of Django and Python and Machine
+Learning, to get done with all I started. But I have a serious issues saying no
+to people, especially when they ask for second time. On the email he'd go in
+detail explaining how Javascript is future of web and how Django and bros gonna
+be a thing of past. So James convinced me to learn Meteor. Initially I was doing
+it just to avoid saying no to him. I would do the coursera Machine learning
+course all day, and would give about 2 hours a day to little fun project he gave
+me. After about 13 hours (about a week), he said I was ready for a real project.
+I was stunned. I was new to Javascript itself. But he has a way to boost you up.
+When he want you to do something, he pumps you up with energy and you simply
+can't say no. And I am happy that happened.
+
+** The early wearout
+   :PROPERTIES:
+   :CUSTOM_ID: the-early-wearout
+   :END:
+I started out with full power on my first project. I was feeling a lot of
+pressure from inside. There were people saying "I won't let such person stand in
+my office" (a relative of mine who owns same kind of sweatshop as I mentioned in
+other post said that, behind my back; if you're reading this Mr, you were being
+a real bitch getting that post printed and showing it to my uncle). For the
+first week, I coded for 16 hours a day for 7-8 consecutive days. Truth to be
+told, all the progress in that project was made during that week. If I could
+keep on going for just 2-3 more days, I could save me next 3 weeks. But at a
+point it became too much for me. This was the first time I was doing real work,
+first time I was getting instructions from someone to code, first time I was
+getting paid significant money, and I wanted to nail it. I couldn't. In those 8
+days, I was literally glued to my chair. When I'd get up for dinner at night,
+there I had a feeling as doped. A light spin in head and little dark in front of
+eyes. On the 8th day that spin stayed when I woke up. The dark went all around
+me I almost fell on floor. That day I opened Hacker News for first time in 8
+days. It looked like it was "burn-out" themed that day. Every third post was
+about burn-outs, devs going mad, and stuff. It scared the shit out of me. I
+didn't want to go mad. I talked to James. I emailed him that I gonna take a day
+off. He was cool with it. He was always cool with it. It was my stupid ass who
+was pushing me harder and harder. It took me whole next week just to recover to
+the point where I could think straight. It was a funny feeling. It was not a
+burn-out. I didn't lose my will to code. I still wanted to and was still coding.
+But I couldn't. It was a wall got built around my head and I was unable to think
+deeper. Holding just few things in mind became difficult. I realised the
+significance of thinking with holding detail in head. Something I always took
+for granted. And a strange fear followed the week next.
+
+** On shoulders of the giant
+   :PROPERTIES:
+   :CUSTOM_ID: on-shoulders-of-the-giant
+   :END:
+I gave up on the first project more than one times. That has been the
+pattern of my life for long. My fight or flight hormone almost always
+choose flight. I could finish it only because of James. He'd send me
+emails to motivate me, and they worked. I would be on steroids the day
+he sent me his motivational emails. I can't express my gratitude towards
+him for picking me from the Internet, and for all the time and energy
+(and money) he invested in me. I've been sitting on a rollercoaster
+under his mentorship.
+
+** Bad habits from past
+   :PROPERTIES:
+   :CUSTOM_ID: bad-habits-from-past
+   :END:
+*** Drag it to the end
+    :PROPERTIES:
+    :CUSTOM_ID: drag-it-to-the-end
+    :END:
+Education system here is clunky. We have a whole year of study and exams in the
+end (there are six months exams too, and of course stupid tests anytime in b/w).
+The point is, most kids in schools find tricks to live through the schooling
+without getting much of what they call education. One is to drag it to the end.
+No need to touch the book the whole year, you can just study for a day and get
+passed. I topped my class for 10 consecutive years with half day studies. Nobody
+cares if you are learning anything or not, scores on your card is the only thing
+that matter. This is a dangerous mentality to attain. I didn't realise the
+consequences until I went through them. You naturally tend to drag tasks until
+it is absolute necessary to do them. This leads to frustration and stress. Trust
+me, once you do it enough times, the stress make a home in your head and won't
+leave you alone. Not even during coitus. I won over most part of this though.
+Trick I used is broadly known and followed by many. Just do it. Whenever James
+would add a row to the todo sheet, I would just rush for it.This takes lot of
+mental energy, but it works. I couldn't keep it on forever though, but I kept it
+for long enough to break the habit.
+
+*** Hop hop hop
+    :PROPERTIES:
+    :CUSTOM_ID: hop-hop-hop
+    :END:
+One bad habit you acquire when you teach yourself stuff from internet
+all by yourself is hopping. You hop, from here to there to somewhere.
+There's nothing to stop you. When the primary goal is just "learning",
+you don't bother about sticking with a single technology. Mind simply
+make excuses and you hop. Learning new things become analogous to
+chewing a chewing-gum. You chew until it's sweet, and when you start
+hitting the sour parts, you throw it away and put a new one in mouth. It
+would be different for different people, but it worked this way for me.
+I think thing that makes a difference is the direction. Some guys get
+motivation when they start a project of their own, some guys (like me)
+just never get the direcion. It takes real hard effort to get over the
+plateaus and taste the bitter parts of technology. Nothing is all sweet.
+You can't pass on a technology learning just the good parts, bad parts
+are where you get real lessons. You don't know a technology well enough
+if you don't know where it fails. Knowledge of failure is the real test
+of your knowledge of something.
+
+** The most important lesson: Give up, or fight on
+   :PROPERTIES:
+   :CUSTOM_ID: the-most-important-lesson-give-up-or-fight-on
+   :END:
+This is most important lesson only experience can teach. Experience
+doesn't necessarily means failures (although failures count for more
+valuable experience). James have been through what I am going right now.
+He can perceive a dead end, he can also see when success is just beyond
+the next wall. Me on the other hand give up when I am most close to
+success, and keep ramming the steal wall until my head opens up. That's
+where having a mentor makes a difference. Some mistakes help you grow
+up, some take you down temporarily. If you make the second kind of
+mistakes often enough, the temporary phase can get longer and longer.
+Hitting the wrong walls was the reason of my fickleness. When you keep
+hitting the wrong walls, your mind catch an (obviously wrong) pattern.
+When you start doing something, the first hurdle raise an alarm that
+"this is like last time, remember how you wasted whole week trying to do
+X but failed? This is same". Even when it's not. That alarm make you
+give up early. Online courses, self-guided projects and all can do only
+so much. Having a real mentor/sensai/guru with you takes the learning
+process to another level. This is the traditional eastern way of
+learning. Accept a master, make him accept you, and learn. Online
+learning is great, but wherever I see, they are missing the most
+important ingredient of all-round education: a real teacher/guide, who
+could actively participate in student's growth. Where teacher is
+genuinly interested in student's growth. If you are making another
+Codeacademy, I'd suggest aiming for Internstine instead.
+
+** Procrastination
+   :PROPERTIES:
+   :CUSTOM_ID: procrastination
+   :END:
+I miss it. No really. When I was working on the work all the time, I
+missed procrastinating. It's weird but I think procrastinating can be
+recreational to some level. Or may be it's just being and not doing
+anything that I am misinterpretting as procrastination. I don't have
+words to say this thought, it's kinda rough in my mind at the moment,
+but I believe it is recreational. Not just good procrastination, what I
+mean is the type A of procrastination Paul Graham talks about in
+[[https://web.archive.org/web/20140813170756/http://paulgraham.com/procrastination.html][his
+essay]]. He talks about 3 kind of procrastination: A) Doing nothing B)
+doing something less important C) doing something more important.
+
+** Changing places
+   :PROPERTIES:
+   :CUSTOM_ID: changing-places
+   :END:
+I've noticed a weird thing about productivity I haven't read much about.
+I found myself more productive during first few days of working from a
+new place. Like first week in my uncle's home, first few days at my
+friend's place etc. After first few days, things become less
+interesting, more boring. I've noticed that same work stays interesting
+if I keep switching places. Another reason I am considering staying a
+contract worker instead of doing a day job.
+
+** Smartass Jackass
+   :PROPERTIES:
+   :CUSTOM_ID: smartass-jackass
+   :END:
+I've been proved wrong a lot lately. By many people. I was never proved
+wrong ever by anyone until before 3 months. That could simply mean that
+I've been living with people most of whom are total idiots (I'd have
+said all, but lets stay safe in case someone confront me). World is a
+big place. People are lot more smarter than I am. And I like that. That
+means the game is not over yet. I have many levels more to play. Many
+worlds to explore. I wanna explore. Want to see what this world has to
+offer. I have a long way to go. I have to get over this anti-social
+thing of mine, and be better at my craft. I really love programming; I
+have to take myself to place where it'll love me back.
+
+This post is getting little too long. I wanted to write about the
+techniques and tricks I learned during this period, and also about my
+thoughts and future plans to make my city better in terms of tech, but I
+think I should write a separate post for it.
+
+*I wanna apologize to Sunny, Jayant, Martin and Lido. We started a team
+to start learning Machine Learning, I was the one super determined, and
+I was the one who quit first. I took more than one endeavors at a time
+and gave the other more priority. I also wanna apologize to all those
+whom I couldn't respond.*

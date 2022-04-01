@@ -1,0 +1,129 @@
+#+DATE: <2015-03-31>
+#+AUTHOR: Charanjit Singh
+#+TITLE: A Mind Full of Chaos
+
+
+I need to reinvent a system for keeping myself in check. I can't think
+of a single thing I haven't tried in past; pomodoros, gtd, time boxing,
+what not. They all work for some time, and then stop working. We find
+flaws in systems pretty quickly; we find cracks, make excused to let us
+do the easiest thing, the laziest thing.
+
+No matter what system I would adopt next, it all wears off soon. This is
+a wheel that has been reinvented countless times. If only world was so
+simple that what works for one would work for all. I need to build a
+system unique for myself; considering factors that might not have
+existed for those who predate me. Things that I didn't include earlier.
+
+** Change
+   :PROPERTIES:
+   :CUSTOM_ID: change
+   :END:
+I never considered change to be a part of any of my systems. I should
+this time. I believe most things work because of the new
+tools/techniques/whatever they bring on plate. A new lifestyle, a new
+toy, or just a different way to do something. As soon as the newness
+fades away, it becomes a chore to do. A cognitive load that I finally
+throw away with a deep breath.
+
+I wonder how I'll integrate change. To make it an ultimate changing
+system, may I should adopt the actual digital nomad lifestyle. Travel
+around all the time. A month here, few weeks there, keep hopping from
+city to city. But then, I don't think I am a traveler kind of person. I
+like it more when there is less chaos outside my mind.
+
+** Hunger
+   :PROPERTIES:
+   :CUSTOM_ID: hunger
+   :END:
+Another important thing is the hunger for growth. I have an unquenchable
+thirst for growing bigger and bigger. Bigger in everything. I am not a
+competitive person though, I don't like competing with others. With just
+myself. I believe it is a good thing. Most satisfying is when I grow my
+skill set, learning something new or getting deeper into what I am
+already familiar with. But I wonder if it should be used as a carrot, or
+as a central piece of the system. Using it as carrot would be like
+having a 2 hour slot to study something after the day's work is done.
+For making it a central piece of the system will require me to find
+either:
+
+- New things to learn from within what I am currently working. Or
+- Find work for what I want to learn/strengthen
+
+** Race
+   :PROPERTIES:
+   :CUSTOM_ID: race
+   :END:
+I am seeing people leaving me behind, in the race I don't know I belong
+or not. A friend just got a job in a startup with very smart people. I
+envy him for the work environment and team he'll have there. May be I'll
+start looking for a job in May. Or just enter the wilds of freelancing,
+leaving the mothership of faceyspacey. I don't know. But that would be
+an easy workaround, not a solution. I might get into a team of people
+smarter than me, but not now. Not before I learn to orchestrate this
+chaos in my head.
+
+These problems have been with me from the very beginning. I thought I
+solved them when we were in that pressure cooker with celebvidy. They
+seemed to be a thing of past when we were doing 18 hour days a year ago.
+But here I am facing them again, half dead. Or living dead may be (the
+problems, not me). I know I have nailed them, it just need a final push,
+the last piece of puzzle.
+
+** Specs
+   :PROPERTIES:
+   :CUSTOM_ID: specs
+   :END:
+I don't like it when I waste a day like I did today. I need to develop a
+real good system for myself, a system that will consume least willpower
+and provide maximum satisfaction.
+
+*** Consumes willpower
+    :PROPERTIES:
+    :CUSTOM_ID: consumes-willpower
+    :END:
+
+1. Decision making
+
+   What to eat lunch, which cold drink, which snack. Fuck.
+
+2. The feeling of "not enough freedom" I have living in the hostel.
+
+3. Forcing myself to do things
+
+   - when I actually want to do something else. Oooh new shiny
+     language/framework, so cool. I wanna do that, and I am stuck with
+     Meteor. I can code this shit in dreams.
+
+*** Boosts willpower
+    :PROPERTIES:
+    :CUSTOM_ID: boosts-willpower
+    :END:
+
+1. Change in my tools
+
+   A new cool mode in Emacs, some new sexy modification I do in
+   settings, some new cool way I invent to do something that was
+   repeating
+
+2. Knowing my tools better
+
+   Reading something new/deeper about Emacs/git/javascript/meteor is
+   generally a happy/refreshing moment
+
+3. Talking to someone new in a friendly way.
+
+   If this backfires, it keep me drained for days though.
+
+*** Maximum satisfaction
+    :PROPERTIES:
+    :CUSTOM_ID: maximum-satisfaction
+    :END:
+Seeing 8:00+ in the hours worked today Knocking more tasks from my todo
+list than I actually plan to Exercising
+
+It is funny all these things that give most satisfaction at the end of
+the day are most hard to do.
+
+I am making this a blog post. Will be funny to read in future when I
+have conquered all these problems.

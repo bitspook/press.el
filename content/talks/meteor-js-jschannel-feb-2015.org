@@ -1,0 +1,14 @@
+#+DATE: <2015-02-07>
+#+TITLE: Meteor Js Jschannel Feb 2015
+
+
+#+begin_html
+  <iframe src="//slides.com/channikhabra/meteor-jschannel-feb-2015/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+#+end_html
+
+#+begin_html
+  </iframe>
+#+end_html
+
+First talk I ever gave. I was new to Bangalore and all excited about the
+whole idea of meetup.

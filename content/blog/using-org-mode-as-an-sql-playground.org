@@ -1,0 +1,165 @@
+#+DATE: <2022-02-03>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Using org-mode as an SQL playground
+
+
+Showcase video:
+
+#+begin_html
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DY7t4T4TmUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+#+end_html
+
+#+begin_html
+  </iframe>
+#+end_html
+
+For every web app I work on, a database client is always present for
+exploring data and building complex queries. Recently, I have moved on
+from my PgAdmin to org-mode for this purpose, because why not.
+
+Org-mode allows executing code snippets and can show results in a nice
+tabular form. But org-mode isn't
+[[https://www.cvedetails.com/vulnerability-list/vendor_id-26/product_id-320/Microsoft-Office.html][written
+by Microsoft]]. So it don't allow arbitrary code execution without our
+explicit consent. To tell org-mode that it is okay to execute SQL
+snippets, we need to run following elisp snippet:
+
+#+begin_example
+  (with-eval-after-load 'org
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((sql . t))))
+#+end_example
+
+Org-mode has a number of
+[[https://www.orgmode.org/worg/org-contrib/babel/languages/ob-doc-sql.html#org7f0941b][header
+arguments for SQL blocks]] which can be used to configure how a
+particular SQL source-code snippet is executed. Most important ones
+perhaps are:
+
+- =:engine= which tells which database to run the SQL against
+- =:dbhost= to configure the database host, most likely =localhost= for
+  a dev environment
+- =:dbport=
+- =:dbuser= and =:dbpassword= for database authentication
+- =:database= for database name
+
+By default org-mode runs the code snippets in current OS environment. I
+use this fact to get the ability to run SQL against our postgres
+database without passing most of the above arguments. Postgres allows
+setting
+[[https://www.postgresql.org/docs/current/libpq-envars.html][some
+environment]] variables, which it then use to for making connections by
+default. In my
+[[https://github.com/bitspook/entropy/blob/ae5ee52646c2c67ce713938548d67a722b73a294/flake.nix][flake.nix]]
+file, I setup the required environment variables:
+
+#+begin_example
+  PGDIR=$PWD/storage/postgres
+  export PGDATA=$PGDIR/data
+  export PGHOST=$PGDIR/run
+  export PGDATABASE=entropy
+  export DATABASE_URL="postgresql:///$PGDATABASE?host=$PGHOST" # not required by postgres, but will be helpful
+#+end_example
+
+With this, only header option left to set is =:engine=, which I prefer
+to configure globally for my
+[[https://raw.githubusercontent.com/bitspook/entropy/96cc9c0485d972ed819996d61c3730cafb228660/sql-playground.org][sql-playground.org]]
+since I usually have one database for my personal projects. You can
+check this
+[[https://github.com/bitspook/entropy/commit/96cc9c0485d972ed819996d61c3730cafb228660][commit
+on Entropy project]] for how I have setup my sql-playground there.
+Following snippet on top of the sql-playground.org does the trick:
+
+#+begin_example
+  #+PROPERTY: header-args:sql  :engine postgres
+#+end_example
+
+Now any SQL snippets that we create can be executed against our
+development database right within the org file. For example, pressing
+=C-c C-c= in following SQL block produces output shown below that.
+
+#+begin_example
+  #+name: events
+  #+begin_src sql
+    SELECT events.title,
+           events.slug,
+           start_time,
+           events.id,
+           events.source,
+           format('%s mins', extract(epoch from (events.end_time - events.start_time))/60)
+    FROM events;
+  #+end_src
+
+  #+RESULTS: events
+  | title              | slug                 | start_time          | end_time            | source | format  |
+  |--------------------+----------------------+---------------------+---------------------+--------+---------|
+  | Lol bro what       | lol-rofl-lmao        | 2021-11-29 12:30:00 | 2021-11-29 13:30:00 | local  | 60 mins |
+  | Nested event title | nested-lol-rofl-lmao | 2021-10-29 12:30:00 | 2021-10-29 13:30:00 | local  | 60 mins |
+#+end_example
+
+* Utilizing LSP
+  :PROPERTIES:
+  :CUSTOM_ID: utilizing-lsp
+  :END:
+Building SQL queries is my primary use-case, and org-mode configured so
+far serves that purpose. But since I am putting all this effort in
+writing this blog post anyway, I thought let's go a step further and try
+configuring LSP mode for SQL snippets in my org file. To my surprise, it
+is possible. [[https://github.com/lighttiger2505/sqls/][SQLS]] provides
+an LSP server for SQL files, which once configured can provide certain
+features like auto-completing table and column names. I have created a
+[[https://github.com/bitspook/entropy/blob/96cc9c0485d972ed819996d61c3730cafb228660/.dir-locals.el][.dir-locals]]
+file for
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html][adding
+directory local variables]] to configure LSP to connect to correct
+database.
+
+#+begin_example
+  ((nil . ((eval (lambda ()
+                   (setq lsp-sqls-connections `(((driver . "postgresql")
+                                                 (dataSourceName . ,(getenv "DATABASE_URL"))))))))))
+#+end_example
+
+This snippet isn't actually the right way configuring directory local
+variables, becuase it sets =lsp-sqls-connections= globally. This is the
+result of me time-boxing the task of evaluating
+=(getenv "DATABASE_URL")=, so I won't need to duplicate my database
+configuration here.
+
+LSP for org-mode also need to provide a file to which it can tangle
+source blocks. So I added another snippet to top of my org file.
+
+#+begin_example
+  #+PROPERTY: header-args:sql  :tangle test.sql
+#+end_example
+
+I can now run =lsp-org= in an SQL block, and 8/10 times it has lsp
+configured properly. It isn't flawless though, but that is expected
+since
+[[https://emacs-lsp.github.io/lsp-mode/manual-language-docs/lsp-org/#][lsp
+support in org-snippets]] is in alpha stage right now.
+
+I also tried setting up lsp support in edit buffer for SQL statements
+(which you get by pressing =C-c '= in org src blocks), but because of a
+[[https://github.com/emacs-lsp/lsp-mode/issues/2525][bug in lsp-mode]],
+that didn't work out too well.
+
+#+begin_example
+  (defun org-babel-edit-prep:sql (babel-info)
+    (setq-local buffer-file-name (->> babel-info caddr (alist-get :tangle)))
+    (setq-local lsp-buffer-uri (->> babel-info caddr (alist-get :tangle) lsp--path-to-uri))
+    (setq-local lsp-headerline-breadcrumb-enable nil)
+    (lsp))
+#+end_example
+
+* Problems with this setup
+  :PROPERTIES:
+  :CUSTOM_ID: problems-with-this-setup
+  :END:
+There are 2 main problems I face during my primary use-case.
+
+1. Org tables don't work well if a column has a lot of data. e.g
+   =description= of an =event= messes up the table real bad. lsp-mode
+   allow executing queries which don't suffer from this.
+2. No LSP support in edit buffer is a major bummer.

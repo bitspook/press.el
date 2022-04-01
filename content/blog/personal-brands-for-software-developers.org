@@ -1,0 +1,109 @@
+#+FILETAGS: management trantor
+#+DATE: <2019-04-01>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Personal brands for software developers
+
+
+[[https://channikhabra.github.io/blog/maximize-individual-growing-in-a-software-team-2-month-report/][Reflecting
+on the progress]] we have made in our
+[[https://channikhabra.github.io/blog/how-to-maximize-individual-growth-in-a-software-team/]["nurture
+a culture of individual growth in a software team" initiative]], I
+realized there is much to gain from candy wrapping our efforts. As per
+our plan, we'll be (and are) giving talks, doing research, and writing
+itch-scratching code. Coming out of shadows and presenting our efforts
+in a nice frame present many fold benefits.
+
+My proposal is to invest energy in making our efforts more visible. To
+focus this emotion on a more concrete goal, I have chosen
+
+** Establishing a personal brand
+   :PROPERTIES:
+   :CUSTOM_ID: establishing-a-personal-brand
+   :END:
+I believe a person is a brand when (s)he is recognizable for the value
+(s)he carry and can contribute, without fresh proof. Building a genuine
+brand need genuine efforts. Efforts we are already making, and which can
+gain a boost if we focus on this short term goal.
+
+Doing so will also incentivize us to engage more in our chosen
+activities. Our objective is personal growth of individuals involved in
+our team(s), and I believe visibility of this growth is important for
+its sustenance. The organization we work for, if it can see us growing
+new skills, will be able to leverage them, hence contributing more to
+our growth. Before I start fantasizing about all the good this can bring
+to us, let's brainstorm on
+
+** How can we establish ourselves as brands?
+   :PROPERTIES:
+   :CUSTOM_ID: how-can-we-establish-ourselves-as-brands
+   :END:
+Being a brand is a completely dependent value. Unlike our technical
+skills, it is not something that can independently stand on its own. It
+is almost entirely dependent on other people. People decide how valuable
+you are as a brand. Thinking along these lines, I suppose the first
+natural step turns out to be
+
+_Step 1_: *Building an online presence*
+
+It boils down to having a home to showcase all the value we are
+delivering right now. For starters, this can be a personal website which
+can showcase the talks we are giving (since that is where we are
+investing most of our time). Eventually, I imagine at least
+incorporating all the steps we have chosen in our personal websites:
+
+1. *Talks/Presentations section* for the talks we deliver. Perhaps we
+   can have "Review" section for the talks we attend
+2. *A blog* for sharing the discussions we have on
+   [[http://forum.trantorinc.com/][Trantor forum]], our research notes,
+   thoughts, opinions and just about anything. Blogs are great for
+   making noise and gather attention to yourself.
+3. *A Portfolio* for showcasing the open source(?) work we do, as a
+   demonstration of our growing skills
+
+Even though there are platforms for creating and sharing content, I
+firmly believe in having complete ownership of the content we generate.
+
+Once we have a platform where we are creating and sharing content, then
+we can focus on
+
+_Step 2_: *Creating online visibility*
+
+Just creating content is not enough, there is too much noise all over
+the internet to get noticed organically. Once we have the bare minimum
+content creation pipeline, we can then focus on polishing things like
+how it looks, SEO, automatic sharing across social media platforms,
+analytic and data gathering, automatic updates for new content. I
+wouldn't delve too deep into this right now.
+
+_Step 1_: *Building an offline presence*
+
+Another great first step along with aiming to build an online presence
+is to build an offline presence. Local brands are very valuable,
+probably more valuable than internet celebrities to local communities
+and organizations employing us. Building offline presence require
+engagement in local community, organizing and attending meetups,
+hackathons etc.
+
+We are in a unique position in this regard, the tech "culture" in our
+city (Chandigarh) is yet barely blossoming. It used to be a
+[[https://channikhabra.github.io/blog/dear-first-world-dev-have-a-look-at-your-nightmare/][rather
+gloomy picture]] around here, but I believe people have now started
+seeing the exploitation going around in the tech scene of the city for
+what it is.
+[[https://www.meetup.com/find/events/?allMeetups=true&radius=10&userFreeform=Chandigarh%252C+India&mcId=z1018132&mcName=Chandigarh%252C+IN&eventFilter=mysugg][More
+and more meetup groups]] are blossoming for the good. Participating in
+these groups can be a great source of content for our online presence.
+Before I start day-dreaming about how we can hack for Chandigarh, I'll
+shut up about it : )
+
+For this, I suppose the next course of action is to open the sessions we
+have been doing for public to attend. Trantor is one of the few
+companies I have seen being quite open for organizing meetups in
+Tricity, so this shouldn't be a problem from that front.
+
+--------------
+
+Here is what I am imagining for our next goal is to attain our grand
+objective of nurturing the culture of growth. Please do share your
+ideas, opinions and thoughts. You are also always welcome to join us in
+our endeavor.

@@ -1,0 +1,59 @@
+#+FILETAGS: introspection
+#+DATE: <2016-09-30>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Some random thoughts
+
+
+Life can be so overwhelming sometimes. Sometime I wonder how people go
+on about living without asking questions. Or may be they do ask
+questions but get satisfied by the answers world has to offer. So much
+in the world goes around these questions after all. Religions and
+nations for example. Who'd believe in such farcicality if there were
+proper answers. Purposelessness is painful. So is loneliness. I seem to
+have plenty of both of them. And then there is paranoia and laziness.
+Latter two are mostly the reasons for former two. Inability to trust
+anyone and jumping to the worst keep me away from most people. Laziness
+keep me from diving into anything engaging enough to forget that it's
+all meaningless.
+
+Laziness now, may be I can do something about it. I have been practicing
+with rituals as of late. They work well 60% of the time, today however I
+failed them drastically. May be tomorrow will be a stronger day.
+
+I think there is another reason for laziness as well. The work. It gets
+so stupid some times. Well, most of the times it is so damn fucking
+stupid. It is no fun writing forms all day long. But I need money right
+now, I need a lot more than this job provides, but to start generating
+more money, I need more skills. Whether I go for a better paying job or
+for my own business, both need time. We're building a house, so the need
+for money is immediate. I have to stick with this job for long enough to
+finish the house and have some savings to give myself some period to lay
+back and learn new skills, and bootstrap a business.
+
+As to what business I'll do, I am thinking to have a take on content
+publishing and app building combo. I'll build apps that do something,
+and I'll start a blog for each app. Apps will have premium versions via
+in-app purchases, and blogs will have ads. For this I plan to first
+study the competition, for which I'll build an Intenet-wide crawler to
+fetch and keep information about everything that goes on in public
+Internet.
+
+Another plan I have is to start an app and business for farming.
+Bio-farming and whatnot. I like to farm and I like Punjab. I'll like to
+do something for the land.
+
+I have to get on speed with studying Haskell. I intend to start building
+the Internet scanner in Haskell after I finish the 2 Haskell courses I
+plan to do. After that I'll do a series of blogs for algorithms, apps,
+games and Mathematics. Perhaps on farming and immigration out of India
+as well. Basically everything that I want to do, I'll turn it into a
+blog.
+
+Sometime I want to just hit the road and live a traveler's life. I know
+it sound obscene for I hate to travel, but constant change keep me from
+falling into limbo, thinking how utterly meaningless everything is. I
+guess that's how people go about their lives. There are so many problems
+everyone have to deal with, there is no time or energy left to indulge
+in this bullshit. Specially given that there is much more juicy bullshit
+for most to indulge in; love, family, power, politics, nationality, and
+the one bullshit to rule them all, religion.

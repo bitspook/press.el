@@ -1,0 +1,15 @@
+* bitspook.in
+
+My personal blog.
+
+** Publishing
+:PROPERTIES:
+:ID:       17b0b36c-e03a-419e-8978-b4e72c234e3a
+:END:
+
+I am using Emacs to write and publish my blog.
+I have following requirements:
+
+1. Quickly capture blog posts as drafts
+2. Publish my drafts easily
+3. Effortlessly refer to my notes in my blog posts

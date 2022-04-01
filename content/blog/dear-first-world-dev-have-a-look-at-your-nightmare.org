@@ -1,0 +1,145 @@
+#+DATE: <2014-02-26>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Dear First World Dev, Have a Look at Your Nightmare. I Am Going to Live It
+
+
+#+begin_quote
+  Tech scene in my city (Chandigarh) is daunting. There is super heavy
+  exploitation of new developers and nobody seem to have any problem
+  with it. In this post I am plotting the situation from my view, and
+  sharing the reasons behind my decision of accepting a job where I'll
+  obviously get exploited.
+#+end_quote
+
+For a long time, I've been very afraid of doing a job in my locality.
+First of my concerns have been that it will hinder my growth. From
+people working in local companies, I've heard things like "they will
+suck all plasma out of your blood; you'll hate to even look at a
+computer". I don't want this to happen with me. I love computers, and I
+want to keep loving computers. I don't want to get stuck either. On job,
+I'll most likely be doing PHP projects. I don't want to do PHP for rest
+of my life. It was the second language I learned, and I hate it. Looking
+back at it after a year of Python, most of it look like mumble-jumble of
+hoola-boo.
+
+I will be working 48 hours a week (excluding break; mon-sat 10 am to 7
+pm) for less than $100 per month. Pick that jaw up, I know it's
+exploitation. What they are going to do is get projects from oDesk and
+similar sites, and make developers do them, and pay like 0.01% to the
+devs. I can do it myself sitting at home, I've done a couple projects,
+but it was not fun. I got bored and left my third project halfway. I am
+so fucking undisciplined that it frustrates even me. Here's the list of
+my reasons for diving into the situation which at the moment looks like
+a whirlpool to hell.
+
+** My reasons for doing this job
+   :PROPERTIES:
+   :CUSTOM_ID: my-reasons-for-doing-this-job
+   :END:
+*** Indiscipline
+    :PROPERTIES:
+    :CUSTOM_ID: indiscipline
+    :END:
+I am sick of my fickleness. I get bored like after 20 minutes of playing
+with anything. I've tried as many techniques as I could in 2 years to
+discipline myself. I am expecting my new job to discipline me more. I am
+expecting it to be one of the most suffocating environments I can
+imagine as a developer. I know the culture of most companies in my city.
+I'll have to keep my phone outside the office before I enter, only the
+time I spend in my cube will be counted as my 'in office' time and
+similar. If nothing else, it will at least make me realize the
+significance of all the freedom I have in my room.
+
+*** Team
+    :PROPERTIES:
+    :CUSTOM_ID: team
+    :END:
+I want a team of coders to work with. I've always done coding alone, and
+I am sick of it. It's no fun. I want to work in a team. I want to show
+off my work. And most importantly I want smart people around me to look
+upto and learn from. There will probably be senior developers on job
+from whom I can learn many things.
+
+*** Network
+    :PROPERTIES:
+    :CUSTOM_ID: network
+    :END:
+I've been living in the place I am staying at present for about 8
+months, and my neighbor doesn't know I live in this house. Actually I
+met my neighbor in the new company I joined when I went there for
+interview. He work there. He accidentally read the address on my resume
+and asked me. I wasn't least bit surprised when he said "I didn't know
+you live there, I thought there's only an old couple in that house". I
+have made literally 0 friends in the period of 8 months, and I hardly
+know more than 5 people in whole city (that old couple included). I am
+expecting to get to know more people from programming community. And may
+be I'll make some friends.
+
+*** I want these 9 months to change my life
+    :PROPERTIES:
+    :CUSTOM_ID: i-want-these-9-months-to-change-my-life
+    :END:
+I will be doing a bond of 9 months with them. If I leave them before 9
+months, I will be paying them my 2 month salary before leaving. I want
+these 9 months to change my life. I don't mind working heavily underpaid
+if I can grow myself in same proportions as the exploitation. I will be
+working in a technology I've always hated, more because of other's
+opinions than my own experience. From this I am expecting to learn
+something I haven't realized yet.
+
+I want them to stand with a machine gun and shoot whatever they can at
+me. I am expecting to gain a lot of mental strength and sharpen my
+ability to quickly learn new things further. I've always felt proud of
+my quick-learning ability, I want to put it through the most intense
+test.
+
+*** Confidence
+    :PROPERTIES:
+    :CUSTOM_ID: confidence
+    :END:
+I know many things. I've developed things in Django, Flask, PyQt,
+CodeIgniter, SlimPHP, Wordpress, Angularjs, ReactJs, Backbone and
+similar tools. But still I could never collect enough nerve to bid for
+any such projects on freelancing sites. I know I can do them, I do them
+for my friends or for my experiments, but I get scared when it comes to
+work for someone I don't know. On the job I'll be forced to do things.
+May be by doing things this way I'll get some confidence.
+
+*** I want to study the environment
+    :PROPERTIES:
+    :CUSTOM_ID: i-want-to-study-the-environment
+    :END:
+This is the last thing on my mind, actually at the moment it is not even
+on my mind. I am too scared thinking of what is about to come. But
+earlier it was one my reasons for my decision of jumping in.
+
+Things are very bad in my city. There is no any kind of active community
+of computer enthusiasts; be it some Linux Users Group or something
+similar. For me thinking Hackathons in my city is similar to thinking a
+Lamborghini in my garage. Developers are heavily underpaid and
+over-exploited. I want to study the environment. I have ideas for a
+self-sustaining software company that would follow an open business
+model (another idea in my ideas.org). I want to foresee if it is
+practical.
+
+** Thing that triggered this decision
+   :PROPERTIES:
+   :CUSTOM_ID: thing-that-triggered-this-decision
+   :END:
+I have been at home for about 2 months, self-learning stuff. I thought
+of continuing like this for next 4 months. Couple days back I met Jayant
+on /r/machinelearning. (We've decided to pursue learning ml the way I
+discussed in
+[[https://web.archive.org/web/20140814135355/http://www.reddit.com/r/datascience/comments/1y9t11/is%5Fit%5Fa%5Fgood%5Fapproach%5Fto%5Fget%5Fstarted%5Fwith%5Fmachine/][this
+thread]]. If you are interested in joining the team pm me.) I talked to
+him and he turned out to be in a situation very similar to mine. He even
+called us identical twins. But he's a year ahead of me. He spent a whole
+year self-learning without doing any job. He said the experience was
+good and he learned a lot. I had a different feeling from his words
+though. Assuming that we are identical, I want to know what would have
+happened if he made the other choice. So I have decided to go for
+"learning on the shitty job" approach, just to make a twist in the
+timeline. It's looking like a risky decision to me, so I was postponing
+it for some time. But the thrill of doing this experiment is what
+triggered me doing it. Life is an experiment after all, and I like doing
+crazy things with it.

@@ -1,0 +1,115 @@
+#+FILETAGS: adhd introspection
+#+DATE: <2018-12-15>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Coming to terms with ADHD
+
+
+After my recent subscription to [[http://reddit.com/r/adhd][/r/adhd]], I
+realized how important it can be to share experiences. Even when it is
+something very personal and seem unlikely that anyone can relate to it,
+it can be quite helpful for someone who thinks she's alone with her
+struggles. A while back I deleted most of my old blog posts feeling
+embarrassed of their suspected cringeworthiness. Now I think it was a
+mistake. I am thinking about resurrecting them from archive.org.
+
+In this post I want to talk about how I came to the single instance of
+my life when I am not completely lost in self-pity for being too lazy
+and undisciplined. Perhaps it was this self-loathing that slowly turned
+to depression, and a bad event finally pushed me into the hole that I
+believe I am out of now.
+
+I started my research on ADHD when my doctor pointed I might have it. At
+that time I was in limbo of a special kind. I was quite used to the
+struggle of making myself do work that wasn't interesting anymore. I was
+also used to the periods of time when I was simply incapable of doing
+any work. But what made me go to the doctor was a relatively longer
+period of true nothingness. Nothing would excite me, no matter what I
+tried. The chaos inside my head got so out of control I was often
+talking to myself in an attempt to materialize the voices and solidify
+the line of thought so I could deal with them one at a time. Nothing
+worked. I would often contemplate suicide because my mind just wouldn't
+shut up about how pathetic I was. It was then I decided to consult help
+from a professional.
+
+I have not reached a solution, perhaps there is no solution that solves
+everything. But here is a list of things that has made a huge impact in
+helping me come to terms with my ADHD.
+
+** Keep a daily journal
+   :PROPERTIES:
+   :CUSTOM_ID: keep-a-daily-journal
+   :END:
+Try to know yourself. Understanding why you are thinking what you are
+thinking can be immensely helpful. It will help you figure out the flaws
+in your thinking, and how to make up for them. For example, a pat
+routine has saved me so many times once I started noticing that how
+often in a single I would forget my wallet or my phone or keys. Small
+things like this add up to make life miserable, and often go unnoticed
+in the storms of thoughts we face every day.
+
+So much of the overwhelmingness can just be let gone by writing it down.
+Try to be your own therapist, try to witness yourself. Not to
+participate, or engage, just analyze. It can be quite an exhausting
+thing to do, but I've found it to be more helpful than meditation. When
+I write in my diary, I find myself to be much more in control of life
+the next day. It'll also help you figure out which of your ideas are
+actually work-able and which are just fluff that need to go in trash
+can.
+
+** Write stuff down
+   :PROPERTIES:
+   :CUSTOM_ID: write-stuff-down
+   :END:
+You don't need to wait for the night to fall before you can write in
+your diary. Writing often during the day is quite helpful too. Write
+anything and everything down. Is it something you want to do but can't
+right now? Create a todo entry. Just had a brilliant new idea? Capture
+it. Invest in a tool that can help you capture your thoughts quickly.
+Make this process a part of your life. I use Emacs' Org mode which has a
+brilliant capture system, and I am very happy with it.
+
+** Delegate to your future self
+   :PROPERTIES:
+   :CUSTOM_ID: delegate-to-your-future-self
+   :END:
+You don't need to do all the hundred things you have thought of, today
+itself. Delegate them to your future self. I don't remember where I
+learned it, but it is very helpful to treat your future self as a
+different person, and just assign tasks to him that you don't have time
+to work on right now. You can schedule stuff you capture right away, or
+you can have a weekly review when you sort everything you captured in
+the week.
+
+** Review weekly
+   :PROPERTIES:
+   :CUSTOM_ID: review-weekly
+   :END:
+It is very important to review everything you capture on regular
+intervals. It'll give you confidence regarding your system, you could
+trust yourself more. When you can start trusting your future self,
+things becomes a lot very easier. You also become better at estimating
+stuff, so the commitments you give to other people bring you that much
+less anxiety.
+
+** Respect the decisions made by your past self
+   :PROPERTIES:
+   :CUSTOM_ID: respect-the-decisions-made-by-your-past-self
+   :END:
+Only way you can trust your future self to finish what's assigned to him
+is if you respect the decisions made by your past self. You don't have
+to beat yourself up too much about it either. Understand that it's not
+easy to estimate things. If we could predict things very reliably, we
+could open shops as psychics. Try to achieve "eventual consistency". Not
+everything is equally important. Make sure that if something has been
+assigned to you, it eventually gets completed.
+
+** Find something you can attach meaning to
+   :PROPERTIES:
+   :CUSTOM_ID: find-something-you-can-attach-meaning-to
+   :END:
+It's helpful to have something to call home. A principle that you
+wouldn't compromise with. I have chosen to attach meaning to the quality
+of the work I do. That's where I try to find solace. That's what I use
+to bring myself to peace, when I can't control the mess in some parts of
+my life. It might be one of the cardinal sins, but this kind of pride
+helps build confidence to face life.

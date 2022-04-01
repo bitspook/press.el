@@ -1,0 +1,71 @@
+#+FILETAGS: management trantor
+#+DATE: <2019-03-26>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Maximize individual growing in a software team
+
+
+Couple months ago we started an
+[[https://channikhabra.github.io/blog/how-to-maximize-individual-growth-in-a-software-team/][initiative]]
+in our team here at [[http://trantorinc.com/][Trantor]] with the focus
+on nurturing a culture which optimizes personal growth of an individual
+in the team. I believe it is turning out to be quite successful. We
+decided we'll focus on 4 things to achieve our goal:
+
+** Interactive sessions of tools/technologies
+   :PROPERTIES:
+   :CUSTOM_ID: interactive-sessions-of-tools-technologies
+   :END:
+This is where we've observed most success. We have had 4 sessions in
+past 2 months (we do two-week sprints), with following primary topics:
+
+- Up your ops game: Ansible and Vagrant /(delivered by *Charanjit Singh
+  (me)*)/
+- Up your ops game: Docker and Docker Compose /(delivered by *Charanjit
+  Singh (me)*/
+- Quick and Dirty Kafka /(collaboratively delivered by *Charanjit Singh
+  (me), Rupinder Singh, Sheenam Narula, Krishan Saini*)/
+- Getting acquainted with Elasticsearch /(delivered by *Krishan Saini*)/
+
+** Collaboratively studying open source projects we use
+   :PROPERTIES:
+   :CUSTOM_ID: collaboratively-studying-open-source-projects-we-use
+   :END:
+We started off with =chai.js=, but after probably spending only a few
+minutes each, the
+[[https://docs.google.com/document/d/13dko42FS9kcnpqnrjp9QCouQO0vZHDQ0tslID3BAQBs/edit?usp=sharing][google
+doc]] we created for collaboratively creating notes didn't see much
+action.
+
+** Being active in Trantor forums
+   :PROPERTIES:
+   :CUSTOM_ID: being-active-in-trantor-forums
+   :END:
+Plan was to use Trantor Forums as a platform for proposing
+(revolutionary) changes in our project. We started off with
+[[https://forum.trantorinc.com/t/suggested-improvements-for-tdd-in-veriown-cloud-mutation-testing-and-running-tests-concurrently/74][a
+proposal to introduce mutation testing]] in our test-coverage reports,
+but didn't move forward from that.
+
+I believe this is because we don't really spend as much time exploring
+new/different things/subject-matters to be able to bring more of such
+proposals. This problem is one of many that should fix itself if we are
+successful in fostering a culture of self growth in the team.
+
+** Day long hackathons
+   :PROPERTIES:
+   :CUSTOM_ID: day-long-hackathons
+   :END:
+We are yet to realize this dream. Shiva proposed a neat little idea to
+solve a problem faced by Trantor employees, but turned out an official
+solution was already in the works and about to be released in couple
+weeks (it didn't). I believe we should have just gone ahead and spend a
+day to build what we wanted, just for the heck of it. That would have
+been more fruitful.
+
+--------------
+
+Above points are more than just steps to achieve our goal, I believe,
+they are also metrics of our success. How much engagement each of these
+get reflects on how much of a self-growth culture is prospering in the
+team. I wonder if we can somehow quantize these per-person. If nothing
+else, that'll create some cool graphs to gawk at.

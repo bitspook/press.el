@@ -1,0 +1,117 @@
+#+FILETAGS: management trantor
+#+DATE: <2019-01-21>
+#+AUTHOR: Charanjit Singh
+#+TITLE: How to maximize individual growth in a software team?
+
+
+Working as a solo freelance developer, I used to have lofty ideas of how
+a group of people can grow so much more together. I imagined how a mind
+in the hive can grow at exponential rates. I made several attempts to
+build communities striving for this, a few were successful to some
+degree, most were not. Now working in a software development team at
+[[http://trantorinc.com/][Trantor]], I am revisiting these ideas.
+
+I still believe that it's a worthwhile general direction to move in. In
+this post, I am asking myself (and you) the question of "how". How can
+we maximize growth of an individual developer in a software team?
+
+What do I mean by growth? Software is about so much more than just
+writing code. It is also philosophy, psychology, mathematics, art and
+policy making. Growth as a software developer encompass growth in all
+these areas. Learning new tools and technologies is important, but so is
+the conceptual knowledge of software development principles, foresight
+about how decisions as trivial as naming a variable are going to impact
+the future of our code, to perceiving the perception of reader of our
+code, and also to make it elegant at many levels.
+
+Why focus on an individual's growth? I believe people are selfish by
+design. We think first for ourselves, then for our family, then for our
+closest community, and so on. Growing individuals help teams (and
+companies) directly as well. A culture of growth attracts good
+developers, more good developers are good for teams/companies than
+mediocre/bad ones. Optimizing for an individual's growth seem like a
+good idea to me. I think it adds significant positive value to everyone
+involved in the process of writing software.
+
+Now then, how do we optimize for an individual's growth? I had a
+discussion with the team here and we came up with some points that we
+are going to try this
+[[https://www.atlassian.com/agile/scrum/sprints][sprint]]. Plan is to
+buckle up and finish our committed work a day earlier than planned. Then
+on the extra day we earn, we sit back together, analyze two weeks of our
+code, share peer feedback, and dig into one or more of following
+activities.
+
+** Interactive sessions of new tools/technologies
+   :PROPERTIES:
+   :CUSTOM_ID: interactive-sessions-of-new-tools-technologies
+   :END:
+Topmost and shiniest layer of a software developer's growth is knowledge
+of new tools and technologies. Some of us explore more technologies than
+others. It was proposed that team members present a tool or technology,
+and give an interactive session of something they find cool. This can be
+very helpful for knowledge sharing in a diverse team where different
+people might have very different roles. For example, I am also handling
+the dev-ops in our current project, using tools like
+[[https://www.ansible.com/][Ansible]],
+[[https://www.terraform.io/][Terraform]],
+[[https://www.docker.com/][Docker]] and
+[[https://kubernetes.io/][Kubernetes]]. But rest of the team has no
+exposure to these tools. Me giving a session about these tools can be
+very helpful for me, rest of the team, and the company. It is also very
+much in alignment with my personal belief that every backend web
+developer should be familiar with devops.
+
+I differ from the proposal by the team a bit though. I think it is cool
+to just "show and tell" bi-weekly, giving an interactive session is a
+good to have.
+
+** Collaboratively studying open source projects we use
+   :PROPERTIES:
+   :CUSTOM_ID: collaboratively-studying-open-source-projects-we-use
+   :END:
+Another very good suggestion was reading the source code of an open
+source project, and collaboratively make notes of the patterns that
+codebase has used, things they did right, things they did wrong etc. At
+the end of the sprint, we can all discuss the notes we took, if we can
+take something and use in our projects etc. We have picked chai.js for
+this sprint.
+
+** Put forward new approaches in forums
+   :PROPERTIES:
+   :CUSTOM_ID: put-forward-new-approaches-in-forums
+   :END:
+Often times there are disagreements in team regarding approaches that
+can be taken towards a problem. Or sometimes under the pressure of
+delivery we pick one approach on another. If the taken approach is too
+bad, a technical debt is created, but when it is "good enough", we just
+move on. We don't want to let this slide. We should reconsider these
+small improvements, and keep incrementally improving and challenging our
+current practices.
+
+We decided that we create posts on Trantor Forums for this, the team
+should actively explore the alternative approaches, debate, reach a
+consensus and implement the approach into our project. An example of
+this is my proposal to bring [[https://stryker-mutator.io/][mutation
+testing]] to our workflow. I raised it, and then higher priorities sent
+it so deep into the ground that I myself forgot about it. A forum post
+can be a healthy reminder in such cases, provide documented discussion
+and bring activity in our forums as well.
+
+** Day long Hackathons
+   :PROPERTIES:
+   :CUSTOM_ID: day-long-hackathons
+   :END:
+Another nice thing that came out of our discussion was that we can
+utilize this extra day we earn ourselves as an internal team hackathon.
+We can decide on any idea, regardless of its relevance for the
+project/work, and the entire team spends a day hacking on it. Member
+whose idea is selected can lead the team.
+
+I think this can be a great way for team members to develop leadership
+skills, learn new things, have some open-source portfolio, and most
+importantly, feel that rush of starting a new project, and the bliss of
+finishing one.
+
+Above are few things we are going to start doing starting this sprint.
+Please put in comments below if you have opinions and/or suggestions!

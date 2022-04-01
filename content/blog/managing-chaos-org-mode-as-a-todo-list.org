@@ -1,0 +1,124 @@
+#+FILETAGS: productivity adhd
+#+DATE: <2019-01-05>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Managing Chaos
+
+
+I am thinking about doing a small series of posts on how I am managing
+the chaos that I am trying to stop fighting. I hope the chaos of an ADHD
+mind can be utilized rather than fought against. So far it has been
+working out pretty great (for past ~8 months). This post is about how I
+manage my ever exploding list of things I want to do.
+
+I believe one of the most important things is to externalize your
+thoughts. Making it a habit to write them down is immensely helpful. So
+many of my problems stopped being problems as I adopted writing things
+down more and more. I have very small working memory. I forget often and
+I forget most things. Mind is always thinking of new ideas, things to
+do, things to tell people. The knowledge that I am going to forget the
+thing I am thinking right now is a big source of anxiety. The burden of
+remembering innumerable things and then failing to do so has a cognitive
+toll of its own.
+
+I use org-mode as a lot of things; a TODO list is one of them. I am not
+going to get into the details of using org-mode for a beginner, but I'll
+share my flow of using org mode as a TODO list.
+
+** Capturing things to do
+   :PROPERTIES:
+   :CUSTOM_ID: capturing-things-to-do
+   :END:
+A very useful feature of org-mode is how easy it makes to "capture" TOOD
+items. I use Emacs as my primary text editor; being a software
+developer, most of my day time is spent in Emacs. Any time I think of
+something I [want|have] to do, I capture it with 3 keystrokes and
+usually immediately refile it under an appropriate heading. I keep 2
+TODOs.org files, one for work and one for my personal life.
+
+In my personal TODOs.org file, I keep headings categorizing the kind of
+thing it is that I want to do; right now, they are =Study, Personal
+Development, Habits, Projects, Reading List, In Basket"."In Basket"
+heading keeps things that are quickly done in a day or few, and/or
+cannot be categorized.
+
+My work TODOs.org carries all my work related tasks, including Jira
+issues, and general things I want/have to do when I am in the office. I
+have a TODO item to integrate org-jira, but right now I am manually
+copying Jira task IDs around like an imbecile.
+
+This is how my org-capture-templates variable looks like right now:
+
+#+begin_example
+  (setq
+     org-capture-templates
+     '(("d" "Diary Entry" plain (file+datetree org-agenda-diary-file) "\n<%<%I:%M %p>>\n%?\n")
+       ("f" "Feedback" plain (file+datetree trantor-feedback-file) "\n<%<%I:%M %p>>\n%?\n")
+       ("i" "Idea" entry (file org-ideas-file) "* %?\n%T")
+       ("t" "Todo" entry (file+headline "" "Todos") "* TODO %?\n%U\n[[%F]]")
+       ("c" "Contact" entry (file org-contacts-file) "* %^{Name}\n:PROPERTIES:\n:COMPANY %^{Company}\n:PHONE: %^{Phone}\n:END:")))
+#+end_example
+
+** Delegating things to future
+   :PROPERTIES:
+   :CUSTOM_ID: delegating-things-to-future
+   :END:
+Org-mode has a brilliant feature of scheduling tasks. It's rare for me
+to schedule a task for "today"; I delegate stuff to future me. I can
+capture and file things in any header, and then use org-mode's agenda
+views to filter out things past-me assigned for today. I try to finish
+the "today" tasks, and try to stay at peace when I fail to every day.
+Org-mode also display a count of for how long I've been missing to do a
+certain task which is a handy reminder that I am falling short on my
+commitments.
+
+** Prioritizing things
+   :PROPERTIES:
+   :CUSTOM_ID: prioritizing-things
+   :END:
+Not all tasks are made equal. Although I try my best to not let my
+"Today" tasks list become too big, sometimes there is simply too much on
+the plate. In that case, I define priorities for the most important
+tasks, which are displayed at the top of the list in Day-agenda view.
+
+** Tagging items
+   :PROPERTIES:
+   :CUSTOM_ID: tagging-items
+   :END:
+I often tag my TODO items so I can easily filter them in the agenda view
+when I want to find things I have to do in some particular context. I
+often tag things by:
+
+- The person's name who I need to be with for doing something e.g when I
+  want to tell someone something
+- The Scrum sprint in which a task need to get done. For this I don't
+  tag each task but instead file my tasks in a "Sprint X" heading which
+  is tagged, and org-mode automatically inherit tags to all the
+  subheadings
+- Place where I need to be at for doing something
+- Some other task specific metadata that I think can be helpful for
+  finding this task
+
+** Finding things to do
+   :PROPERTIES:
+   :CUSTOM_ID: finding-things-to-do
+   :END:
+Org-mode allow me to write my todo items in any order in any manner; I
+have several files where I write a lot of stuff, some of it is things to
+do; most if it isn't. It's crucial to write things down for me, because
+I know that I am going to forget it. Org-mode is immensely helpful in
+finding things out when I need it. Org-files being just text files allow
+me to just grep stuff; which is even more powerful with
+helm-projectile-grep. But the killer feature for finding out what I am
+supposed to be doing right now is org's agenda view. It allow me to
+filter things by time and tags.
+
+Org-mode require you to explicitly add files to a list of
+=org-agenda-files=. The agenda views only pick tasks from files in this
+list. I have almost all my org files in my agenda list. It also provides
+different views for the agenda; the one I am using most these days is
+the "Day-agenda" view, and Week-agenda view when I want to plan things
+ahead for the week.
+
+On my mobile, I use orgzly android app. I am not too happy with it, but
+it's the best I've got for now. I've it in my TODO list to create an app
+focused on org-mode and TODO lists the way I want it to work.

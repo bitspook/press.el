@@ -1,0 +1,63 @@
+#+FILETAGS: javascript
+#+DATE: <2014-02-12>
+#+AUTHOR: Charanjit Singh
+#+TITLE: My notes to help learning Javascript
+
+
+** Patience
+   :PROPERTIES:
+   :CUSTOM_ID: patience
+   :END:
+You need to keep it. Don't rush, it's alright if you are not getting it.
+Specially if you are from Python world. Javascript is to Python like
+India is to New Zeland, things are not actually as complicated as they
+appear, you just need to keep little patience.
+
+** Coffeescript is your friend
+   :PROPERTIES:
+   :CUSTOM_ID: coffeescript-is-your-friend
+   :END:
+Coffeescript helped me learn to think in javascript more than any book.
+I am not saying that you should use coffeescript, but use it for
+learning more about javascript. If you are unable to think something in
+javascript, do a version of it in Coffeescript, generate javascript and
+try to learn. I don't know how good is the generated javascript, but it
+was good enough for me to not get stuck. Emacs helped me a lot in this.
+I created a buffer with coffee-mode which was not visiting any file, and
+compiled coffee to see javascript in a split window for comparison. It
+really helped to avoid creating temporary files.
+
+** Don't rely too much on books, try something real
+   :PROPERTIES:
+   :CUSTOM_ID: don-t-rely-too-much-on-books-try-something-real
+   :END:
+Books can do only so much to help you. Elequent Javascript is great (or
+so they call it, actually I never got why it's called great), but what a
+real project can teach you is on another level. Go out in wild and try
+to do some real project, for fun of course.
+
+** Avoid DOM and UI
+   :PROPERTIES:
+   :CUSTOM_ID: avoid-dom-and-ui
+   :END:
+DOM manipulation and Javascript have their own concepts which are most
+times confusing to foreigners, specially if you are already infected by
+JQuery. Make your aim to learn Javascript, as a programming language and
+do something you do when learning a new language. Make self-contained
+scripts which don't need browser to work. Of course browser help when
+you are getting started and with 'console.log' you can avoid all sort of
+DOM manipulation, but that's not what I mean. On the next step to
+getting started, when you 'think' you know some javascript, try to make
+something that involve as little DOM manipulation as possible. Try
+making some simple nodeJs module, or some sort of browser extension.
+
+** Focus on getting it done, learning is a bonus
+   :PROPERTIES:
+   :CUSTOM_ID: focus-on-getting-it-done-learning-is-a-bonus
+   :END:
+It's better if you choose to do something you want to use, or at least
+something you find really interesting. And focus on getting it done. All
+ninja skills you want to learn come as a bonus. Remember those old
+Jackie Chan movies in which kung-fu master make him do his household
+chores? Just focus on washing clothes, you'll learn iron-fist style
+without knowing it, as a bonus.

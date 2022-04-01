@@ -1,0 +1,101 @@
+#+DATE: <2014-10-12>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Stalemate
+
+
+#+begin_quote
+  I write here mostly only when things aren't going well in my life.
+  Writing is a good exercise, it clear thoughts. It work better when
+  others give you their opinions. So please be my guest and share your
+  thoughts in comments. After a quite a roller-coaster ride for past 6-7
+  months, I am finding myself caught up in a stalemate like situation.
+  That's what I am writing about here.
+#+end_quote
+
+At the moment there's trouble going between me and my first and foremost
+mentor/employer James Gillmore. He's been paying me for past 7 months,
+and for past couple weeks, I am not working well. So what's apparent to
+me is coming end of our relationship.
+
+Reasons for me not working are unknown to me. But here are my guesses:
+
+** No work place
+   :PROPERTIES:
+   :CUSTOM_ID: no-work-place
+   :END:
+I am living in a hostel working from my bed. There is no suitable place
+to sit and work. Not much space in room that I could buy a small office
+setup (aka a chair and table; I actually bought them but had to return
+‘cause I couldn't place them anywhere). Working from bed is a disaster,
+but somehow it worked fine for 3 months or so.
+
+** Not getting enough food
+   :PROPERTIES:
+   :CUSTOM_ID: not-getting-enough-food
+   :END:
+I live in my head. Food for mind is important for me. With James, I've
+mostly worked in Javascript and Meteor.js. When he first contacted me,
+my JavaScript was same as my French. I don't know French. It was a fun
+ride. I learned a hell lot of stuff. Besides learning JavaScript and
+meteor, I got the opportunity to manage AWS instances, tweaking npm
+modules, setting up Mongo replicas, fixing Mysql servers, RoR apps (at
+one instance) and many more. It was all super cool. But for past couple
+months, I am not getting any food. I've been working on a very
+interesting project (a collaborative development tool that aims to make
+the web writeable). But I feel like I am not learning anything new. I am
+feeling like I am not growing. For last 3 months (since I moved to
+Bangalore) I've been constantly working for 8 hours a day, sometimes
+working on weekends too.
+
+Although I managed to teach myself Objective-C (out of foolish fear that
+it might extinct before I could learn it) and Angular.js (I learned this
+when I was teaching it to my girlfriend who wanted to make a phonegap
+app; she got a job at Intel with that), but I don't think it's worth
+even mentioning them. They were easy and I haven't mastered any of
+these. IMO mastering anything without investing substantial amount of
+time actually working in it is not possible.
+
+** Loneliness
+   :PROPERTIES:
+   :CUSTOM_ID: loneliness
+   :END:
+I am loner to be honest. I despise company. This is festival season in
+India, my roommates are gone to their homes. I can't be happier. But
+it's not true when I am coding. I like company there. For about a month
+I worked along with James Gillmore. He's like 10X smarter than I am. I
+loved every moment of it even though for about a week we were working
+may be 18 hours a day. I didn't exactly logged any hours, but I remember
+all I did for may be a week was eat, sleep and code. Literally. I loved
+it and still cherish the memory.
+
+But for last 4 or so months, I am working all alone. I've brought
+meteor-only version of nucleus to a level where we can start using it
+(internally), but I haven't even launched it yet.
+
+** Caught in a Limbo
+   :PROPERTIES:
+   :CUSTOM_ID: caught-in-a-limbo
+   :END:
+I find myself caught in a Limbo. I don't know if that's the word to use
+here, I learned it from a blog post I read couple days ago (about
+Ubisoft doing funny things with its employees). I am not working for
+reasons unknown to me, and I am not doing anything else because I have
+unfinished work to do. I have spent days just staring at my computer's
+screen, not moving a finger.
+
+My gut feeling says I should stick. But probably I should quit and find
+myself work elsewhere on the interwebs. I really don't want to work in a
+shitty development shop. Big companies won't take me because I don't
+have any experience on paper. A freelancer friend (yes I made a friend
+in new place) warned me that it's not that easy for un-established
+Indian freelancers to find work. Apparently the law of averages rule the
+Internet. With the vast number of Indian developers lurking around the
+Internet and the quality of most of them, averages are certainly not in
+my favour. Personally I don't want to quit. Reasons being I want to
+finish what I've started, for the sake of it.
+
+And I don't really have any savings to survive without work for more
+than a couple weeks. But if I can't produce results, I can't really ask
+James to place his bets on me again (yes, again;
+[[https://web.archive.org/web/20141015151208/http://channikhabra.github.io/2014/02/26/i-have-decided-to-do-a-job-where-they-will-exploit-shit-out-of-me/#comment-1262743983][he
+actually placed his bets on me last time]]).

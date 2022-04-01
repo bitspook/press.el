@@ -1,0 +1,108 @@
+#+DATE: <2013-10-20>
+#+AUTHOR: Charanjit Singh
+#+TITLE: I Eventually Managed to Leverage My Wave
+
+
+#+begin_quote
+  The wave I am talking about here is the period of crests and troughs
+  which I have been experiencing for like always. It has always been a
+  very commoving pull-back experience. Lately I have been through a
+  series of change and started looking at things with a different eye.
+  Here's a list of things helping me the most.
+#+end_quote
+
+My life is like riding a wave. When I am on the crest everything is
+easy, I am super-curious, confident and over-flowing with energy. After
+some time the energy of the crest goes away. And starts very depressing,
+negative period. I feel myself to be a weight on Earth. People call them
+`burn-outs'. I have read they burn-out after doing something reckless.
+But I burn-out periodically. This very negative time come in circles in
+my life no matter what I do.
+
+But now I think I've eventually managed to leverage my wave. I am not
+just living with it, I am using it. I started looking at the world with
+a different view after I read the Theory of Positive Disintegration. I
+learned it's not bad to be super-sensitive. The sadness, the pain, they
+can be used for good.
+
+Here are some of the things helping me to make something out of all the
+mess my life have become, and utilize the wave.
+
+** Abandoned commitments and my gtd.org
+   :PROPERTIES:
+   :CUSTOM_ID: abandoned-commitments-and-my-gtd-dot-org
+   :END:
+I once tried to utilize the `Getting Things Done' system. It didn't work
+very well for me. Although it did not fail 100% either. Thanks to it now
+I am in a habit of writing down most of my thoughts (I do it in an org
+file I've named gtd.org). I have made a list of all the commitments I
+have made to myself, things I wanted to do but didn't, and things I want
+to do in future. All the fallen dreams/commitments which have been a
+psychological weight on me. One of the problems I face in troughs is
+that I find nothing interesting. Like I don't want anything. Reading
+through my gtd.org always give me something in which some part of me is
+interested. I haven't recognized any pattern in this yet, but it
+significantly decreases the trough period. Last time I found learning
+e-lisp quite fascinating and that brought me out of the trough fast, and
+my crest now is not that chaotic.
+
+** Inspiration from the
+`[[https://web.archive.org/web/20141119093711/http://channikhabra.github.io/2013/10/20/I-eventually-managed-to-leverage-my-wave/blog.42floors.com/100-day-goals/][100
+day goals]]'
+   :PROPERTIES:
+   :CUSTOM_ID: inspiration-from-the-100-day-goals
+   :END:
+I read a blog post in which an entrepreneur is talking about his system
+of applying '100 day limits' to do some hard projects. He also warned
+that he and his team get burnt out and need rest after that. I thought
+to myself that I am going to burn out anyways, there is no stopping to
+it, so why not give it a shot. May be it will do some good. And it is
+working. I set a limit to finish `The Emacs-lisp intro' in seven days,
+and did it. It felt good. The sense of achievement was much needed.
+
+** Self introspection
+   :PROPERTIES:
+   :CUSTOM_ID: self-introspection
+   :END:
+To me self introspection appear to be a wastage of time on crests. But
+it has been a great help in darkest depths of my troughs. Would it be
+studying psychology, trying to diagnose myself for some mental disorder,
+or just digging through my zodiac and stuff, it help me not get lost.
+It's like the last line of defense for my focus, and has always worked
+till now. It give me a feel that all the chaos can be sorted out.
+
+** Video games
+   :PROPERTIES:
+   :CUSTOM_ID: video-games
+   :END:
+They have always been a source of despair actually. I waste all my time
+in them when I am going through troughs. But I actually found a way to
+utilize them. It came from another blog post I read. What I was doing
+was that I used to play a lot of video games in troughs, and none at all
+in crests. May be it created a pulling force towards troughs. Inspired
+by above mentioned blog post, I now give a little time playing some
+games everyday. And I am riding on my longest crest ever.
+
+** A pinch of success
+   :PROPERTIES:
+   :CUSTOM_ID: a-pinch-of-success
+   :END:
+I used to love my computer more than I love my girlfriend (note: my
+culture has molded my mind to make me a serious one woman man, don't
+interpret the word 'girlfriend' as used in western-culture
+relationships). I still feel fascinated about computers and programming,
+but looking at my computer I have a feeling like a lost battle-ground.
+There are so many things I thought I could do with it, so many I started
+on it, and no one I ever finished. The wave is the one I blame.
+
+[[https://web.archive.org/web/20141119093711/http://channikhabra.github.io/2013/10/11/the-most-beautiful-tutorial/][My
+previous blog post]] was a wild success (when seen from my eyes). It
+earned me many hn and reddit points, and is still bringing traffic. It
+was a blow to my thought that I can't achieve anything. Many of the
+self-doubting thoughts that started raising heads in my head got
+chopped.
+
+I took a lesson from it. Instead of trying to pursue my half-baked
+world-changing ideas, I will spend more time doing small things. It
+certainly doesn't mean I am not thinking big. I still have ideas that
+will turn the world around ;-) But a pinch of success is necessary.

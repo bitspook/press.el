@@ -1,0 +1,59 @@
+#+FILETAGS: productivity adhd
+#+DATE: <2019-01-03>
+#+AUTHOR: Charanjit Singh
+#+TITLE: Coming to terms with ADHD - Part 2
+
+
+One of the important aspects of living with ADHD is getting overwhelmed
+by thoughts. This is usually a major pain in the ass. When left
+unchecked it usually leads to a lot of confusion very painfully visible
+to people around you. This made most of my school life very tormenting.
+Despite being an "A" student, I was always completely lost.
+
+This got better when I found computers. A book I found while sitting in
+the wrong classroom turned things around for me. My thoughts got
+channeled, things started becoming a lot more clearer when I wasn't
+thinking of 10 random things at a time. I was still thinking of 10
+things at a time, but it was now manageable; it was interesting. I
+wasn't fighting the trains of thought anymore, I was enjoying the ride.
+
+This was alright while it was fun and games, but it became a problem
+again when I entered software development as a profession. Now I had to
+focus on things for extended duration of time; which usually was more
+than my interest span. It was a struggle again. I got over that period
+though; my current solution is to bring more accountability for my work,
+for which right now, I am doing a day job.
+
+During my period of struggle, I did a lot of fight to stay focused. I
+fought to not let distractions come in; I blocked sites, tried several
+time-boxing techniques; most things worked, but for a small duration of
+time. The fight did me more bad than good. Exploring things is what make
+me happy, when I took that away from myself, the frustration that built
+up as a result threw me in a pit of despair.
+
+My recommendation to anyone finding [her|him]self in my shoes is to not
+fight it all the time. Do whatever you feel like every once in a while.
+It is very important to keep feeling happy. Trust yourself that you'll
+manage to get important things done in time. However, you need to
+build/earn this trust. Read my
+[[https://channikhabra.github.io/blog/coming-to-terms-with-adhd/][previous
+post]] for some tips on how I do it.
+
+When you find something you feel passionate about, the multiple trains
+of thought kinda all go in the same direction. They're all interesting,
+and you want to ride them all. If you fight to ride one (or few) of
+them, you're gonna give yourself a hard time. Instinct to hop on each
+one of them until another one is more interesting isn't all that evil.
+I'll be writing more posts on how I do that (i.e tools and techniques I
+use), I don't have time right now, and am losing interest in writing
+this post. Try to trust yourself that you'll come back to what you're
+pausing, have means that allow you to hop b/w different things, and try
+to be at peace with the fact that this is simply how you operate. It
+might look chaotic to others, you'll still not be "normal", but you'll
+be a whole lot happy, and hopefully satisfied.
+
+In my current setup I have tens of different things I am time-sharing
+on, and am still delivering satisfactory value in my work. It is
+certainly possible for you to not fight tooth and nail with your way of
+thinking and have a satisfactory career (at least in Software
+Development).

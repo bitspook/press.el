@@ -1,0 +1,25 @@
+#+FILETAGS: management trantor
+#+DATE: <2019-10-21>
+#+TITLE: Personal Brands for Software Developers (Talk)
+
+
+After long diligence, me and my old (Trantor) team decided to organize a
+meetup to showcase our efforts, and to share our ideas with the local
+community.
+[[https://www.meetup.com/Chandigarh-Programmers-Club/events/263862634/][The
+meetup]] was organized in Trantor on September 18, 2019.
+
+It was a collaborative talk given in 3 parts be me, Ayush Sharma, and
+Sheenam Narula. Attendance was very low, but that's usually how it is in
+Tricity. Overall it was a fun session with lengthy, and mostly fruitful
+discussions.
+
+Here's my set of slides from the talk:
+
+#+begin_html
+  <iframe src="//slides.com/channikhabra/personal-brands-for-software-developers/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+#+end_html
+
+#+begin_html
+  </iframe>
+#+end_html
