@@ -1,0 +1,17 @@
+{
+  "name": "bitspook.in",
+  "version": "1.0.0",
+  "repository": "git@github.com:bitspook/bitspook.in.git",
+  "author": "Charanjit Singh <bitspook@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-scss": "parcel build assets/scss/main.scss --dist-dir static/dist",
+    "build": "yarn build-scss"
+  },
+  "dependencies": {
+    "parcel": "^2.4.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.4.1"
+  }
+}

@@ -59,7 +59,7 @@ publishing as a single project."
          (project `("project" :components ("static" "posts")))
          (org-publish-project-alist (list posts project static))
          (org-html-head-include-default-style nil)
-         (org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\"></link>")
+         (org-html-head "<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>")
          (js-mode-hook nil))
     (spub--clean)
     (spub--stage)

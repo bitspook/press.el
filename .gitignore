@@ -1,2 +1,4 @@
 /_staged/
 /_published/
+/.parcel-cache/
+/node_modules/
