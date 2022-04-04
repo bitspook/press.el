@@ -3,49 +3,47 @@
 #+TITLE: A Mind Full of Chaos
 
 
-I need to reinvent a system for keeping myself in check. I can't think
-of a single thing I haven't tried in past; pomodoros, gtd, time boxing,
-what not. They all work for some time, and then stop working. We find
-flaws in systems pretty quickly; we find cracks, make excused to let us
-do the easiest thing, the laziest thing.
+I need to reinvent a system for keeping myself in check. I can't think of a
+single thing I haven't tried in past; pomodoros, gtd, time boxing, what not.
+They all work for some time, and then stop working. We find flaws in systems
+pretty quickly; we find cracks, make excused to let us do the easiest thing, the
+laziest thing.
 
-No matter what system I would adopt next, it all wears off soon. This is
-a wheel that has been reinvented countless times. If only world was so
-simple that what works for one would work for all. I need to build a
-system unique for myself; considering factors that might not have
-existed for those who predate me. Things that I didn't include earlier.
+No matter what system I would adopt next, it all wears off soon. This is a wheel
+that has been reinvented countless times. If only world was so simple that what
+works for one would work for all. I need to build a system unique for myself;
+considering factors that might not have existed for those who predate me. Things
+that I didn't include earlier.
 
 ** Change
    :PROPERTIES:
    :CUSTOM_ID: change
    :END:
-I never considered change to be a part of any of my systems. I should
-this time. I believe most things work because of the new
-tools/techniques/whatever they bring on plate. A new lifestyle, a new
-toy, or just a different way to do something. As soon as the newness
-fades away, it becomes a chore to do. A cognitive load that I finally
-throw away with a deep breath.
+I never considered change to be a part of any of my systems. I should this time.
+I believe most things work because of the new tools/techniques/whatever they
+bring on plate. A new lifestyle, a new toy, or just a different way to do
+something. As soon as the newness fades away, it becomes a chore to do. A
+cognitive load that I finally throw away with a deep breath.
 
-I wonder how I'll integrate change. To make it an ultimate changing
-system, may I should adopt the actual digital nomad lifestyle. Travel
-around all the time. A month here, few weeks there, keep hopping from
-city to city. But then, I don't think I am a traveler kind of person. I
-like it more when there is less chaos outside my mind.
+I wonder how I'll integrate change. To make it an ultimate changing system, may
+I should adopt the actual digital nomad lifestyle. Travel around all the time. A
+month here, few weeks there, keep hopping from city to city. But then, I don't
+think I am a traveler kind of person. I like it more when there is less chaos
+outside my mind.
 
 ** Hunger
    :PROPERTIES:
    :CUSTOM_ID: hunger
    :END:
-Another important thing is the hunger for growth. I have an unquenchable
-thirst for growing bigger and bigger. Bigger in everything. I am not a
-competitive person though, I don't like competing with others. With just
-myself. I believe it is a good thing. Most satisfying is when I grow my
-skill set, learning something new or getting deeper into what I am
-already familiar with. But I wonder if it should be used as a carrot, or
-as a central piece of the system. Using it as carrot would be like
-having a 2 hour slot to study something after the day's work is done.
-For making it a central piece of the system will require me to find
-either:
+Another important thing is the hunger for growth. I have an unquenchable thirst
+for growing bigger and bigger. Bigger in everything. I am not a competitive
+person though, I don't like competing with others. With just myself. I believe
+it is a good thing. Most satisfying is when I grow my skill set, learning
+something new or getting deeper into what I am already familiar with. But I
+wonder if it should be used as a carrot, or as a central piece of the system.
+Using it as carrot would be like having a 2 hour slot to study something after
+the day's work is done. For making it a central piece of the system will require
+me to find either:
 
 - New things to learn from within what I am currently working. Or
 - Find work for what I want to learn/strengthen

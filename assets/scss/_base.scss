@@ -1,39 +1,39 @@
 @font-face {
-	font-family: "Roboto";
-	font-style: "normal";
-	font-weight: 300;
-	src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
+  font-family: "Roboto";
+  font-style: "normal";
+  font-weight: 300;
+  src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
   font-display: optional;
 }
 
 @font-face {
-	font-family: "Roboto";
-	font-style: "normal";
-	font-weight: 500;
-	src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto";
+  font-style: "normal";
+  font-weight: 500;
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
   font-display: optional;
 }
 
 @font-face {
-	font-family: "Roboto";
-	font-style: "normal";
-	font-weight: "bold";
-	src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-family: "Roboto";
+  font-style: "normal";
+  font-weight: "bold";
+  src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
   font-display: optional;
 }
 
 @font-face {
-	font-family: "Cantarell";
-	font-style: "normal";
-	font-weight: "bold";
-	src: url("/assets/fonts/Cantarell/Cantarell-Bold.ttf");
+  font-family: "Cantarell";
+  font-style: "normal";
+  font-weight: "bold";
+  src: url("/assets/fonts/Cantarell/Cantarell-Bold.ttf");
   font-display: optional;
 }
 
 @font-face {
-	font-family: "Cantarell";
-	font-style: "normal";
-	src: url("/assets/fonts/Cantarell/Cantarell-Regular.ttf");
+  font-family: "Cantarell";
+  font-style: "normal";
+  src: url("/assets/fonts/Cantarell/Cantarell-Regular.ttf");
   font-display: optional;
 }
 
@@ -55,7 +55,9 @@ a {
   color: $primary-text;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Roboto, sans-serif;
 }
 
@@ -73,56 +75,45 @@ body {
     max-width: 100%;
     padding: 0 4%;
   }
+}
 
-  .top-nav {
-    height: 90px;
+.top-nav {
+  height: 90px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+  ul {
+    list-style-type: none;
     display: flex;
-    position: relative;
+    align-items: center;
+    padding: 2em 0;
+  }
 
-    .brand {
-      width: 60px;
-      height: 60px;
-      align-self: center;
-      flex-grow: 1;
+  li {
+    flex-grow: 1;
+    padding-right: 2em;
+
+    a {
+      text-decoration: underline;
+      font-size: 1.4em;
+      font-family: Roboto, sans-serif;
+      color: $primary-text;
+
+      &:hover {
+        color: $secondary-color;
+      }
     }
 
-    .brand-avatar {
-      height: 100%;
+    &:last-child {
+      padding: 0;
     }
 
-    .nav-items {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      justify-self: right;
-      padding: 2em;
-    }
-
-    .nav-item {
-      flex-grow: 1;
-      padding-right: 2em;
+    @media (max-width: $width-xs) {
+      padding-right: 1em;
 
       a {
-        text-decoration: underline;
-        font-size: 1.4em;
-        font-family: Roboto, sans-serif;
-        color: $primary-text;
-
-        &:hover {
-          color: $secondary-color;
-        }
-      }
-
-      &:last-child {
-        padding: 0;
-      }
-
-      @media (max-width: $width-xs) {
-        padding-right: 1em;
-
-        a {
-          font-size: 1.2em;
-        }
+        font-size: 1.2em;
       }
     }
   }
@@ -147,7 +138,8 @@ blockquote {
   border-left: 4px solid $secondary-color;
 }
 
-img, figure {
+img,
+figure {
   background-color: lighten($secondary-color, 50);
 
   figcaption {
