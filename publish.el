@@ -3,6 +3,7 @@
 (require 'seq)
 (require 'org-roam)
 (require 'cl-lib)
+(require 'ox-publish)
 
 (defvar spub--staging-dir (expand-file-name "./_staged/"))
 (defvar spub--publish-dir (expand-file-name "./_published/"))
@@ -42,6 +43,18 @@ publishing as a single project."
       (copy-file (org-roam-node-file node)
                  (expand-file-name "./blog/" staging-dir)))))
 
+(defun spub--org-publish-to-clean-html (plist filename pub-dir)
+  "Publish an org-file to a clean URL.
+PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
+  (let* ((done-file (org-html-publish-to-html plist filename pub-dir))
+         (basename (car (split-string done-file ".html" t)))
+         (new-done-file (expand-file-name "index.html" basename)))
+    (cond
+     ((string= (file-name-base done-file) "index") done-file)
+     (t (mkdir basename t)
+        (rename-file done-file new-done-file)
+        new-done-file))))
+
 (defun spub--publish (&optional force? async? sitemap?)
   "Publish the project."
   (defvar org-publish-project-alist)
@@ -55,7 +68,7 @@ publishing as a single project."
                   :recursive t
                   :base-exteinsion "org"
                   :publishing-directory ,spub--publish-dir
-                  :publishing-function org-html-publish-to-html
+                  :publishing-function spub--org-publish-to-clean-html
                   :auto-preamble nil
                   :with-toc nil
                   :with-creator nil
@@ -63,6 +76,7 @@ publishing as a single project."
                   :sitemap-filename "index.org"
                   :auto-sitemap ,sitemap?
                   :template "./templates/test.org"
+                  :html-extension nil
                   :html-style nil))
          (static `("static"
                    :base-directory ,spub--static-dir
