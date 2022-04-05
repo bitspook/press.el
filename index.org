@@ -1,1 +1,1 @@
-* Welcome to my home page
+{{{latest-5-posts}}}

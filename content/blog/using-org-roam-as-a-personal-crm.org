@@ -3,13 +3,10 @@
 #+TITLE: Abusing org-roam as a personal CRM
 
 
-#+begin_html
+#+begin_export html
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DteN5uBV5ts" title="TLDR video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-#+end_html
-
-#+begin_html
   </iframe>
-#+end_html
+#+end_export
 
 org-roam is an Emacs application which makes efficiently capturing and
 finding notes easy. It does so a good job at that, I decided to use it
