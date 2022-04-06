@@ -103,7 +103,7 @@
     }
   }
 
-  .content {
+  .main {
     width: calc(100% - 450px);
     max-width: 872px;
     position: relative;
@@ -208,6 +208,11 @@
       .recent-content-list {
         list-style-type: none;
         margin: 2em 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+        }
       }
 
       .recent-content-item {
@@ -238,6 +243,13 @@
       .content-type--talks {
         &::before {
           background-image: url('/assets/images/icons/talk.svg');
+        }
+      }
+
+      .content-type--poems {
+        &::before {
+          background-image: url('../images/icons/poems.svg');
+          background-size: contain;
         }
       }
 

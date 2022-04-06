@@ -13,6 +13,7 @@
 (defvar spub--base-url "http://localhost:8000"
   "Need an HTTP(s) URL to convince org-mode that absolute links in
 index.html aren't local file URLs.")
+(defvar spub--author "Charanjit Singh")
 
 (defun spub--roam-nodes-with-tags (tags)
   "Find all org-roam nodes which have all TAGS."
@@ -44,28 +45,46 @@ publishing as a single project."
                  (expand-file-name "./blog/" staging-dir)))))
 
 (defvar spub--index nil)
-(defvar spub--index-template (expand-file-name "index.org"))
+
+(defun spub--render (filename scope)
+  "Render FILENAME as html with SCOPE.
+FILENAME should contain DOM as Lisp forms, as provided by
+`libxml-parse-html-region' (or accepted by `shr-dom-to-xml').
+SCOPE is an alist of (var . val) which the form in FILENAME will
+have access to."
+  (shr-dom-to-xml
+   (with-temp-buffer
+     (insert-file-contents filename)
+     (eval (read (current-buffer)) scope))))
 
 (defun spub--make-index-file ()
   "Create the index.html ."
   (let* ((index (sort spub--index
                       (lambda (a b)
                         (time-less-p
-                         (encode-time (cdr (assoc "date" b)))
-                         (encode-time (cdr (assoc "date" a)))))))
-         (latest-5 (seq-take index 5))
-         (org-export-global-macros
-          `((latest-5-posts . ,(seq-reduce
-                                (lambda (accum post)
-                                  (let ((url (string-replace
-                                              "index.html" ""
-                                              (string-replace spub--publish-dir "/" (car post))))
-                                        (title (cdr (assoc "title" (cdr post)))))
-                                    (string-join (list accum (format "- [[%s%s][%s]]" spub--base-url url title)) "\n")))
-                                latest-5 "")))))
-    (with-current-buffer (find-file-noselect (expand-file-name "index.org" spub--staging-dir))
-      (insert-file spub--index-template)
-      (write-file (expand-file-name "index.org" spub--staging-dir) nil)
+                         (encode-time (cdr (assq 'date b)))
+                         (encode-time (cdr (assq 'date a)))))))
+         (org-html-preamble nil)
+         (org-html-postamble nil)
+         (org-html-content-class "")
+         (org-export-with-title nil)
+         (staged-index-file (expand-file-name "index.org" spub--staging-dir))
+         (index-body (spub--render
+                      "./index.el"
+                      `((author . ,spub--author)
+                        (handle . "bitspook")
+                        (latest-posts . ,(seq-map (lambda (p) (cdr p)) (seq-take index 5)))
+                        (github . "https://github.com/bitspook")
+                        (stackoverflow . "https://stackoverflow.com/users/3175762")
+                        (linkedin . "https://www.linkedin.com/in/bitspook/")
+                        (resume . "https://docs.google.com/document/d/1HFOxl97RGtuhAX95AhGWwa808SO9qSCYLjP1Pm39la0")
+                        (gpg-qr-url . "/assets/images/public-key-qr.svg")
+                        (avatar . "/assets/images/avatar.png")))))
+    (with-current-buffer (find-file-noselect staged-index-file)
+      (erase-buffer)
+      (insert "#+title: Online home of Charanjit Singh \n\n")
+      (insert (concat "#+begin_export html\n" index-body "\n#+end_export"))
+      (write-file staged-index-file nil)
       (org-export-to-file 'html (expand-file-name "index.html" spub--publish-dir))
       (kill-buffer))))
 
@@ -88,13 +107,22 @@ publishing as a single project."
                    (let ((key (downcase (car pcell)))
                          (val (cadr pcell)))
                      (pcase key
-                       ("date" (cons key (org-parse-time-string val)))
-                       ("filetags" (cons "tags" (split-string val " " t "[ \t]")))
-                       (t (cons key val))))) props)))
+                       ("date" (cons 'date (org-parse-time-string val)))
+                       ("filetags" (cons 'tags (split-string val " " t "[ \t]")))
+                       (t (cons (intern key) val))))) props)))
     (when (string= "index.org" (f-filename filename))
-      (push (cons "date" (parse-time-string (current-time-string))) props))
+      (push (cons 'date (parse-time-string (current-time-string))) props))
 
-    (when (not (cdr (assoc "date" props)))
+    (when (not (assq 'category props))
+      (let* ((path-frags (split-string (string-replace spub--staging-dir "" filename) "/"))
+             (category (when (> (length path-frags) 1) (car path-frags))))
+        (when category (push `(category . ,category) props))))
+
+    (push (cons 'url (string-replace
+                      spub--staging-dir "/"
+                      (replace-regexp-in-string "\\(index\\)?.org$" "" filename))) props)
+
+    (when (not (cdr (assq 'date props)))
       (error "Date is a required field for a post"))
     props))
 
@@ -115,11 +143,12 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
 (defun spub--publish (&optional force? async?)
   "Publish the project."
   (defvar org-publish-project-alist)
-  (let* ((user-full-name "Charanjit Singh")
+  (let* ((user-full-name spub--author)
          (org-html-preamble t)
-         (org-html-preamble-format `(("en" ,(with-temp-buffer
-                                              (insert-file-contents spub--preamble-file)
-                                              (buffer-string)))))
+         (org-html-preamble-format
+          `(("en" ,(with-temp-buffer
+                     (insert-file-contents spub--preamble-file)
+                     (buffer-string)))))
          (posts `("posts"
                   :base-directory ,spub--staging-dir
                   :recursive t

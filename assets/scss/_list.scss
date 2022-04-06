@@ -20,15 +20,15 @@ li {
   flex-shrink: 0;
 
   &--blog {
-    background-image: url('/assets/images/icons/post.svg');
+    background-image: url('../images/icons/post.svg');
   }
 
   &--talks {
-    background-image: url('/assets/images/icons/talk.svg');
+    background-image: url('../images/icons/talk.svg');
   }
 
   &--poems {
-    background-image: url('/assets/images/icons/poems.svg');
+    background-image: url('../images/icons/poems.svg');
     background-size: contain;
   }
 }

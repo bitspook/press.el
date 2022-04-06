@@ -61,7 +61,7 @@ h3 {
   font-family: Roboto, sans-serif;
 }
 
-body {
+.content {
   max-width: 70%;
   padding: 0 124px;
   margin: 0 auto;
@@ -140,8 +140,6 @@ blockquote {
 
 img,
 figure {
-  background-color: lighten($secondary-color, 50);
-
   figcaption {
     padding: 0.4em;
     padding-top: 0;
