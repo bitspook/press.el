@@ -57,7 +57,7 @@ have access to."
      (insert-file-contents filename)
      (eval (read (current-buffer)) scope))))
 
-(defun spub--make-index-file ()
+(defun spub--publish-index-page ()
   "Create the index.html ."
   (let* ((index (sort spub--index
                       (lambda (a b)
@@ -86,6 +86,25 @@ have access to."
       (insert (concat "#+begin_export html\n" index-body "\n#+end_export"))
       (write-file staged-index-file nil)
       (org-export-to-file 'html (expand-file-name "index.html" spub--publish-dir))
+      (kill-buffer))))
+
+(defun spub--publish-archive-page ()
+  "Create archive.html."
+  (let* ((index (sort spub--index
+                      (lambda (a b)
+                        (time-less-p
+                         (encode-time (cdr (assq 'date b)))
+                         (encode-time (cdr (assq 'date a)))))))
+         (staged-page-file (expand-file-name "archive.org" spub--staging-dir))
+         (page-body (spub--render
+                      "./archive.el"
+                      `((posts . ,(seq-map (lambda (p) (cdr p)) index))))))
+    (with-current-buffer (find-file-noselect staged-page-file)
+      (erase-buffer)
+      (insert "#+title: Archive \n\n")
+      (insert (concat "#+begin_export html\n" page-body "\n#+end_export"))
+      (write-file staged-page-file nil)
+      (spub--org-publish-to-clean-html nil staged-page-file spub--publish-dir)
       (kill-buffer))))
 
 (defun spub--get-org-file-props (filename)
@@ -137,7 +156,8 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                                 (t (mkdir basename t)
                                    (rename-file published-file clean-published-file)
                                    clean-published-file))))
-    (push (cons clean-published-file (spub--get-post-meta filename)) spub--index)
+    (when plist
+      (push (cons clean-published-file (spub--get-post-meta filename)) spub--index))
     clean-published-file))
 
 (defun spub--publish (&optional force? async?)
@@ -145,6 +165,7 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
   (defvar org-publish-project-alist)
   (let* ((user-full-name spub--author)
          (org-html-preamble t)
+         (org-export-with-section-numbers nil)
          (org-html-preamble-format
           `(("en" ,(with-temp-buffer
                      (insert-file-contents spub--preamble-file)
@@ -171,16 +192,16 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
          (project `("project" :components ("static" "posts")))
          (org-publish-project-alist (list posts project static))
          (org-html-head-include-default-style nil)
-         (org-html-head
+         (org-html-head-extra
           (string-join
-           '("<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>"
-             "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">")
+           '("<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>")
            "\n"))
          (js-mode-hook nil))
     (when force? (spub--clean))
     (spub--stage)
     (setq spub--index nil)
     (org-publish-project project t)
-    (spub--make-index-file)))
+    (spub--publish-index-page)
+    (spub--publish-archive-page)))
 
 ;;; publish.el ends here
