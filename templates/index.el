@@ -37,8 +37,8 @@
                         ,@(seq-map
                            (lambda (post)
                              `(li nil
-                                  (a ((href . ,(cdr (assq 'url post)))
-                                      (class . ,(concat "recent-content-item content-type--" (cdr (assq 'category post)))))
-                                     ,(cdr (assq 'title post)))))
+                                  (a ((href . ,(alist-get 'url post))
+                                      (class . ,(concat "recent-content-item content-type--" (alist-get 'category post))))
+                                     ,(alist-get 'title post))))
                            latest-posts))
                     (footer nil (a ((class . "btn btn-primary read-more-btn") (href . "/archive")) "See all")))))
