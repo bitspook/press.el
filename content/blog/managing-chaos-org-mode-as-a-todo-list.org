@@ -48,7 +48,7 @@ copying Jira task IDs around like an imbecile.
 
 This is how my org-capture-templates variable looks like right now:
 
-#+begin_example
+#+begin_example elisp
   (setq
      org-capture-templates
      '(("d" "Diary Entry" plain (file+datetree org-agenda-diary-file) "\n<%<%I:%M %p>>\n%?\n")

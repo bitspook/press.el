@@ -13,6 +13,7 @@
 (defvar press--author "Charanjit Singh")
 (defvar press--templates-dir (expand-file-name "./templates"))
 (defvar press--preamble-tmpl (expand-file-name "./preamble.el" press--templates-dir))
+(defvar press--postamble-tmpl (expand-file-name "./postamble.el" press--templates-dir))
 
 (defun press--roam-nodes-with-tags (tags)
   "Find all org-roam nodes which have all TAGS."
@@ -20,6 +21,10 @@
                 (lambda (node) (= (seq-length tags) (seq-length (seq-intersection (org-roam-node-tags node) tags))))
                 (org-roam-node-list))))
     nodes))
+
+(defvar press--hidden-tags '("blog-post" "draft" "published")
+  "Tags which should be hidden from press.el.
+So they don't end up being published on the blog.")
 
 (defun press--clean ()
   "Cleanup intermediate and published content."
@@ -41,7 +46,11 @@ publishing as a single project."
 
     (cl-dolist (node blog-posts-to-publish)
       (copy-file (org-roam-node-file node)
-                 (expand-file-name "./blog/" staging-dir)))))
+                 (expand-file-name
+                  (concat "./blog/"
+                          (string-replace "_" "-" (org-roam-node-slug node))
+                          ".org")
+                  staging-dir)))))
 
 (defvar press--index nil)
 
@@ -160,7 +169,10 @@ anti-chronologically. TEMPLATE is relative to
                          (val (cadr pcell)))
                      (pcase key
                        ("date" (cons 'date (encode-time (org-parse-time-string val))))
-                       ("filetags" (cons 'tags (split-string val " " t "[ \t]")))
+                       ("filetags" (seq-filter
+                                    (lambda (tag)
+                                      (not (seq-contains-p press--hidden-tags tag)))
+                                    (cons 'tags (split-string val " " t "[ \t]"))))
                        (_ (cons (intern key) val)))))
                  props)))
 
@@ -199,9 +211,10 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
   "Publish the project."
   (interactive)
   (defvar org-publish-project-alist)
+  (defvar org-html-postamble-format)
   (defvar js-mode-hook)
   (let* ((user-full-name press--author)
-         (inhibit-message t)
+         (inhibit-message nil)
          (org-html-preamble t)
          (org-export-with-section-numbers nil)
          (org-html-preamble-format
@@ -210,8 +223,10 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                     `((github . "https://github.com/bitspook")
                       (author . "Charanjit Singh")
                       (avatar . "/assets/images/avatar.png"))))))
-         (org-html-postamble nil)
-         (org-html-post)
+         (org-html-postamble-format `(("en" ,(press--render
+                                              press--postamble-tmpl
+                                              '((author . "Charanjit Singh")
+                                                (handle . "bitspook"))))))
          (posts `("posts"
                   :base-directory ,press--staging-dir
                   :recursive t

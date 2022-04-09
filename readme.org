@@ -1,15 +1,10 @@
-* bitspook.in
+#+title: press.el
 
-My personal blog.
+My blogging setup based around org-publish.
 
-** Publishing
-:PROPERTIES:
-:ID:       17b0b36c-e03a-419e-8978-b4e72c234e3a
-:END:
-
-I am using Emacs to write and publish my blog.
-I have following requirements:
-
-1. Quickly capture blog posts as drafts
-2. Publish my drafts easily
-3. Effortlessly refer to my notes in my blog posts
+#+begin_quote
+*Warning*: This is a very alpha software. I am not sure if it is going to be a
+ thing of its own, or if I will archive it and move the elisp to my blog's repo.
+ It is public for showcasing some elisp tricks, and for
+ criticism/feedback/code-reviews.
+#+end_quote

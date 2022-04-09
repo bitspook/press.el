@@ -59,9 +59,10 @@ h1,
 h2,
 h3 {
   font-family: Roboto, sans-serif;
+  margin: 4rem 0 2rem 0;
 }
 
-.content, .top-nav {
+.content, .top-nav, .postamble {
   max-width: 70%;
   padding: 0 124px;
   margin: 0 auto;
@@ -131,7 +132,7 @@ h3 {
 }
 
 .title {
-  margin: 2em 0;
+  margin: 0;
 
   h1 {
     font-family: Roboto, sans-serif;
@@ -165,7 +166,7 @@ pre {
   padding: 1em;
 }
 
-#postamble {
+.postamble {
   font-family: monospace;
   color: #666;
   margin: 4rem 0;
