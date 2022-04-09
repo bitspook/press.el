@@ -73,19 +73,20 @@
       }
 
       .github {
-        background: url('/assets/images/icons/github.svg') no-repeat;
+        background: url('../images/icons/github.svg') no-repeat;
       }
 
-      .stackoverflow {
-        background: url('/assets/images/icons/stackoverflow.svg') no-repeat;
+      .twitter {
+        background: url('../images/icons/twitter.svg') no-repeat;
+        background-size: contain;
       }
 
       .rss {
-        background: url('/assets/images/icons/rss.svg') no-repeat;
+        background: url('../images/icons/rss.svg') no-repeat;
       }
 
       .linkedin {
-        background: url('/assets/images/icons/linkedin.svg') no-repeat;
+        background: url('../images/icons/linkedin.svg') no-repeat;
       }
     }
 
@@ -117,21 +118,19 @@
     }
 
     .about-me-snippet {
-      p {
-        font-family: Cantarell, sans-serif;
-        font-size: 1.35em;
-        line-height: 1.5;
-        align-items: center;
-        margin: 0.8em 0;
-        font-weight: 500;
+      font-family: Cantarell, sans-serif;
+      font-size: 1.35em;
+      line-height: 1.5;
+      align-items: center;
+      margin: 0.8em 0;
+      font-weight: 500;
 
-        a {
-          text-decoration: underline;
-          font-weight: bold;
+      a {
+        text-decoration: underline;
+        font-weight: bold;
 
-          &:active {
-            color: $secondary-color;
-          }
+        &:active {
+          color: $secondary-color;
         }
       }
     }

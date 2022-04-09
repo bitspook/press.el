@@ -97,7 +97,7 @@ anti-chronologically. TEMPLATE is relative to
                         (handle . "bitspook")
                         (latest-posts . ,(seq-take index 5))
                         (github . "https://github.com/bitspook")
-                        (stackoverflow . "https://stackoverflow.com/users/3175762")
+                        (twitter . "https://twitter.com/bitspook")
                         (linkedin . "https://www.linkedin.com/in/bitspook/")
                         (resume . "https://docs.google.com/document/d/1HFOxl97RGtuhAX95AhGWwa808SO9qSCYLjP1Pm39la0")
                         (gpg-qr-url . "/assets/images/public-key-qr.svg")
