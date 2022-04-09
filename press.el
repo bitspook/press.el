@@ -211,7 +211,6 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
   "Publish the project."
   (interactive)
   (defvar org-publish-project-alist)
-  (defvar org-html-postamble-format)
   (defvar js-mode-hook)
   (let* ((user-full-name press--author)
          (inhibit-message nil)
@@ -223,10 +222,12 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                     `((github . "https://github.com/bitspook")
                       (author . "Charanjit Singh")
                       (avatar . "/assets/images/avatar.png"))))))
-         (org-html-postamble-format `(("en" ,(press--render
-                                              press--postamble-tmpl
-                                              '((author . "Charanjit Singh")
-                                                (handle . "bitspook"))))))
+         (org-html-postamble t)
+         (org-html-postamble-format
+          `(("en" ,(press--render
+                    press--postamble-tmpl
+                    '((author . "Charanjit Singh")
+                      (handle . "bitspook"))))))
          (posts `("posts"
                   :base-directory ,press--staging-dir
                   :recursive t

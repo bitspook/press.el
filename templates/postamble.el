@@ -1,4 +1,6 @@
 `(footer ((class . "site-footer postamble"))
-         (p nil "Made with <3 and Emacs.")
-         (p nil ,(format "Author: %s (%s)" author handle))
-         (p nil "Published on: %d"))
+         (p nil "Made with ❤️ and Emacs.")
+         (p nil
+            ,(concat "Author : " author)
+            (a ((href . ,(concat "https://twitter.com/" handle)))
+               ,(concat "@" handle))))
