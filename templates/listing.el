@@ -11,5 +11,9 @@
                           (span ((class . "meta-item date"))
                                 ,(format-time-string "%B %d, %Y" (alist-get 'date post)))
                           (span ((class . "meta-item tags"))
-                                ,@(seq-map (lambda (t) (concat (capitalize t) ", ")) (alist-get 'tags post)))))))
+                                ,@(seq-map
+                                   (lambda (tag)
+                                     `(a ((href . ,(concat "/tags/" tag)))
+                                         ,(capitalize tag)))
+                                   (alist-get 'tags post)))))))
         posts))
