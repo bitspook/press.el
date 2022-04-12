@@ -280,7 +280,8 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
          (org-html-head-include-default-style nil)
          (org-html-head-extra
           (string-join
-           '("<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>")
+           '("<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>"
+             "<script type=\"text/javascript\" src=\"/dist/main.js\"></script>")
            "\n"))
          (js-mode-hook nil))
     (press--clean)

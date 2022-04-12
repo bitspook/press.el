@@ -7,9 +7,11 @@
   "scripts": {
     "clean": "rm -rf static/dist",
     "build-scss": "parcel build assets/scss/main.scss --dist-dir static/dist",
-    "build": "yarn clean && yarn build-scss"
+    "build-ts": "parcel build assets/ts/main.ts --dist-dir static/dist",
+    "build": "yarn clean && yarn build-scss && yarn build-ts"
   },
   "dependencies": {
+    "mixpanel-browser": "^2.45.0",
     "parcel": "^2.4.1"
   },
   "devDependencies": {
