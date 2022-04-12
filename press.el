@@ -14,6 +14,7 @@
 (defvar press--templates-dir (expand-file-name "./templates"))
 (defvar press--preamble-tmpl (expand-file-name "./preamble.el" press--templates-dir))
 (defvar press--postamble-tmpl (expand-file-name "./postamble.el" press--templates-dir))
+(defvar press--newsletter-tmpl (expand-file-name "./email-newsletter-form.el" press--templates-dir))
 
 (defun press--roam-nodes-with-tags (tags)
   "Find all org-roam nodes which have all TAGS."
@@ -252,8 +253,10 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
          (org-html-postamble-format
           `(("en" ,(press--render
                     press--postamble-tmpl
-                    '((author . "Charanjit Singh")
-                      (handle . "bitspook"))))))
+                    `((author . "Charanjit Singh")
+                      (handle . "bitspook")
+                      (newsletter-form . ,(press--render press--newsletter-tmpl nil))
+                      )))))
          (posts `("posts"
                   :base-directory ,press--staging-dir
                   :recursive t

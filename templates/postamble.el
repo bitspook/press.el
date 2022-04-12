@@ -1,4 +1,6 @@
 `(footer ((class . "site-footer postamble"))
+         ,newsletter-form
+
          (p nil "Made with ❤️ and Emacs.")
          (p nil
             ,(concat "Author: " author)

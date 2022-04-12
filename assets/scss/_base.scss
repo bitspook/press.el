@@ -175,3 +175,17 @@ pre {
     display: none;
   }
 }
+
+#mc_embed_signup {
+  max-width: 600px;
+  background: transparent;
+  margin-bottom: 4rem;
+}
+
+.newsletter-email {
+  border: 1px solid $secondary-color;
+  border-radius: 25px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+}
