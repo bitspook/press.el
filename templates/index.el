@@ -12,7 +12,7 @@
                 (a ((href . ,github) (title . ,(concat author " on Github")) (target . "blank")) (span ((class . "github"))))
                 (a ((href . ,twitter) (title . ,(concat author " on Twitter")) (target . "blank")) (span ((class . "twitter"))))
                 (a ((href . ,linkedin) (title . ,(concat author " on LinkedIn")) (target . "blank")) (span ((class . "linkedin"))))
-                (a ((href . "/rss.xml") (style . "display: none") (title . "Follow via RSS") (target . "blank")) (span ((class . "rss")))))
+                (a ((href . "/feed.xml") (title . "Follow via RSS") (target . "blank")) (span ((class . "rss")))))
            (img ((class . "pub-key-qr") (alt . ,(concat author "'s Public GPG Key")) (src . ,gpg-qr-url))))
       (div ((class . "main"))
            (section ((class . "about-me-snippet"))

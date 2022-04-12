@@ -65,13 +65,10 @@ have access to."
      (insert-file-contents filename)
      (eval (read (current-buffer)) scope))))
 
-(defun press--publish-page (dest template scope-fun)
-  "Publish NAME page with TEMPLATE and scope obtained from SCOPE-FUN.
-SCOPE-FN is called with index of all published files sorted
-anti-chronologically. TEMPLATE is relative to
-`press--templates-dir'."
+(defun press--publish-page (dest template scope)
+  "Publish page to DEST with TEMPLATE and SCOPE.
+TEMPLATE is relative to `press--templates-dir'."
   (let* ((index press--index)
-         (scope (funcall scope-fun index))
          (dest (if (file-name-extension dest) dest (concat dest ".org")))
          (staged-file (expand-file-name dest press--staging-dir))
          (staged-file-dir (file-name-directory staged-file))
@@ -87,30 +84,55 @@ anti-chronologically. TEMPLATE is relative to
       (press--org-publish-to-clean-html nil staged-file dest-dir)
       (kill-buffer))))
 
-(defun press--publish-index-page ()
-  "Create the index.html ."
+(defun press--publish-rss-feed (dest posts)
+  "Publish RSS feed to DEST for POSTS.
+DEST is relative to `press--publish-dir'."
+  (let ((feed (shr-dom-to-xml `(feed ((xmlns . "http://www.w3.org/2005/Atom"))
+                                     (link ((href . "https://bitspook.in/")))
+                                     (link ((href . "https://bitspook.in/feed.xml")
+                                            (rel . "self")))
+                                     (updated nil ,(format-time-string "%Y-%m-%dT%H:%M:%SZ"))
+                                     (author nil (name nil ,press--author))
+                                     (id nil "https://bitspook.in/")
+                                     (title nil "bitspook.in")
+
+                                     ,@(mapcar
+                                        (lambda (post)
+                                          `(entry nil
+                                                  (title nil ,(alist-get 'title post))
+                                                  (link ((href . ,(concat "https://bitspook.in" (alist-get 'url post)))))
+                                                  (id nil ,(concat "https://bitspook.in" (alist-get 'url post)))
+                                                  (updated nil ,(format-time-string "%Y-%m-%dT%H:%M:%SZ" (alist-get 'date post)))
+                                                  (summary nil)))
+                                        posts)))))
+    (with-temp-buffer
+      (insert feed)
+      (write-file (expand-file-name dest press--publish-dir) nil))))
+
+(defun press--publish-home-page ()
+  "Create the home page ."
   (let* ((org-html-preamble nil)
          (org-html-postamble nil)
          (org-html-content-class "")
          (org-export-with-title nil)
-         (scope-fun (lambda (index)
-                      `((title . "Online home of Charanjit Singh")
-                        (author . ,press--author)
-                        (handle . "bitspook")
-                        (latest-posts . ,(seq-take index 5))
-                        (github . "https://github.com/bitspook")
-                        (twitter . "https://twitter.com/bitspook")
-                        (linkedin . "https://www.linkedin.com/in/bitspook/")
-                        (resume . "https://docs.google.com/document/d/1HFOxl97RGtuhAX95AhGWwa808SO9qSCYLjP1Pm39la0")
-                        (gpg-qr-url . "/assets/images/public-key-qr.svg")
-                        (avatar . "/assets/images/avatar.png")))))
-    (press--publish-page "index" "index.el" scope-fun)))
+         (scope `((title . "Online home of Charanjit Singh")
+                  (author . ,press--author)
+                  (handle . "bitspook")
+                  (latest-posts . ,(seq-take press--index 5))
+                  (github . "https://github.com/bitspook")
+                  (twitter . "https://twitter.com/bitspook")
+                  (linkedin . "https://www.linkedin.com/in/bitspook/")
+                  (resume . "https://docs.google.com/document/d/1HFOxl97RGtuhAX95AhGWwa808SO9qSCYLjP1Pm39la0")
+                  (gpg-qr-url . "/assets/images/public-key-qr.svg")
+                  (avatar . "/assets/images/avatar.png"))))
+    (press--publish-page "index" "index.el" scope)
+    (press--publish-rss-feed "feed.xml" (seq-take press--index 10))))
 
 (defun press--publish-archive-page ()
   "Publish archive.html."
   (press--publish-page
    "archive" "listing.el"
-   (lambda (index) `((title . "Archive") (posts . ,index)))))
+   `((title . "Archive") (posts . ,press--index))))
 
 (defun press--publish-tags-pages ()
   "Publish listing pages for tags."
@@ -125,10 +147,11 @@ anti-chronologically. TEMPLATE is relative to
     (seq-map
      (lambda (tp)
        (let ((tag (car tp))
-             (posts (cdr tp)))
+             (posts (reverse (cdr tp))))
          (press--publish-page
           (format "tags/%s" tag) "listing.el"
-          (lambda (index) `((title . ,(capitalize tag)) (posts . ,(reverse posts)))))))
+          `((title . ,(capitalize tag)) (posts . ,posts)))
+         (press--publish-rss-feed (format "tags/%s.xml" tag) (seq-take posts 10))))
      tags)))
 
 (defun press--publish-category-pages ()
@@ -144,11 +167,12 @@ anti-chronologically. TEMPLATE is relative to
           press--index nil)))
     (seq-map
      (lambda (cp)
-       (let ((category (car cp))
-             (posts (cdr cp)))
+       (let* ((category (car cp))
+              (posts (reverse (cdr cp))))
          (press--publish-page
           category "listing.el"
-          (lambda (index) `((title . ,(capitalize category)) (posts . ,(reverse posts)))))))
+          `((title . ,(capitalize category)) (posts . ,posts)))
+         (press--publish-rss-feed (format "%s.xml" category) (seq-take posts 10))))
      categories)))
 
 (defun press--get-org-file-props (filename)
@@ -267,9 +291,9 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                           (time-less-p
                            (alist-get 'date b)
                            (alist-get 'date a)))))
-    (press--publish-index-page)
+    (press--publish-home-page)
     (press--publish-archive-page)
     (press--publish-tags-pages)
     (press--publish-category-pages)))
 
-;;; publish.el ends here
+;;; press.el ends here
