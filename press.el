@@ -82,7 +82,7 @@ TEMPLATE is relative to `press--templates-dir'."
       (insert (concat "#+begin_export html\n" html "\n#+end_export"))
       (mkdir staged-file-dir t)
       (write-file staged-file nil)
-      (press--org-publish-to-clean-html nil staged-file dest-dir)
+      (press--org-publish-file nil staged-file dest-dir)
       (kill-buffer))))
 
 (defun press--publish-rss-feed (dest posts)
@@ -219,7 +219,7 @@ DEST is relative to `press--publish-dir'."
 
     props))
 
-(defun press--org-publish-to-clean-html (plist filename pub-dir)
+(defun press--org-publish-file (plist filename pub-dir)
   "Publish an org-file to a clean URL.
 PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
   (let* ((published-file (org-html-publish-to-html plist filename pub-dir))
@@ -233,6 +233,10 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
     (when plist
       (push (press--get-post-meta filename clean-published-file) press--index))
     clean-published-file))
+
+(defun press--publish-static ()
+  "Publish the static components."
+  (copy-directory press--static-dir press--publish-dir t t t))
 
 (defun press--publish ()
   "Publish the project."
@@ -262,20 +266,14 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                   :recursive t
                   :base-exteinsion "org"
                   :publishing-directory ,press--publish-dir
-                  :publishing-function press--org-publish-to-clean-html
+                  :publishing-function press--org-publish-file
                   :auto-preamble nil
                   :with-toc nil
                   :with-creator nil
                   :with-drawers nil
                   :html-extension nil
                   :html-style nil))
-         (static `("static"
-                   :base-directory ,press--static-dir
-                   :base-extension "[a-zA-Z0-9]*"
-                   :publishing-directory ,press--publish-dir
-                   :recursive t
-                   :publishing-function org-publish-attachment))
-         (project `("project" :components ("static" "posts")))
+         (project `("project" :components ("posts")))
          (org-publish-project-alist (list posts project static))
          (org-html-head-include-default-style nil)
          (org-html-head-extra
@@ -286,6 +284,8 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
          (js-mode-hook nil))
     (press--clean)
     (press--stage)
+    (press--publish-static)
+
     (setq press--index nil)
     (org-publish-project project t)
     ;; Sort press--index anti-chronologically.
@@ -295,6 +295,7 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                           (time-less-p
                            (alist-get 'date b)
                            (alist-get 'date a)))))
+
     (press--publish-home-page)
     (press--publish-archive-page)
     (press--publish-tags-pages)
