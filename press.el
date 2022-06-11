@@ -274,12 +274,13 @@ PLIST FILENAME PUB-DIR are same as `org-html-publish-to-html'"
                   :html-extension nil
                   :html-style nil))
          (project `("project" :components ("posts")))
-         (org-publish-project-alist (list posts project static))
+         (org-publish-project-alist (list posts project))
          (org-html-head-include-default-style nil)
          (org-html-head-extra
           (string-join
            '("<link rel=\"stylesheet\" href=\"/dist/main.css\"></link>"
-             "<script type=\"text/javascript\" src=\"/dist/main.js\"></script>")
+             "<script type=\"text/javascript\" src=\"/dist/main.js\"></script>"
+             "<link rel=\"alternate\" type=\"application/atom+xml\" title=\"RSS Feed\" href=\"/feed.xml\" />")
            "\n"))
          (js-mode-hook nil))
     (press--clean)

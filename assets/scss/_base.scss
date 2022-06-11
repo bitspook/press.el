@@ -179,7 +179,6 @@ pre {
 #mc_embed_signup {
   max-width: 600px;
   background: transparent;
-  margin-bottom: 4rem;
 }
 
 .newsletter-email {
@@ -188,4 +187,21 @@ pre {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.4rem 0.8rem;
+}
+
+.rss-sub {
+  margin: 2rem 0;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    .rss {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
+      background: url('../images/icons/rss.svg') no-repeat;
+      background-size: contain;
+    }
+  }
 }
