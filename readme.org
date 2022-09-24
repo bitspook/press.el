@@ -1,10 +1,15 @@
 #+title: press.el
 
-My blogging setup based around org-publish.
+My ex-blogging setup based around org-publish.
 
-#+begin_quote
-*Warning*: This is a very alpha software. I am not sure if it is going to be a
- thing of its own, or if I will archive it and move the elisp to my blog's repo.
- It is public for showcasing some elisp tricks, and for
- criticism/feedback/code-reviews.
-#+end_quote
+I am archiving this repository in favor of [[https://github.com/bitspook/cl-ownpress][cl-ownpress]]. press.el uses org-publish-project to publish convert org-files, which is not very flexible. It also takes a lot of time to generate the blog, which can be annoying. 
+
+[[https://github.com/bitspook/cl-ownpress][cl-ownpress]] builds on the same spirit as press.el, and extends it further. 
+It allows 
+- using full power of Emacs to convert org files to HTML. So any elisp hacks you might have in place (e.g special org link types) are not lost
+- exporting a subset of org-roam notes to blog posts
+- interactive workflow thanks to it being written in common-lisp
+- fast (well,faster than press.el, but speed isn't a priority for now)
+- very hackable (configuration is code, you take the pieces you want from cl-ownpress to build your own site; you can go as deep as you want, or just use a couple lines of lisp to build your site).
+
+Please do check [[https://github.com/bitspook/cl-ownpress][cl-ownpress]] out. I am leaving this repo here (in archived state) because it is linked to elsewhere on the web (e.g on my blog and Youtube), and might help someone in future. 
